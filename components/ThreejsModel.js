@@ -12,25 +12,26 @@ extend({ EffectComposer, RenderPass, UnrealBloomPass })
 function Sphere({ geometry, x, y, z, s }) {
   const ref = useRef()
   useFrame((state) => {
-    ref.current.position.x = x + Math.sin((state.clock.getElapsedTime() * s) / 2)
-    ref.current.position.y = y + Math.sin((state.clock.getElapsedTime() * s) / 2)
-    ref.current.position.z = z + Math.sin((state.clock.getElapsedTime() * s) / 2)
+    let time = state.clock.getElapsedTime();
+    ref.current.position.x = x + 50 * Math.sin( time * s/10)
+    ref.current.position.y = y + Math.sin(time * s / 1)
+    ref.current.position.z = z + Math.sin(time * s / .5)
   })
   return (
     <mesh ref={ref} position={[x, y, z]} scale={[s, s, s]} geometry={geometry}>
-      <meshStandardMaterial color="hotpink" roughness={1} />
+      <meshStandardMaterial color="#c8fa5c" roughness={1} />
     </mesh>
   )
 }
 
 function RandomSpheres() {
-  const [geometry] = useState(() => new THREE.SphereGeometry(1, 32, 32), [])
+  const [geometry] = useState(() => new THREE.SphereGeometry(1, 100, 100), [])
   const data = useMemo(() => {
     return new Array(15).fill().map((_, i) => ({
       x: Math.random() * 100 - 50,
       y: Math.random() * 100 - 50,
       z: Math.random() * 100 - 50,
-      s: Math.random() + 10,
+      s: Math.random() * 50 + 5,
     }))
   }, [])
   return data.map((props, i) => <Sphere key={i} {...props} geometry={geometry} />)
