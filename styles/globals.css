@@ -1,9 +1,31 @@
+#root canvas {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  height: 800px;
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
+  
+  text-align: center;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.home-logo {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 auto;
+  position: "fixed";
+  z-index: 100;
 }
 
 a {
@@ -11,6 +33,12 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: yellow;
+  font-style: italic;
+}
+
 * {
   box-sizing: border-box;
 }
+
