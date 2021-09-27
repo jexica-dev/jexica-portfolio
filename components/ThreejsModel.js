@@ -5,6 +5,11 @@ import { Canvas, extend, useThree, useFrame } from "@react-three/fiber";
 import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer";
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass";
 import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPass";
+import {
+  Sky,
+  MeshWobbleMaterial,
+  MeshDistortMaterial,
+} from "@react-three/drei";
 
 extend({ EffectComposer, RenderPass, UnrealBloomPass });
 
@@ -37,6 +42,7 @@ function Sphere({ geometry, x, y, z, s, material }) {
       geometry={geometry}
       material={material ? material : null}
     >
+      
       {!material ? <meshPhysicalMaterial {...glassMaterialProps} /> : null}
       {/* color="#c8fa5c"  */}
     </mesh>
@@ -54,7 +60,7 @@ function RandomSpheres({ material, count }) {
     }));
   }, []);
   return data.map((props, i) => (
-    <Sphere key={i} {...props} geometry={geometry} material={material}  />
+    <Sphere key={i} {...props} geometry={geometry} material={material} />
   ));
 }
 
@@ -97,10 +103,27 @@ export default function ThreejsModel() {
       camera={{ position: [0, 0, 120] }}
     >
       <Main>
+        <Sky
+          distance={1000}
+          sunPosition={[1, 1, 1]}
+          inclination={0}
+          azimuth={0.25}
+        />
         <pointLight />
         <ambientLight />
         <RandomSpheres material={new THREE.MeshNormalMaterial()} />
-        <RandomSpheres count={35}/>
+        <RandomSpheres count={35} />
+        {/* <mesh scale={[50, 50, 50]}>
+          <sphereBufferGeometry attach="geometry" />
+          <MeshWobbleMaterial attach="material" factor={50} speed={1} />
+        </mesh> */}
+        <mesh scale={25}>
+          <sphereBufferGeometry args={[1, 50, 50]} attach="geometry" />
+          <MeshDistortMaterial
+            distort={1}
+            speed={5}
+          />
+        </mesh>
       </Main>
       <Bloom>
         <ambientLight />
