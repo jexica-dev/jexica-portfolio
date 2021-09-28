@@ -49,7 +49,7 @@ function Sphere({ geometry, x, y, z, s, material }) {
 }
 
 function RandomSpheres({ material, count }) {
-  const [geometry] = useState(() => new THREE.SphereGeometry(1, 100, 100), []);
+  const [geometry] = useState(() => new THREE.SphereGeometry(.75, 100, 100), []);
   const data = useMemo(() => {
     return new Array(count || 15).fill().map((_, i) => ({
       x: Math.random() * 200 - 100,
@@ -102,25 +102,23 @@ export default function ThreejsModel() {
       camera={{ position: [0, 0, 120] }}
     >
       <Main>
-        <ambientLight />
-
+        <ambientLight intensity={.5} />
+        <directionalLight position={[10, 10, 15]} intensity={.75}/>
+        <color attach="background" args={["black"]}/>
         <RandomSpheres material={new THREE.MeshNormalMaterial()} />
         <RandomSpheres count={35} />
-        {/* <mesh scale={[50, 50, 50]}>
-          <sphereBufferGeometry attach="geometry" />
-          <MeshWobbleMaterial attach="material" factor={50} speed={1} />
-        </mesh> */}
-        <mesh scale={25}>
+
+        {/* <mesh scale={25}>
           <sphereBufferGeometry args={[1, 50, 50]} attach="geometry" />
           <MeshDistortMaterial distort={1} speed={5} color="#c8fa5c" />
-        </mesh>
+        </mesh> */}
         <Stars
           radius={50} // Radius of the inner sphere (default=100)
           depth={50} // Depth of area where stars should fit (default=50)
           count={1000} // Amount of stars (default=5000)
           factor={4} // Size factor (default=4)
           saturation={0} // Saturation 0-1 (default=0)
-          fade // Faded dots (default=false)
+          fade="true"// Faded dots (default=false)
         />
       </Main>
       <Bloom>
