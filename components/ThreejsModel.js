@@ -6,7 +6,7 @@ import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass";
 import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPass";
 import {
-  Sky,
+  Stars,
   MeshWobbleMaterial,
   MeshDistortMaterial,
 } from "@react-three/drei";
@@ -42,7 +42,6 @@ function Sphere({ geometry, x, y, z, s, material }) {
       geometry={geometry}
       material={material ? material : null}
     >
-      
       {!material ? <meshPhysicalMaterial {...glassMaterialProps} /> : null}
       {/* color="#c8fa5c"  */}
     </mesh>
@@ -54,8 +53,8 @@ function RandomSpheres({ material, count }) {
   const data = useMemo(() => {
     return new Array(count || 15).fill().map((_, i) => ({
       x: Math.random() * 200 - 100,
-      y: Math.random() * 200 - 50,
-      z: Math.random() * 150 - 75,
+      y: Math.random() * 250 - 95,
+      z: Math.random() * 100 - 70,
       s: Math.random() * 20 + 5,
     }));
   }, []);
@@ -103,14 +102,8 @@ export default function ThreejsModel() {
       camera={{ position: [0, 0, 120] }}
     >
       <Main>
-        <Sky
-          distance={1000}
-          sunPosition={[1, 1, 1]}
-          inclination={0}
-          azimuth={0.25}
-        />
-        <pointLight />
         <ambientLight />
+
         <RandomSpheres material={new THREE.MeshNormalMaterial()} />
         <RandomSpheres count={35} />
         {/* <mesh scale={[50, 50, 50]}>
@@ -119,11 +112,16 @@ export default function ThreejsModel() {
         </mesh> */}
         <mesh scale={25}>
           <sphereBufferGeometry args={[1, 50, 50]} attach="geometry" />
-          <MeshDistortMaterial
-            distort={1}
-            speed={5}
-          />
+          <MeshDistortMaterial distort={1} speed={5} color="#c8fa5c" />
         </mesh>
+        <Stars
+          radius={50} // Radius of the inner sphere (default=100)
+          depth={50} // Depth of area where stars should fit (default=50)
+          count={1000} // Amount of stars (default=5000)
+          factor={4} // Size factor (default=4)
+          saturation={0} // Saturation 0-1 (default=0)
+          fade // Faded dots (default=false)
+        />
       </Main>
       <Bloom>
         <ambientLight />
