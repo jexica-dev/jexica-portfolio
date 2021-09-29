@@ -30,9 +30,9 @@ function Sphere({ geometry, x, y, z, s, material }) {
 
   useFrame((state) => {
     let time = state.clock.getElapsedTime();
-    ref.current.position.x = x + 50 * Math.sin((time * s) / 20);
-    ref.current.position.y = y + 20 * Math.sin((time * s) / 5);
-    ref.current.position.z = z + 30 * Math.sin((time * s) / 20);
+    ref.current.position.x = x + 50 * Math.sin((time * s) / 55);
+    ref.current.position.y = y + 20 * Math.sin((time * s) / 25);
+    ref.current.position.z = z + 30 * Math.sin((time * s) / 55);
   });
   return (
     <mesh
@@ -49,13 +49,13 @@ function Sphere({ geometry, x, y, z, s, material }) {
 }
 
 function RandomSpheres({ material, count }) {
-  const [geometry] = useState(() => new THREE.SphereGeometry(.75, 100, 100), []);
+  const [geometry] = useState(() => new THREE.SphereGeometry(.75, 200, 200), []);
   const data = useMemo(() => {
     return new Array(count || 15).fill().map((_, i) => ({
-      x: Math.random() * 200 - 100,
-      y: Math.random() * 250 - 95,
-      z: Math.random() * 100 - 70,
-      s: Math.random() * 20 + 5,
+      x: Math.random() * 300 - 150,
+      y: Math.random() * 250 - 100,
+      z: Math.random() * 100 - 100,
+      s: Math.random() * 100 - 50,
     }));
   }, []);
   return data.map((props, i) => (

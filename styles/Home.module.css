@@ -1,46 +1,33 @@
 @import url("https://api.fontshare.com/css?f[]=clash-grotesk@1&display=swap");
 
-.workbutton {
-  color: white !important;
-  text-decoration: none;
-  padding: 0 .5rem;
-  border-radius: 3rem;
-  color: #000;
-  display: inline-block;
-  border: .5px solid !important;
-  border-color: white;
-  color: inherit;
-  font-size: 2rem;
-  letter-spacing: .025em;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  line-height: 3.25rem;
-  height: 3.5rem;
-  min-width: 8rem;
-  text-align: center;
-  max-width: 100%;
-  font-family: 'Clash Grotesk', sans-serif;
-  transform: scale(1.5);
-}
+@-webkit-keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+@keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
 
-.workbutton:hover {
-  color: yellow;
-  font-style: italic;
+.flexcontainer {
+  display: flex;
+  justify-content: center;
 }
 
 .homelogo {
+  display: flex;
   filter: contrast(5);
-  width: 100vw;
-  height: 100vh;
-  margin: 0 auto;
-  padding: 0 auto;
+  margin-top: 5vh;
   position: "fixed";
   z-index: 100;
-  
-  
+ justify-content: center;
+ -webkit-animation: 4s linear 0s infinite alternate move_eye;
+ animation: 4s linear 0s infinite alternate move_eye;
 }
 
+
+
+.marquee {
+  color: white;
+  font-size: 2.25rem;
+  font-weight: 400;
+  letter-spacing: .25rem;
+  z-index: 100;
+}
 
 /* .container {
   min-height: 100vh;

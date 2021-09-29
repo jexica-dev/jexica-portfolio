@@ -1,35 +1,45 @@
 // ourdomain.com
 import Layout from "../components/layout/Layout.js";
 import Image from "next/image";
-import ReactDOM from "react-dom";
+import Homebutton from "../components/homebutton/homebutton.js";
 import ThreejsModel from "../components/ThreejsModel";
-import Link from "next/link";
 import styles from "../styles/Home.module.css";
-import { useState } from "react";
-
+import Marquee from "react-fast-marquee";
 
 function HomePage() {
-  const [hover, setHover] = useState(false);
-
   return (
     <>
       <Layout>
+        <div className={styles.flexcontainer}> 
         <ThreejsModel id="root" />
-        <div className={styles.homelogo} style={{ position: "fixed", zindex: "100" }}>
-          <Image
+        <div
+          className={styles.homelogo}
+          style={{ position: "fixed", zindex: "100" }}
+        >
+          <Image className={styles.homelogo}
             src="/jexica-logo.png"
             width={750}
             height={350}
             alt="jexica"
             className="logo-img"
-          />
-          
-          <Link href="/work" passHref>
-          <div className={styles.workbutton}>
-            work 
-            </div>
-            </Link>
-          
+            />
+            
+          </div>
+          <Homebutton className={styles.homelogo} />
+        <Marquee
+          className={styles.marquee}
+          pauseOnHover="true"
+          direction="right"
+          speed="50"
+          gradientColor="[0,0,0]"
+        >
+          <p> jexica.ayran@gmail.com +&nbsp;</p>
+          <p> designer +&nbsp;</p>
+          <p> front web dev +&nbsp;</p>
+          <p> creative coding +&nbsp;</p>
+          <p> based in brooklyn, nyc. +&nbsp;</p>
+        </Marquee>
+
         </div>
       </Layout>
     </>
