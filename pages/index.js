@@ -9,24 +9,9 @@ import Marquee from "react-fast-marquee";
 function HomePage() {
   return (
     <>
-      <Layout>
-        <div className={styles.flexcontainer}> 
-        <ThreejsModel id="root" />
-        <div
-          className={styles.homelogo}
-          style={{ position: "fixed", zindex: "100" }}
-        >
-          <Image className={styles.homelogo}
-            src="/jexica-logo.png"
-            width={750}
-            height={350}
-            alt="jexica"
-            className="logo-img"
-            />
-            
-          </div>
-          <Homebutton className={styles.homelogo} />
-        <Marquee
+      <ThreejsModel id="root" />
+      <div className={styles.flexcontainer}>
+      <Marquee
           className={styles.marquee}
           pauseOnHover="true"
           direction="right"
@@ -39,9 +24,20 @@ function HomePage() {
           <p> creative coding +&nbsp;</p>
           <p> based in brooklyn, nyc. +&nbsp;</p>
         </Marquee>
-
+        <div className={styles.homelogo}>
+          <Image
+            className={styles.homelogo}
+            src="/jexica-logo.png"
+            width={750}
+            height={350}
+            alt="jexica"
+            className="logo-img"
+          />
         </div>
-      </Layout>
+        <div className={styles.homebutton}>
+          <Homebutton />
+        </div>
+      </div>
     </>
   );
 }
