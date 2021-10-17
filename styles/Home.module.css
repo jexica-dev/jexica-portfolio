@@ -10,14 +10,14 @@
 .homelogo {
   flex: 2;
   filter: contrast(5);
-  margin-top: 5vh;
+  margin-top: 20vh;
  justify-content: center;
  z-index: 1;
 }
 
 
 .homebutton {
-  margin-top: -10vh;
+  margin-top: -9vh;
   justify-content: center;
   z-index: 100;
 }
@@ -28,6 +28,7 @@
   font-weight: 400;
   letter-spacing: .25rem;
   z-index: 100;
+  margin-top: 2.5vh;
   margin-bottom: -20vh;
 }
 
