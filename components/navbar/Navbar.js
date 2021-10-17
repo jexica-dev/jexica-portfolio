@@ -1,14 +1,23 @@
 import { Component } from "react";
+import Link from "next/dist/client/link";
+import styles from '../navbar/Navbar.module.css'
+
 
 function Navbar(props) {
   return (
-    <div className="text-center flex m-12 ml-96 mr-80">
-      <div className="flex-none">Jexica Ayran &nbsp;</div>
-      <div className="flex-1">&nbsp;</div>
+    <div className="relative">
+    <div>
+    <div className="align-center text-right flex flex-col m-12 ml-44 w-1/5">
+      <div className={styles.navname}>Jexica Ayran</div>
 
-      <div className="flex-1">Linkedin&nbsp;</div>
-      <div className="flex-1">Github&nbsp;</div>
-    </div>
+
+      <div className="flex-1"><Link href="mailto:jexica.ayran@gmail.com"> Email</Link>&nbsp;</div>
+      <div className="flex-1"><Link href="https://www.linkedin.com/in/jexica/"> Linkedin</Link>&nbsp;</div>
+      <div className="flex-1"><Link href="https://github.com/xicaz"> Github</Link>&nbsp;</div>
+      </div>
+
+      </div>
+      </div>
   );
 }
 

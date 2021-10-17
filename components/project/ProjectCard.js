@@ -1,9 +1,12 @@
 import Image from "next/image";
+import Link from "next/dist/client/link";
+
 
 export default function ProjectCard(props) {
   return (
+    <>
     <div
-      className="mb-10 relative overflow-hidden"
+      className="mb-8 relative overflow-hidden"
       style={{ width: 750, height: 410 }}
     >
       <Image
@@ -18,12 +21,17 @@ export default function ProjectCard(props) {
       <video
         className=" absolute z-0 top-0 left-0"
         width="750px"
-        height="410"
+        height="410px"
         autoPlay
         loop
       >
         <source src={props.vid} type="video/mp4" />
       </video>
-    </div>
+      </div>
+      <p className="mb-8 z-10 bottom-0 flex flex-row w-1/2 text-red text-xl">
+      <Link  className="" href={props.deployed}>Deployed</Link>
+      <Link className="" href={props.github}>Github</Link>
+      </p>
+      </>
   );
 }

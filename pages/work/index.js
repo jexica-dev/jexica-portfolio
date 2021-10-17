@@ -16,10 +16,14 @@ function ProjectListPage() {
       <div className="flex flex-col items-center w-full ">
 
 
-        <ProjectCard img="/thyme.png" vid="/thyme.mp4" alt="thyme" />
-        <ProjectCard img="/digialtar.png" vid="/digialtar.mp4" alt="digialtar"/>
-        <ProjectCard img="/gjam.png" vid="/gjam.mp4" alt="gjam"/>
-        <ProjectCard img="/spiritgif.png" vid="/spiritgif.mp4" alt="spiritgif" />
+
+        <ProjectCard img="/digialtar.png" vid="/digialtar.mp4" alt="digialtar" deployed="https://digialtar.netlify.app/" github="https://github.com/xicaz/digiAltar" />
+        
+        <ProjectCard img="/gjam.png" vid="/gjam.mp4" alt="gjam" deployed="https://gjam-app.netlify.app/" github="https://github.com/WAMS24/gjam-app" />
+        
+        <ProjectCard img="/thyme.png" vid="/thyme.mp4" alt="thyme" deployed="https://thyme-app.netlify.app/" github="https://github.com/xicaz/Thyme" />
+        
+        <ProjectCard img="/spiritgif.png" vid="/spiritgif.mp4" alt="spiritgif" deployed="https://spiritgif.surge.sh/" github="https://github.com/xicaz/Spirit-GIF" />
         
 
       </div>

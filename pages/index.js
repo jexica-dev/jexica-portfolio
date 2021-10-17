@@ -20,7 +20,7 @@ function HomePage() {
         >
           <p> jexica.ayran@gmail.com +&nbsp;</p>
           <p> designer +&nbsp;</p>
-          <p> front-end web dev +&nbsp;</p>
+          <p> front web dev +&nbsp;</p>
           <p> creative coding +&nbsp;</p>
           <p> based in brooklyn, nyc. +&nbsp;</p>
         </Marquee>

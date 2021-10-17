@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;600&display=swap');
 
 
 
@@ -16,13 +17,17 @@
 }
 
 html,
-body {
-  
+body, a {
   text-align: center;
   padding: 0;
   margin: 0 auto;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Noto Sans Mono', monospace;
+  font-weight: 300;
+  font-size: small;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .home-logo {
