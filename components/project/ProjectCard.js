@@ -17,6 +17,7 @@ export default function ProjectCard(props) {
         width={750}
         height={410}
         alt={props.alt}
+        layout="responsive"  
       />
       <video
         className=" absolute z-0 top-0 left-0"
