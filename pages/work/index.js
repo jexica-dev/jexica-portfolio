@@ -3,11 +3,9 @@
 import Navbar from "../../components/navbar/Navbar";
 import { useState } from "react";
 import ProjectCard from "../../components/project/ProjectCard.js";
-import Media from 'react-media';
 
 
 function ProjectListPage() {
-  const [isShown, setIsShown] = useState(true);
 
   return (
     <>

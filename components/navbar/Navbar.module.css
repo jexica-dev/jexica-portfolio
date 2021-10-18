@@ -1,13 +1,40 @@
 @import url('https://api.fontshare.com/css?f[]=clash-grotesk@1&f[]=cabinet-grotesk@400,700&display=swap');
 
 
-.navname{
-font-family: 'Cabinet Grotesk', monospace;
+.navname > a {
+  margin-top: 2rem;
+font-family: 'Cabinet Grotesk', sans-serif;
 line-height: .75em;
   font-weight: 700;
   font-size: 5em;
-  flex: 1;
-  margin-bottom: 10px;
+  margin-bottom: 2rem;
+
+}
+
+.nav > a {
+  align-items: flex-end;
+  justify-content: end;
 }
 
 
+
+@media only screen and (max-width: 800px) {
+  .navname {
+    flex-direction: column;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .nav-container > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 0 auto;
+
+  }
+  .nav > a {
+    font-size: large;
+  }
+}

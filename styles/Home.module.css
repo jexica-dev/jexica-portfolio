@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  overscroll-behavior-y: none;
 }
 
 .homelogo {
@@ -34,9 +35,15 @@
 
 
 @media only screen and (max-width: 768px) {
+
+  .marquee {
+    margin-top: 5vh;
+    margin-bottom: -10vh;
+  }
   
   .homelogo{
     margin: 15vh 0 0;
+
   }
 
   .homebutton {
