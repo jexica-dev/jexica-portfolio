@@ -8,7 +8,7 @@ function Navbar(props) {
     <div className="relative">
     <div>
     <div className="align-center text-right flex flex-col m-12 ml-44 w-1/5">
-      <div className={styles.navname}>Jexica Ayran</div>
+      <div className={styles.navname}>jexica ayran</div>
 
 
       <div className="flex-1"><Link href="mailto:jexica.ayran@gmail.com"> Email</Link>&nbsp;</div>

@@ -1,10 +1,10 @@
 // ourdomain.com
 // import Layout from '../components/layout/Layout.js'
-import { useRouter } from "next/dist/client/router";
 import Navbar from "../../components/navbar/Navbar";
 import { useState } from "react";
-import Image from "next/image";
 import ProjectCard from "../../components/project/ProjectCard.js";
+import Media from 'react-media';
+
 
 function ProjectListPage() {
   const [isShown, setIsShown] = useState(true);

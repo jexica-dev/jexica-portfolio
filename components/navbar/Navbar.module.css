@@ -1,8 +1,11 @@
+@import url('https://api.fontshare.com/css?f[]=clash-grotesk@1&f[]=cabinet-grotesk@400,700&display=swap');
+
 
 .navname{
-  font-family: 'Noto Sans Mono';
+font-family: 'Cabinet Grotesk', monospace;
+line-height: .75em;
   font-weight: 700;
-  font-size: medium;
+  font-size: 5em;
   flex: 1;
   margin-bottom: 10px;
 }
