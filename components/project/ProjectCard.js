@@ -2,9 +2,16 @@ import Image from "next/image";
 import Link from "next/dist/client/link";
 import Media from "react-media";
 
+function SafeHydrate({ children }) {
+  return (
+    <div suppressHydrationWarning>
+      {typeof window === 'undefined' ? null : children}
+    </div>
+  )
+}
 export default function ProjectCard(props) {
   return (
-    <>
+    <SafeHydrate>
       <Media queries={{ mobile: { maxWidth: 700 } }}>
         {(matches) => {
           console.log(matches.mobile);
@@ -49,7 +56,7 @@ export default function ProjectCard(props) {
                   layout="responsive"
                 />
                 <video
-                  className=" absolute z-0 top-0 left-0"
+                  className="absolute z-0 top-0 left-0 sm: "
                   width="750px"
                   height="410px"
                   autoPlay
@@ -70,6 +77,6 @@ export default function ProjectCard(props) {
           );
         }}
       </Media>
-    </>
+    </SafeHydrate>
   );
 }
