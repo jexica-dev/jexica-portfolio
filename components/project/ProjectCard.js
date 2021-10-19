@@ -30,7 +30,7 @@ export default function ProjectCard(props) {
                   layout="responsive"
                 />
               </div>
-              <p className="mb-12 z-10 bottom-0 flex flex-row w-1/2 text-red text-xl">
+              <p className="mb-12 z-10 bottom-0 flex flex-row w-full align-center text-red text-xl">
                 <Link className="" href={props.deployed}>
                   Deployed
                 </Link>
@@ -65,7 +65,7 @@ export default function ProjectCard(props) {
                   <source src={props.vid} type="video/mp4" />
                 </video>
               </div>
-              <p className="mb-24 z-10 bottom-0 flex flex-row w-1/2 text-red text-xl">
+              <p className="mb-24 z-10 bottom-0 flex flex-row align-center w-full text-red text-xl">
                 <Link className="" href={props.deployed}>
                   Deployed
                 </Link>
