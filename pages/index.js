@@ -10,6 +10,7 @@ import About from "../components/About/About.js";
 function HomePage() {
   return (
     <>
+      <div className="bg-black w-full">
       <ThreejsModel id="root" />
       <div className={styles.flexcontainer}>
       <Marquee
@@ -40,7 +41,8 @@ function HomePage() {
         <div className="my-20 z-10 w-full flex flex-col place-items-center">
           <About />
         </div>
-      </div>
+        </div>
+        </div>
     </>
   );
 }
