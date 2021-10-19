@@ -29,10 +29,10 @@ function Navbar(props) {
           </>
         ) : (
           <>
-            <div className="w-full bg-white">
+            <div className="w-full h-1/4 bg-white fixed top-0 z-30">
               <div
                 className={[
-                  "z-30 w-3/4 align-center text-right mt-10 sticky top-0 bg-white " +
+                  "w-3/4 align-center text-right mb-44 mt-10 bg-white " +
                     styles.navcontainer,
                 ]}
               >

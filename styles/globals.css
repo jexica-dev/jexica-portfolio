@@ -27,6 +27,7 @@ body, a {
   font-size: small;
   font-family: 'Noto Sans Mono', monospace;
   overscroll-behavior: none;
+  overflow-x: hidden;
 }
 
 a:hover {

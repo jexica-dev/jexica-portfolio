@@ -9,7 +9,7 @@ function ProjectListPage() {
     <>
       <div className="relative w-screen bg-white overflow-y-scroll overflow-x-hidden">
         <Navbar />
-        <div className="flex flex-col items-center w-full bg-black text-white pb-10 ">
+        <div className="flex flex-col items-center w-full bg-black text-white pb-10 mt-56">
           <ProjectCard
             img="/digialtar.png"
             vid="/digialtar.mp4"
