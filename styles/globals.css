@@ -30,6 +30,10 @@ body, a {
   overflow-x: hidden;
 }
 
+html {
+  background-color: black;
+}
+
 a:hover {
   text-decoration: underline;
 }

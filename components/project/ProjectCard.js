@@ -6,24 +6,22 @@ export default function ProjectCard(props) {
   return (
     <>
       <Media queries={{ mobile: { maxWidth: 700 } }}>
-        {(matches) =>
-          matches.mobile ? (
+        {(matches) => {
+          console.log(matches.mobile);
+          return matches.mobile ? (
             <>
-            <div
+              <div
                 className="mb-8 relative overflow-hidden"
-                style={{ width: '100vw', height: 'auto'}}
+                style={{ width: "100vw", height: "auto" }}
               >
                 <Image
-                  className={
-                    "absolute z-10 top-0 left-0"
-                  }
+                  className={"absolute z-10 top-0 left-0"}
                   src={props.img}
                   width={750}
                   height={410}
                   alt={props.alt}
                   layout="responsive"
                 />
- 
               </div>
               <p className="mb-12 z-10 bottom-0 flex flex-row w-1/2 text-red text-xl">
                 <Link className="" href={props.deployed}>
@@ -69,8 +67,8 @@ export default function ProjectCard(props) {
                 </Link>
               </p>
             </>
-          )
-        }
+          );
+        }}
       </Media>
     </>
   );

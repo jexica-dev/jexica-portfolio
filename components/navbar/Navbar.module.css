@@ -3,11 +3,10 @@
 
 .navname > a {
   margin-top: 2rem;
-font-family: 'Cabinet Grotesk', sans-serif;
-line-height: .75em;
+  font-family: 'Cabinet Grotesk', sans-serif;
+  line-height: .75em;
   font-weight: 700;
-  font-size: 5em;
-  margin-bottom: 2rem;
+  font-size: 3.5em;
 
 }
 
@@ -25,7 +24,6 @@ line-height: .75em;
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-bottom: 10px;
   }
   .nav-container > a {
   display: flex;
@@ -35,6 +33,6 @@ line-height: .75em;
 
   }
   .nav > a {
-    font-size: large;
+    font-size: medium;
   }
 }
