@@ -9,9 +9,9 @@ function ProjectListPage() {
 
   return (
     <>
-      {/* <Layout> */}
+      {/* <Layout> */}<div className="relative w-screen bg-white relative">
       <Navbar />
-      <div className="flex flex-col items-center w-full ">
+      <div className="flex flex-col items-center w-full bg-black text-white  pb-20">
 
 
 
@@ -24,7 +24,8 @@ function ProjectListPage() {
         <ProjectCard img="/spiritgif.png" vid="/spiritgif.mp4" alt="spiritgif" deployed="https://spiritgif.surge.sh/" github="https://github.com/xicaz/Spirit-GIF" />
         
 
-      </div>
+        </div>
+        </div>
       {/* </Layout> */}
     </>
   );
