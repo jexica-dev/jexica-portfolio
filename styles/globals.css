@@ -14,6 +14,8 @@
   height: 800px;
   margin: 0;
   padding: 0;
+  overscroll-behavior: none;
+
 }
 
 html,
@@ -21,9 +23,10 @@ body, a {
   text-align: center;
   padding: 0;
   margin: 0 auto;
-  font-family: 'Noto Sans Mono', monospace;
   font-weight: 300;
   font-size: small;
+  font-family: 'Noto Sans Mono', monospace;
+  overscroll-behavior: none;
 }
 
 a:hover {

@@ -1,0 +1,13 @@
+.about {
+  font-family: 'Noto Sans Mono', monospace;
+  line-height: 1.75em;
+  
+}
+
+
+@media only screen and (max-width: 800px) {
+  .about {
+    width: 75%;
+  }
+
+}

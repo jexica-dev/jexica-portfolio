@@ -5,6 +5,7 @@ import Homebutton from "../components/homebutton/homebutton.js";
 import ThreejsModel from "../components/ThreejsModel";
 import styles from "../styles/Home.module.css";
 import Marquee from "react-fast-marquee";
+import About from "../components/About/About.js";
 
 function HomePage() {
   return (
@@ -35,6 +36,9 @@ function HomePage() {
         </div>
         <div className={styles.homebutton}>
           <Homebutton />
+        </div>
+        <div className="my-20 z-10 w-full flex flex-col place-items-center">
+          <About />
         </div>
       </div>
     </>

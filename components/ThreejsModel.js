@@ -97,7 +97,7 @@ function Main({ children }) {
 export default function ThreejsModel() {
   return (
     <Canvas
-      style={{ height: "100vh", zindex: "-100", position: "absolute" }}
+      style={{ height: "100vh", zindex: "-100", position: "fixed" }}
       linear
       camera={{ position: [0, 0, 120] }}
     >
