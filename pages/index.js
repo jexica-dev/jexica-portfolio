@@ -25,16 +25,16 @@ function HomePage() {
           <p> creative coding +&nbsp;</p>
           <p> based in brooklyn, nyc. +&nbsp;</p>
         </Marquee>
-        <div className={styles.homelogo}>
+        <div className={[styles.homelogo + ' mb-12']}>
           <Image
             className={styles.homelogo}
             src="/jexica-logo.png"
-            width={750}
-            height={350}
+            width={700}
+            height={250}
             alt="jexica"
           />
         </div>
-        <div className={styles.homebutton}>
+        <div className={[styles.homebutton + ' -mb-4']}>
           <Homebutton />
         </div>
         <div className="my-20 z-10 w-full flex flex-col place-items-center">
