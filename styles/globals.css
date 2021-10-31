@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;600&display=swap');
+@import url('https://api.fontshare.com/css?f[]=clash-grotesk@1&f[]=cabinet-grotesk@400,500,700,800&display=swap');
 
 
 
@@ -23,14 +23,15 @@ body, a {
   text-align: center;
   padding: 0;
   margin: 0 auto;
-  font-weight: 300;
-  font-size: small;
-  font-family: 'Noto Sans Mono', monospace;
+  font-weight: 400;
+  font-size: large;
+  font-family: 'Cabinet Grotesk', sans-serif;
   overscroll-behavior: none;
   overflow-x: hidden;
 }
 
 html {
+  font-family: 'Cabinet Grotesk', sans-serif;
   background-color: black;
 }
 

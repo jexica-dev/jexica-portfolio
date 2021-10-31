@@ -35,7 +35,7 @@ function HomePage() {
             alt="jexica"
           />
         </div>
-        <div className={[styles.homebutton + ' -mb-4']}>
+        <div className={[styles.homebutton + ' -mb-6']}>
           <Homebutton />
         </div>
         <div className="my-20 z-10 w-full flex flex-col place-items-center">

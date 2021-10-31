@@ -22,8 +22,11 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.3.7",
+    "babel-plugin-glsl": "^1.0.0",
+    "babel-plugin-macros": "^3.1.0",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
+    "glslify": "^7.1.1",
     "postcss": "^8.3.9",
     "tailwindcss": "^2.2.17"
   }

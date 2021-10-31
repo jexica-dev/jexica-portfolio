@@ -1,15 +1,27 @@
+import {
+  MeshDistortMaterial, Stars
+} from "@react-three/drei";
+import { Canvas, extend, useFrame, useLoader, useThree } from "@react-three/fiber";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import * as THREE from "three";
-import { render } from "react-dom";
-import React, { useRef, useState, useMemo, useEffect } from "react";
-import { Canvas, extend, useThree, useFrame } from "@react-three/fiber";
 import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer";
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass";
 import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPass";
-import {
-  Stars,
-  MeshWobbleMaterial,
-  MeshDistortMaterial,
-} from "@react-three/drei";
+// import { TextureLoader } from 'three/src/loaders/TextureLoader';
+// import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+
+// import ShaderBall from './ShaderTexture/ShaderBall.js'
+
+
+function SafeHydrate({ children }) {
+  return (
+    <div suppressHydrationWarning>
+      {typeof window === "undefined" ? null : children}
+    </div>
+  );
+}
+
+
 
 extend({ EffectComposer, RenderPass, UnrealBloomPass });
 
@@ -86,6 +98,8 @@ function Bloom({ children }) {
 function Main({ children }) {
   const scene = useRef();
   const { gl, camera } = useThree();
+  
+
   useFrame(() => {
     gl.autoClear = false;
     gl.clearDepth();
@@ -95,7 +109,11 @@ function Main({ children }) {
 }
 
 export default function ThreejsModel() {
+
+  // const colorMap = useLoader(TextureLoader, '/gradient_13.png')
+
   return (
+    <SafeHydrate>
     <Canvas
       style={{ height: "100vh", zindex: "-100", position: "fixed" }}
       linear
@@ -104,18 +122,38 @@ export default function ThreejsModel() {
       <Main>
         <ambientLight intensity={.5} />
         <directionalLight position={[10, 10, 15]} intensity={.75}/>
-        <color attach="background" args={["black"]}/>
-        <RandomSpheres material={new THREE.MeshNormalMaterial()} />
-        <RandomSpheres count={35} />
+        <color attach="background" args={["black"]} />
+        
 
-        {/* <mesh scale={25}>
-          <sphereBufferGeometry args={[1, 50, 50]} attach="geometry" />
-          <MeshDistortMaterial distort={1} speed={5} color="#c8fa5c" />
+        {/* <RandomSpheres material={new THREE.MeshNormalMaterial()} /> */}
+        {/* <RandomSpheres count={15} /> */}
+
+        
+        {/* <mesh scale={30} position={[0, -20, 0]} >
+          <sphereBufferGeometry args={[1, 50, 50]} attach="geometry"  />
+          <MeshDistortMaterial  factor={.5} distort={1} speed={1.5} opacity={.9}  transparent metalness={.5} roughness={0} shadowSide={1}  />
         </mesh> */}
+
+{/* 
+
+        <ShaderBall
+        // position={[0, -100, 100]}
+        timeOffset={1813}
+        // rotation={[-Math.PI / 2, 0, 0]}
+        scale={[10, 10, 10]}
+        movement={0.3}
+        factor={0.1}
+      >
+
+        <RandomSpheres count={15} /> 
+      </ShaderBall> */}
+
+
+        <ambientLight />
         <Stars
-          radius={50} // Radius of the inner sphere (default=100)
-          depth={50} // Depth of area where stars should fit (default=50)
-          count={1000} // Amount of stars (default=5000)
+          radius={100} // Radius of the inner sphere (default=100)
+          depth={100} // Depth of area where stars should fit (default=50)
+          count={700} // Amount of stars (default=5000)
           factor={4} // Size factor (default=4)
           saturation={0} // Saturation 0-1 (default=0)
           fade="true"// Faded dots (default=false)
@@ -123,8 +161,9 @@ export default function ThreejsModel() {
       </Main>
       <Bloom>
         <ambientLight />
-        <RandomSpheres count={10} material={new THREE.MeshBasicMaterial()} />
+        {/* <RandomSpheres count={25} material={new THREE.MeshBasicMaterial()} /> */}
       </Bloom>
-    </Canvas>
+      </Canvas>
+      </SafeHydrate>
   );
 }
