@@ -30,6 +30,9 @@ export default function ProjectCard(props) {
                   layout="responsive"
                 />
               </div>
+              <p>
+                
+              </p>
               <p className="mb-12 z-10 bottom-0 flex flex-row w-full align-center text-red text-xl">
                 <Link className="" href={props.deployed}>
                   Deployed
