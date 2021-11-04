@@ -63,4 +63,8 @@
   .homebutton {
     margin-top: 0;
   }
+
+  .cursor {
+    display: none;
+  }
 }

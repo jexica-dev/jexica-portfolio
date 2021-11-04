@@ -11,6 +11,7 @@ function SafeHydrate({ children }) {
     </div>
   );
 }
+
 function Navbar(props) {
   const [isOpen, setOpen] = useState(false);
 

@@ -1,7 +1,7 @@
 // ourdomain.com
-import Layout from "../components/layout/Layout.js";
+import Layout from "../components/Layout/Layout.js";
 import Image from "next/image";
-import Homebutton from "../components/homebutton/homebutton.js";
+import Homebutton from "../components/Homebutton/homebutton.js";
 import ThreejsModel from "../components/Threejs/ThreejsModel.js";
 import styles from "../styles/Home.module.css";
 import Marquee from "react-fast-marquee";
@@ -20,7 +20,6 @@ function HomePage() {
   return (
     <>
       <SafeHydrate>
-      
         <div className="bg-black w-full">
           <ThreejsModel id="root" />
           <div className={styles.flexcontainer}>
@@ -53,9 +52,10 @@ function HomePage() {
               <About />
             </div>
           </div>
-          
         </div>
-        <ThreejsCursor />
+        <div className={styles.cursor}>
+          <ThreejsCursor />
+        </div>
       </SafeHydrate>
     </>
   );

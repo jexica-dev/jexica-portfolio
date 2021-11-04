@@ -2,7 +2,7 @@ import { useTrail, animated } from "@react-spring/web";
 import useMeasure from "react-use-measure";
 import styles from "./threejscursor.module.css";
 
-const fast = { tension: 1200, friction: 40 };
+const fast = { tension: 1100, friction: 40 };
 const slow = { mass: 10, tension: 200, friction: 50 };
 const trans = (x, y) => `translate3d(${x}px,${y}px,0) translate3d(-50%,-50%,0)`;
 
@@ -24,7 +24,7 @@ export default function ThreejsCursor() {
           <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="35" />
           <feColorMatrix
             in="blur"
-            values="1 0 0 0 0 0 1 0 0 0 0 0 3 9 0 1 0 1 40 -7"
+            values="1 0 0 0 0 0 1 0 0 0 0 0 3 9 0 1 0 1 35 -7"
           />
         </filter>
       </svg>

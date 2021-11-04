@@ -1,8 +1,8 @@
 // ourdomain.com
 // import Layout from '../components/layout/Layout.js'
-import Navbar from "../../components/navbar/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import { useState } from "react";
-import ProjectCard from "../../components/project/ProjectCard.js";
+import ProjectCard from '../../components/ProjectCard/ProjectCard'
 
 function ProjectListPage() {
   return (
