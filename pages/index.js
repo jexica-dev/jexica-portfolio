@@ -1,5 +1,5 @@
 // ourdomain.com
-import Layout from "../components/Layout/Layout.js";
+// import Layout from "../components/Layout/Layout.js";
 import Image from "next/image";
 import Homebutton from "../components/Homebutton/homebutton.js";
 import ThreejsModel from "../components/Threejs/ThreejsModel.js";
