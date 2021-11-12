@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "../homebutton/homebutton.module.css";
+import styles from "./homebutton.module.css";
 import { useState } from "react";
 
 function Homebutton() {

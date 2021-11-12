@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Link from "next/dist/client/link";
 import Media from "react-media";
+// import { randFloatSpread } from "three/src/math/MathUtils";
 
 function SafeHydrate({ children }) {
   return (
     <div suppressHydrationWarning>
-      {typeof window === 'undefined' ? null : children}
+      {typeof window === "undefined" ? null : children}
     </div>
-  )
+  );
 }
 export default function ProjectCard(props) {
   return (
@@ -18,7 +19,7 @@ export default function ProjectCard(props) {
           return matches.mobile ? (
             <>
               <div
-                className="mb-8 relative overflow-hidden"
+                className="mb-8 relative overflow-hidden align-center justify-center "
                 style={{ width: "100vw", height: "auto" }}
               >
                 <Image
@@ -30,22 +31,27 @@ export default function ProjectCard(props) {
                   layout="responsive"
                 />
               </div>
-              <p>
-                
-              </p>
-              <p className="mb-12 z-10 bottom-0 flex flex-row w-full align-center text-red text-xl">
-                <Link className="" href={props.deployed}>
-                  Deployed
-                </Link>
-                <Link className="" href={props.github}>
-                  Github
-                </Link>
-              </p>
+              <p></p>
+              <>
+                <p className="mb-12 z-10 bottom-0 flex flex-col w-full align-center justify-center text-xl">
+                  <Link className="" href={props.deployed}>
+                    Deployed
+                  </Link>
+                  <Link className="" href={props.github}>
+                    Github
+                  </Link>
+                  {props.figma ? (
+                    <Link className="figma" href={props.figma}>
+                      Figma
+                    </Link>
+                  ) : null}
+                </p>
+              </>
             </>
           ) : (
             <>
               <div
-                className="mb-8 relative overflow-hidden"
+                className="flex flex-col mb-8 relative justify-center align-center overflow-hidden"
                 style={{ width: 750, height: 410 }}
               >
                 <Image
@@ -68,14 +74,26 @@ export default function ProjectCard(props) {
                   <source src={props.vid} type="video/mp4" />
                 </video>
               </div>
-              <p className="mb-24 z-10 bottom-0 flex flex-row align-center w-full text-red text-xl">
-                <Link className="" href={props.deployed}>
-                  Deployed
-                </Link>
-                <Link className="" href={props.github}>
-                  Github
-                </Link>
-              </p>
+              <>
+                <div className="flex flex-col" style={{width: '750px' }}>
+                  <p className="px-16 z-10 bottom-0 flex flex-row w-full align-center justify-left text-xl">
+                    <Link className="" href={props.deployed}>
+                      Deployed
+                    </Link>
+                    <Link className="github" href={props.github}>
+                      Github
+                    </Link>
+                    {props.figma ? (
+                      <Link className="figma" href={props.figma}>
+                        Figma
+                      </Link>
+                    ) : null}
+                  </p>
+                  <div className="w-full ">
+                    <p className="text-white text-xs w-full text-left p-10 pt-2">{props.children}</p>
+                  </div>
+                </div>
+              </>
             </>
           );
         }}

@@ -1,6 +1,6 @@
 import { Component } from "react";
 import Link from "next/dist/client/link";
-import styles from "../navbar/Navbar.module.css";
+import styles from "./Navbar.module.css";
 import Media from "react-media";
 import { useState } from "react";
 
@@ -35,7 +35,14 @@ function Navbar(props) {
                     <Link href="/"> jexica ayran </Link>
                   </div>
                   <div className={[styles.nav + " flex-1"]}>
-                    <Link href="mailto:jexica.ayran@gmail.com"> Email</Link>
+                    <a href="mailto:jexica.ayran@gmail.com">
+                      Email
+                      </a>
+                  </div>
+                  <div className={[styles.nav + " flex-1"]}>
+                    <Link href="https://drive.google.com/file/d/19hRYugyFSHhpVsmK6bJHbsLm_WvLk1U1/view">
+                    <a target="_blank">Resume</a>
+                      </Link>
                   </div>
                   <div className={[styles.nav + " flex-1"]}>
                     <Link href="https://www.linkedin.com/in/jexica/">
@@ -45,6 +52,8 @@ function Navbar(props) {
                   <div className={[styles.nav + " flex-1 mb-8"]}>
                     <Link href="https://github.com/xicaz"> Github</Link>
                   </div>
+                  
+
                 </div>
               </div>
             </>
