@@ -50,9 +50,8 @@ function HomePage() {
               <About />
             </div>
           </div>
-        </div>
           <ThreejsCursor />
-
+        </div>
       </SafeHydrate>
     </>
   );
