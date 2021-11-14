@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "./homebutton.module.css";
 import { useState } from "react";
 
-function Homebutton() {
+export default function Homebutton() {
   const [isShown, setIsShown] = useState(false);
 
   return (
@@ -25,4 +25,3 @@ function Homebutton() {
   );
 }
 
-export default Homebutton;
