@@ -51,9 +51,8 @@ function HomePage() {
             </div>
           </div>
         </div>
-        <div className={styles.cursor}>
           <ThreejsCursor />
-        </div>
+
       </SafeHydrate>
     </>
   );

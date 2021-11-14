@@ -1,7 +1,6 @@
 // ourdomain.com
-// import Layout from '../components/layout/Layout.js'
 import Navbar from "../../components/Navbar/Navbar";
-import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import ProjectCard from "../../components/ProjectCard/ProjectCard.js";
 
 function ProjectListPage() {
   return (
