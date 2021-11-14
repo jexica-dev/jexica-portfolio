@@ -1,6 +1,6 @@
 // ourdomain.com
-import Navbar from "../../components/Navbar/Navbar";
-import ProjectCard from "../../components/ProjectCard/ProjectCard.js";
+import Navbar from "../../components/navbar/Navbar";
+import ProjectCard from "../../components/project/ProjectCard.js";
 
 function ProjectListPage() {
   return (
