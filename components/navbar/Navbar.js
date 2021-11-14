@@ -63,16 +63,21 @@ function Navbar(props) {
                 <div className="w-3/4  h-1/4 text-right mt-10 -mb-40">
                   <div className={[styles.navname + " flex-1 mb-8 w-1/5"]}>
                     <Link href="/"> jexica ayran </Link>
+                    </div>
+                    <div className={[styles.nav + " flex-1"]}>
+                    <Link href="https://drive.google.com/file/d/19hRYugyFSHhpVsmK6bJHbsLm_WvLk1U1/view">
+                    <a target="_blank">Resume</a>
+                      </Link>
                   </div>
-                  <div className={[styles.nav + " flex-1 text-xl"]}>
+                  <div className={[styles.nav + " flex-1 text-lg"]}>
                     <Link href="mailto:jexica.ayran@gmail.com"> Email</Link>
                   </div>
-                  <div className={[styles.nav + " flex-1 text-xl"]}>
+                  <div className={[styles.nav + " flex-1 text-lg"]}>
                     <Link href="https://www.linkedin.com/in/jexica/">
                       Linkedin
                     </Link>
                   </div>
-                  <div className={[styles.nav + " flex-1 text-xl mb-8"]}>
+                  <div className={[styles.nav + " flex-1 text-lg mb-8"]}>
                     <Link href="https://github.com/xicaz"> Github</Link>
                   </div>
                 </div>

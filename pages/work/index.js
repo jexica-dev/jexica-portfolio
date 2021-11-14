@@ -1,7 +1,6 @@
 // ourdomain.com
 // import Layout from '../components/layout/Layout.js'
 import Navbar from "../../components/Navbar/Navbar";
-import { useState } from "react";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 
 function ProjectListPage() {
@@ -67,8 +66,8 @@ function ProjectListPage() {
             <span className="font-extralight block text-left mb-2">
               HTML, CSS, JavaScript. Giphy API.
             </span>
-            Spiritgif is a minimalist website, that uses the Giphy API, to
-            render a collage of gif sitckers for anyone's name.
+            Spiritgif is name search bar that'll
+            create a collage of gif sitckers, using the Giphy API.
           </ProjectCard>
         </div>
       </div>
@@ -76,5 +75,5 @@ function ProjectListPage() {
   );
 }
 
-debugger;
+
 export default ProjectListPage;

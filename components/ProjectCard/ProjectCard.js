@@ -33,7 +33,7 @@ export default function ProjectCard(props) {
               </div>
               <p></p>
               <>
-                <p className="mb-12 z-10 bottom-0 flex flex-col w-full align-center justify-center text-xl">
+                <p className="mb-12 z-10 bottom-0 flex flex-row w-full align-center text-left text-xl">
                   <Link className="" href={props.deployed}>
                     Deployed
                   </Link>

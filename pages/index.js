@@ -27,7 +27,7 @@ function HomePage() {
               className={styles.marquee}
               pauseOnHover="true"
               direction="right"
-              speed="50"
+              speed="35"
               gradientColor="[0,0,0]"
             >
               <p> jexica.ayran@gmail.com +&nbsp;</p>
