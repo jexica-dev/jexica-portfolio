@@ -1,12 +1,10 @@
-// ourdomain.com
-// import Layout from "../components/Layout/Layout.js";
 import Image from "next/image";
-import Homebutton from "../components/Homebutton/homebutton.js";
-import ThreejsModel from "../components/Threejs/ThreejsModel.js";
-import styles from "../styles/Home.module.css";
 import Marquee from "react-fast-marquee";
 import About from "../components/About/About.js";
+import Homebutton from "../components/Homebutton/Homebutton.js";
 import ThreejsCursor from "../components/Threejs/ThreejsCursor.js";
+import ThreejsModel from "../components/Threejs/ThreejsModel.js";
+import styles from "../styles/Home.module.css";
 
 function SafeHydrate({ children }) {
   return (
