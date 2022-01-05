@@ -40,7 +40,7 @@ function Navbar(props) {
                       </a>
                   </div>
                   <div className={[styles.nav + " flex-1"]}>
-                    <Link href="https://drive.google.com/file/d/19hRYugyFSHhpVsmK6bJHbsLm_WvLk1U1/view">
+                    <Link href="/JexicaAyran-Resume.pdf">
                     <a target="_blank">Resume</a>
                       </Link>
                   </div>
