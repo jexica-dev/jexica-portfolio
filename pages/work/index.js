@@ -1,6 +1,7 @@
 // ourdomain.com
 import Navbar from "../../components/navbar/Navbar";
 import ProjectCard from "../../components/project/ProjectCard.js";
+import NextJsCarousel from '../../components/Carousel/index'
 
 function ProjectListPage() {
   return (
@@ -68,6 +69,9 @@ function ProjectListPage() {
             Spiritgif is name search bar that'll
             create a collage of gif sitckers, using the Giphy API.
           </ProjectCard>
+
+          <NextJsCarousel />
+
         </div>
       </div>
     </>

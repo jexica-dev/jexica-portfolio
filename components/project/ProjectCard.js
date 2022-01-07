@@ -10,6 +10,7 @@ function SafeHydrate({ children }) {
     </div>
   );
 }
+
 export default function ProjectCard(props) {
   return (
     <SafeHydrate>
