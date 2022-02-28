@@ -1,7 +1,7 @@
 // ourdomain.com
 import Navbar from "../../components/navbar/Navbar";
 import ProjectCard from "../../components/project/ProjectCard.js";
-import NextJsCarousel from '../../components/Carousel/index'
+import NextJsCarousel from "../../components/Carousel/index";
 
 function ProjectListPage() {
   return (
@@ -29,8 +29,8 @@ function ProjectListPage() {
             img="/gjam.png"
             vid="/gjam.mp4"
             alt="gjam"
-            deployed="https://gjam-app.netlify.app/"
-            github="https://github.com/WAMS24/gjam-app"
+            deployed="https://gjam.netlify.app/"
+            github="https://github.com/xicaz/gjam-app"
             figma="https://www.figma.com/file/RpJb5JPqRSrHZgfHFav8Sr/GJAM-team-library?node-id=314%3A2"
           >
             <span className="font-extralight block text-left mb-2">
@@ -66,17 +66,15 @@ function ProjectListPage() {
             <span className="font-extralight block text-left mb-2">
               HTML, CSS, JavaScript. Giphy API.
             </span>
-            Spiritgif is name search bar that'll
-            create a collage of gif sitckers, using the Giphy API.
+            Spiritgif is name search bar that'll create a collage of gif
+            sitckers, using the Giphy API.
           </ProjectCard>
 
           <NextJsCarousel />
-
         </div>
       </div>
     </>
   );
 }
-
 
 export default ProjectListPage;

@@ -10,11 +10,11 @@ export default class NextJsCarousel extends Component {
         <Carousel>
           <div>
           <Image
-                  className={"absolute z-10 top-0 left-0"}
-                  src="/samplework/Jayran_samplework.png"
-                  width={750}
-                  height={410}
-                  alt='image1'
+                className={"absolute z-10 top-0 left-0"}
+                src="/samplework/Jayran_samplework.png"
+                width={750}
+                height={410}
+                alt='image1'
                 />
           </div>
           <div>
