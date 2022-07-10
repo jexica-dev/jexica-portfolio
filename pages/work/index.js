@@ -9,7 +9,7 @@ function ProjectListPage() {
     <>
       <Navbar />
       <div className={[styles.container + " absolute h-screen w-screen"]}>
-        <div className=" w-full pt-14 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 text-black">
+        <div className=" w-full pt-14 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-black">
           <h1 className={[styles.title + " fixed top-0 left-0 z-50 "]}>
             jexica
           </h1>
