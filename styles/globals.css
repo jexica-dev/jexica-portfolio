@@ -1,9 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://api.fontshare.com/css?f[]=clash-grotesk@1&f[]=cabinet-grotesk@400,500,700,800&display=swap');
-
-
+@import url("https://api.fontshare.com/css?f[]=clash-grotesk@1&f[]=cabinet-grotesk@400,500,700,800&display=swap");
 
 #root canvas {
   display: none;
@@ -15,28 +13,32 @@
   margin: 0;
   padding: 0;
   overscroll-behavior: none;
-
 }
 
 html,
-body, a {
+body {
   text-align: center;
   padding: 0;
   margin: 0 auto;
-  font-weight: 400;
+  font-weight: 500;
   font-size: large;
-  font-family: 'Cabinet Grotesk', sans-serif;
+  font-family: "Cabinet Grotesk", sans-serif;
   overscroll-behavior: none;
   overflow-x: hidden;
 }
 
-html {
-  font-family: 'Cabinet Grotesk', sans-serif;
+/* html {
   background-color: black;
-}
+} */
 
+a {
+  font-size: x-large;
+  font-weight: 600;
+  font-family: "Cabinet Grotesk", sans-serif;
+}
 a:hover {
-  text-decoration: underline;
+  text-decoration: red underline;
+  text-underline-offset: 6px;
 }
 
 .home-logo {
@@ -48,16 +50,6 @@ a:hover {
   z-index: 100;
 }
 
-
-
-
-
-
-
-
-
-
 * {
   box-sizing: border-box;
 }
-

@@ -18,7 +18,7 @@ function HomePage() {
   return (
     <>
       <SafeHydrate>
-        <div className="bg-black w-full">
+        <div className=" w-full">
           <ThreejsModel id="root" />
           <div className={styles.flexcontainer}>
             <Marquee
