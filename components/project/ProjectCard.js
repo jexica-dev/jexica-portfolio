@@ -29,7 +29,7 @@ export default function ProjectCard(props) {
   }, []);
 
   // half of window size
-  let size = width / 2;
+  let windowSize = width / 2;
   let aspect = 438.45 / 790;
 
   return (
@@ -54,23 +54,7 @@ export default function ProjectCard(props) {
               <p></p>
               <>
                 <p className=" z-10 bottom-0 flex flex-row w-full align-center text-left text-xl">
-                  <div>
-                    {/* <Link className="" href={props.deployed}>
-                      Live Demo
-                    </Link>
-                  </div>
-                  <div>
-                    <Link className="" href={props.github}>
-                      Github
-                    </Link>
-                  </div>
-                  <div> */}
-                    {/* {props.figma ? (
-                      <Link className="figma" href={props.figma}>
-                        Figma
-                      </Link>
-                    ) : null} */}
-                  </div>
+                  <div></div>
                 </p>
               </>
             </>
@@ -78,10 +62,10 @@ export default function ProjectCard(props) {
             <>
               <div
                 className="backdrop-invert drop-shadow-xl relative justify-center align-center overflow-hidden"
-                style={{ width: size, height: size * aspect }}
+                style={{ width: windowSize, height: windowSize * aspect }}
                 onClick={() => {
-                  props.setModalOpen(true);
                   props.setModalImage(props.img);
+                  props.setModalOpen(true);
                 }}
               >
                 <Image
@@ -89,15 +73,15 @@ export default function ProjectCard(props) {
                     "transition duration-500 ease-in-out opacity-100 hover:opacity-0 absolute z-10"
                   }
                   src={props.img}
-                  width={size}
-                  height={size * aspect}
+                  width={windowSize}
+                  height={windowSize * aspect}
                   alt={props.alt}
                   layout="responsive"
                 />
                 <video
                   className="absolute z-0 top-0 left-0 "
-                  width={size + "px"}
-                  height={size * aspect + "px"}
+                  width={windowSize + "px"}
+                  height={windowSize * aspect + "px"}
                   autoPlay
                   loop
                 >

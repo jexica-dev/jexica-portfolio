@@ -5,9 +5,9 @@ export function Modal(props) {
     <div className="">
       <Image
         className={"absolute z-10"}
-        src={"/digialtar.png"}
-        width={500}
-        height={300}
+        src={props.modalImage}
+        width={750}
+        height={410}
         alt={"image"}
         layout="responsive"
       />

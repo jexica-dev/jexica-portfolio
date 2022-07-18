@@ -16,8 +16,6 @@ function Navbar(props) {
   // const [isOpen, setOpen] = useState(false);
 
   const arrow = "→  ";
-  const portfolio = "portfolio";
-  const about = "about";
 
   return (
     <SafeHydrate>

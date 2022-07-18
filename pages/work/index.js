@@ -9,8 +9,8 @@ import { Modal } from "../../components/Modal/Modal";
 
 function ProjectListPage() {
   let router = useRouter();
+  const [modalImage, setModalImage] = useState("/thyme.png");
   const [modalOpen, setModalOpen] = useState(false);
-  const [modalImage, setModalImage] = useState("");
 
   // let image = "";
 
@@ -18,34 +18,35 @@ function ProjectListPage() {
     <>
       <Navbar />
 
+      <div
+        onClick={() => {
+          setModalOpen(false);
+        }}
+        className={
+          !modalOpen ? "hidden" : "w-screen h-screen z-30 absolute top-0 left-0"
+        }
+      >
+        <div
+          className={
+            !modalOpen
+              ? "hidden"
+              : "" +
+                " fixed grid place-content-center top-0 left-0 w-screen h-screen bg-trp z-50"
+          }
+        >
+          <div
+            style={{ width: "750px", height: "410px" }}
+            className=" bg-black "
+          >
+            <Modal modalImage={modalImage} />
+          </div>
+        </div>
+      </div>
       <div className={[styles.container + " absolute h-screen w-screen"]}>
         <div className="relative w-full pt-14 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-black">
           {/* <h1 className={[styles.title + " fixed top-0 left-0 z-50 "]}>
             jexica
           </h1> */}
-          <div
-            onClick={() => {
-              setModalOpen(false);
-            }}
-            className={
-              !modalOpen
-                ? "hidden"
-                : "w-screen h-screen z-40 absolute top-0 left-0"
-            }
-          >
-            <div
-              className={
-                !modalOpen
-                  ? "hidden"
-                  : "" +
-                    " absolute grid place-content-center top-0 left-0 w-screen h-screen bg-trp border z-30"
-              }
-            >
-              <div className=" w-96 h-96 bg-black">
-                <Modal modalImage={modalImage} />
-              </div>
-            </div>
-          </div>
 
           <ProjectCard
             // href="/?image=1"
@@ -71,8 +72,8 @@ function ProjectListPage() {
           </ProjectCard>
 
           <ProjectCard
-            // href="/?image=b"
-            // as="/2"
+            setModalOpen={setModalOpen}
+            setModalImage={setModalImage}
             img="/gjam.png"
             vid="/gjam.mp4"
             alt="gjam"
@@ -92,8 +93,8 @@ function ProjectListPage() {
             </p> */}
           </ProjectCard>
           <ProjectCard
-            // href="/?image=3"
-            // as="/3"
+            setModalOpen={setModalOpen}
+            setModalImage={setModalImage}
             img="/thyme.png"
             vid="/thyme.mp4"
             alt="thyme"
@@ -109,9 +110,8 @@ function ProjectListPage() {
             </p> */}
           </ProjectCard>
           <ProjectCard
-            // href="/?image=4"
-            // as="/4"
-
+            setModalOpen={setModalOpen}
+            setModalImage={setModalImage}
             img="/36days.png"
             vid="/36days.mp4"
             alt="36days"
@@ -127,8 +127,8 @@ function ProjectListPage() {
             </p> */}
           </ProjectCard>
           <ProjectCard
-            // href="/?image=5"
-            // as="/5"
+            setModalOpen={setModalOpen}
+            setModalImage={setModalImage}
             img="/giphy.png"
             vid="/giphy.mp4"
             alt="ghibli-giphy"
@@ -144,8 +144,8 @@ function ProjectListPage() {
             </p> */}
           </ProjectCard>
           <ProjectCard
-            // href="/?image=6"
-            // as="/6"
+            setModalOpen={setModalOpen}
+            setModalImage={setModalImage}
             img="/spiritgif.png"
             vid="/spiritgif.mp4"
             alt="spiritgif"
