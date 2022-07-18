@@ -10,17 +10,24 @@ export default function About() {
       ]}
     >
       <p className={[styles.about + " font-medium my-4"]}>
-      &#10209; Creative Developer and multi-disciplinary designer interested in interactive, animated, and beautifully curated web experiences.
+        &#10209; Creative Developer and multi-disciplinary designer interested
+        in interactive, animated, and beautifully curated web experiences.
       </p>
       <p className={[styles.about + " mb-4 font-normal text-xl"]}>
-      &#9670; Adobe CC, HTML/CSS, Javascript, React, Node.js, Bootstrap, Tailwind CSS, Express, Mongoose, Ruby, Ruby on Rails, SQL, PostgreSQL, MongoDB, Postman API, Git, and Github. 
+        &#9670; Adobe CC: Photoshop, Illustrator, AfterEffects, InDesign,
+        Lightroom, Figma.
+      </p>
+      <p className={[styles.about + " mb-4 font-normal text-xl"]}>
+        &#9670; Javascript, React, Node.js, Next.js, Tailwind CSS, Bootstrap,
+        Java, Spring (framework), Express, Mongoose, Ruby, Ruby on Rails, SQL,
+        PostgreSQL, MongoDB, Postman API, Git, and Github.
       </p>
       <p className={[styles.about + " text-lg"]}>
-      &#10070; Bachelor of Architecture from California of the Arts, 2016. 
+        &#10070; Bachelor of Architecture from California of the Arts, 2016.
       </p>
-      
+
       <p className={[styles.about + " text-lg"]}>
-      &#10070; General Assembly: Software Engineering Immersive, 2021.
+        &#10070; General Assembly: Software Engineering Immersive, 2021.
       </p>
     </div>
   );

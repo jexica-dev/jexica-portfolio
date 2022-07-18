@@ -3,61 +3,30 @@ import Navbar from "../../components/navbar/Navbar";
 import ProjectCard from "../../components/project/ProjectCard.js";
 import NextJsCarousel from "../../components/Carousel/index";
 import styles from "../../styles/Work.module.css";
+import Modal from "../../components/Modal/Modal";
 import { useRouter } from "next/dist/client/router";
-import { useState } from "react";
-import { Modal } from "../../components/Modal/Modal";
 
 function ProjectListPage() {
   let router = useRouter();
-  const [modalOpen, setModalOpen] = useState(false);
-  const [modalImage, setModalImage] = useState("");
-
-  // let image = "";
-
   return (
     <>
       <Navbar />
 
       <div className={[styles.container + " absolute h-screen w-screen"]}>
-        <div className="relative w-full pt-14 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-black">
-          {/* <h1 className={[styles.title + " fixed top-0 left-0 z-50 "]}>
+        <div className=" w-full pt-14 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-black">
+          <h1 className={[styles.title + " fixed top-0 left-0 z-50 "]}>
             jexica
-          </h1> */}
-          <div
-            onClick={() => {
-              setModalOpen(false);
-            }}
-            className={
-              !modalOpen
-                ? "hidden"
-                : "w-screen h-screen z-40 absolute top-0 left-0"
-            }
-          >
-            <div
-              className={
-                !modalOpen
-                  ? "hidden"
-                  : "" +
-                    " absolute grid place-content-center top-0 left-0 w-screen h-screen bg-trp border z-30"
-              }
-            >
-              <div className=" w-96 h-96 bg-black">
-                <Modal modalImage={modalImage} />
-              </div>
-            </div>
-          </div>
+          </h1>
 
           <ProjectCard
             // href="/?image=1"
             // as="/1"
-            setModalOpen={setModalOpen}
-            setModalImage={setModalImage}
             img="/digialtar.png"
             vid="/digialtar.mp4"
             alt="digialtar"
-            deployed="https://digialtar.netlify.app/"
-            github="https://github.com/xicaz/digiAltar"
-            figma="https://www.figma.com/file/hO2KgFUbFCceqaOceDhOv0/digi-Altar?node-id=0%3A1"
+            // deployed="https://digialtar.netlify.app/"
+            // github="https://github.com/xicaz/digiAltar"
+            // figma="https://www.figma.com/file/hO2KgFUbFCceqaOceDhOv0/digi-Altar?node-id=0%3A1"
           >
             {/* <span className="font-medium text-sm tracking-wide block text-left mb-2">
               HTML, CSS, JavaScript, React, Tailwind CSS, Ruby on Rails.
@@ -76,9 +45,9 @@ function ProjectListPage() {
             img="/gjam.png"
             vid="/gjam.mp4"
             alt="gjam"
-            deployed="https://gjam.netlify.app/"
-            github="https://github.com/xicaz/gjam-app"
-            figma="https://www.figma.com/file/RpJb5JPqRSrHZgfHFav8Sr/GJAM-team-library?node-id=314%3A2"
+            // deployed="https://gjam.netlify.app/"
+            // github="https://github.com/xicaz/gjam-app"
+            // figma="https://www.figma.com/file/RpJb5JPqRSrHZgfHFav8Sr/GJAM-team-library?node-id=314%3A2"
           >
             {/* <span className="font-medium text-sm tracking-wide block text-left mb-2">
               HTML, CSS, JavaScript, React, Bootstrap, Node. Express, MongoDB,
@@ -97,8 +66,8 @@ function ProjectListPage() {
             img="/thyme.png"
             vid="/thyme.mp4"
             alt="thyme"
-            deployed="https://thyme-app.netlify.app/"
-            github="https://github.com/xicaz/Thyme"
+            // deployed="https://thyme-app.netlify.app/"
+            // github="https://github.com/xicaz/Thyme"
           >
             {/* <span className="font-medium text-sm tracking-wide block text-left mb-2">
               HTML, CSS, JavaScript, React. Airtable.
@@ -111,12 +80,11 @@ function ProjectListPage() {
           <ProjectCard
             // href="/?image=4"
             // as="/4"
-
             img="/36days.png"
             vid="/36days.mp4"
             alt="36days"
-            deployed="https://thyme-app.netlify.app/"
-            github="https://github.com/xicaz/Thyme"
+            // deployed="https://thyme-app.netlify.app/"
+            // github="https://github.com/xicaz/Thyme"
           >
             {/* <span className="font-medium text-sm tracking-wide block text-left mb-2">
               HTML, CSS, JavaScript, React. Airtable.
@@ -132,8 +100,8 @@ function ProjectListPage() {
             img="/giphy.png"
             vid="/giphy.mp4"
             alt="ghibli-giphy"
-            deployed="https://spiritgif.surge.sh/"
-            github="https://github.com/xicaz/Spirit-GIF"
+            // deployed="https://spiritgif.surge.sh/"
+            // github="https://github.com/xicaz/Spirit-GIF"
           >
             {/* <span className="font-medium text-sm tracking-wide block text-left mb-2">
               HTML, CSS, JavaScript. Giphy API.
@@ -149,8 +117,8 @@ function ProjectListPage() {
             img="/spiritgif.png"
             vid="/spiritgif.mp4"
             alt="spiritgif"
-            deployed="https://spiritgif.surge.sh/"
-            github="https://github.com/xicaz/Spirit-GIF"
+            // deployed="https://spiritgif.surge.sh/"
+            // github="https://github.com/xicaz/Spirit-GIF"
           >
             {/* <span className="font-medium text-sm tracking-wide block text-left mb-2">
               HTML, CSS, JavaScript. Giphy API.

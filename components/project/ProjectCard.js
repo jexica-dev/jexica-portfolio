@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/dist/client/link";
 import Media from "react-media";
 import { useEffect, useState } from "react";
-// import { randFloatSpread } from "three/src/math/MathUtils";
 
 function SafeHydrate({ children }) {
   return (
@@ -22,7 +21,7 @@ export default function ProjectCard(props) {
   };
 
   useEffect(() => {
-    // component is mounted and window is available
+    // mounted and window is available
     handleWindowResize();
     window.addEventListener("resize", handleWindowResize);
     // unsubscribe from the event on component unmount
@@ -37,7 +36,6 @@ export default function ProjectCard(props) {
     <SafeHydrate>
       <Media queries={{ mobile: { maxWidth: 700 } }}>
         {(matches) => {
-          console.log(matches.mobile);
           return matches.mobile ? (
             <>
               <div
@@ -79,8 +77,12 @@ export default function ProjectCard(props) {
           ) : (
             <>
               <div
-                className="backdrop-invert drop-shadow-xl  relative justify-center align-center overflow-hidden"
+                className="backdrop-invert drop-shadow-xl relative justify-center align-center overflow-hidden"
                 style={{ width: size, height: size * aspect }}
+                onClick={() => {
+                  props.setModalOpen(true);
+                  props.setModalImage(props.img);
+                }}
               >
                 <Image
                   className={
@@ -102,10 +104,10 @@ export default function ProjectCard(props) {
                   <source src={props.vid} type="video/mp4" />
                 </video>
               </div>
-              <>
-                <div className="flex flex-col" style={{ width: "750px" }}>
-                  <p className=" z-10 bottom-0 flex flex-row w-full align-center text-xl">
-                    {/* <Link className="" href={props.deployed}>
+
+              <div className="flex flex-col" style={{ width: "750px" }}>
+                <p className=" z-10 bottom-0 flex flex-row w-full align-center text-xl">
+                  {/* <Link className="" href={props.deployed}>
                       Live Demo
                     </Link>
                     &nbsp;
@@ -117,15 +119,14 @@ export default function ProjectCard(props) {
                       <Link className="figma" href={props.figma}>
                         Figma
                       </Link> */}
-                    {/* ) : null} */}
+                  {/* ) : null} */}
+                </p>
+                <div className="w-full">
+                  <p className="text-white w-full text-left ">
+                    {props.children}
                   </p>
-                  <div className="w-full">
-                    <p className="text-white w-full text-left ">
-                      {props.children}
-                    </p>
-                  </div>
                 </div>
-              </>
+              </div>
             </>
           );
         }}
