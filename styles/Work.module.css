@@ -1,29 +1,5 @@
 @import url("https://api.fontshare.com/css?f[]=clash-grotesk@1&f[]=cabinet-grotesk@400,500,700,800&display=swap");
 
-.container::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: rgba(255, 255, 255, 0.608);
-}
-
-.container {
-  /* padding: 0 20px 0; */
-  background-size: cover;
-  background-image: url("/gradient-1.png");
-  background-repeat: repeat;
-  position: relative;
-  height: fit-content;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-
 .title {
   width: 100vw;
   margin: 0 auto;

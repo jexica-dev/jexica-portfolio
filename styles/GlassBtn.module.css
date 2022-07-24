@@ -1,0 +1,27 @@
+.design-text {
+  font-family: "ABC Ginto Nord";
+}
+
+.glassmorphism-bg {
+  background-image: url("https://i.imgur.com/991zYRj.png");
+
+  overflow: hidden;
+  background-position: 0px 0px;
+  background-size: cover;
+}
+.glassmorphism-bg2 {
+  background-image: url("https://i.imgur.com/991zYRj.png");
+
+  background-position: 0px 0px;
+  background-size: 125%;
+}
+
+.glass-body {
+  font-family: "ABC Social";
+}
+
+.name-logo {
+  font-family: "ABC Social";
+  font-size: 90px;
+  line-height: 80px;
+}

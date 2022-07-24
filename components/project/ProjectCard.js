@@ -39,8 +39,8 @@ export default function ProjectCard(props) {
           return matches.mobile ? (
             <>
               <div
-                // className="w-fit relative overflow-hidden align-center justify-center "
-                className="mb-5 hover:border-black border border-white  drop-shadow-lg rounded-large w-72 h-72  backdrop-blur-xl z-1"
+                className="w-fit relative overflow-hidden align-center justify-center "
+                // className="mb-5 hover:border-black border border-white  drop-shadow-lg rounded-large w-72 h-72  backdrop-blur-xl z-1"
                 style={{ height: "auto" }}
               >
                 <Image

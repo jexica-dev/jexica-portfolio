@@ -3,6 +3,24 @@
 @tailwind utilities;
 @import url("https://api.fontshare.com/css?f[]=clash-grotesk@1&f[]=cabinet-grotesk@400,500,700,800&display=swap");
 
+@keyframes movebg {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -400px 0;
+  }
+}
+
+@-webkit-keyframes movebg {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -400px 0;
+  }
+}
+
 @font-face {
   font-family: "ABC Whyte Inktrap";
   src: url("/fonts/ABCWhyteInktrapSemi-Mono-Regular-Trial.otf");

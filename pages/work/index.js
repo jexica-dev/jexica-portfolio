@@ -5,14 +5,15 @@ import NextJsCarousel from "../../components/Carousel/index";
 import styles from "../../styles/Work.module.css";
 import { useRouter } from "next/dist/client/router";
 import { useState } from "react";
+import Layout from "../../components/Layout/Layout";
 
 function ProjectListPage() {
   let router = useRouter();
 
   return (
     <>
-      <Navbar />
-      <div className={[styles.container + " absolute "]}>
+      <Layout>
+        {/* <div className={[styles.container + " absolute "]}> */}
         <div>
           <div
             className={[
@@ -23,13 +24,14 @@ function ProjectListPage() {
             <div className="flex flex-row">
               portfolio
               <div className="pt-24 px-10">
-                <p className="w-64 border-2 flex justify-around text-white rounded-full py-5 px-14 whitespace-nowrap font-bold tracking-wider bg-black text-3xl">
-                  design creative
+                <p className=" border-2 flex justify-around text-white rounded-full py-5 px-10 whitespace-nowrap font-bold tracking-wider bg-black text-3xl">
+                  creative developer
                 </p>
               </div>
             </div>
           </div>
         </div>
+
         <div className=" pl-10 relative grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-black content-center pt-60">
           <ProjectCard
             // href="/?image=1"
@@ -136,7 +138,8 @@ function ProjectListPage() {
           {/* WORKSAMPLE */}
           {/* <NextJsCarousel /> */}
         </div>
-      </div>
+        {/* </div> */}
+      </Layout>
     </>
   );
 }

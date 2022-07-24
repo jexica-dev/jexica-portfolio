@@ -1,6 +1,6 @@
 // import { Component } from "react";
 import Link from "next/dist/client/link";
-import styles from "./Navbar.module.css";
+// import styles from "./Navbar.module.css";
 // import Media from "react-media";
 import { useState } from "react";
 
@@ -29,8 +29,15 @@ function Navbar(props) {
           </div>
           <div>
             <span>&nbsp;&nbsp; {arrow} &nbsp;</span>
+            <Link href="/work" passHref>
+              <a>Work</a>
+            </Link>
+          </div>
+          <div className="">
+            <span>{arrow} &nbsp;</span>
+
             <Link className="" href="mailto:jexica.ayran@gmail.com">
-              Email
+              Contact
             </Link>
           </div>
           <div className="">
@@ -38,19 +45,20 @@ function Navbar(props) {
             <Link className="" href="/JexicaAyran-Resume.pdf">
               <a target="_blank">Resume</a>
             </Link>
-          </div>
-          <div className="">
-            <span>{arrow} &nbsp;</span>
-            <Link className="" href="https://www.linkedin.com/in/jexica/">
+            {/* <Link className="" href="https://www.linkedin.com/in/jexica/">
               Linkedin
-            </Link>
+            </Link> */}
           </div>
           <div className="">
             <span>{arrow} &nbsp;</span>
 
+            {/*             
             <Link className="" href="https://github.com/xicaz">
               Github
-            </Link>
+            </Link> */}
+            {/* <Link className="" href="https://www.linkedin.com/in/jexica/">
+              Linkedin
+            </Link> */}
           </div>
         </div>
       </div>
