@@ -39,7 +39,8 @@ export default function ProjectCard(props) {
           return matches.mobile ? (
             <>
               <div
-                className="w-fit relative overflow-hidden align-center justify-center "
+                // className="w-fit relative overflow-hidden align-center justify-center "
+                className="mb-5 hover:border-black border border-white  drop-shadow-lg rounded-large w-72 h-72  backdrop-blur-xl z-1"
                 style={{ height: "auto" }}
               >
                 <Image
@@ -61,50 +62,38 @@ export default function ProjectCard(props) {
           ) : (
             <>
               <div
-                className="backdrop-invert drop-shadow-xl relative justify-center align-center overflow-hidden"
-                style={{ width: windowSize, height: windowSize * aspect }}
-                onClick={() => {
-                  props.setModalImage(props.img);
-                  props.setModalOpen(true);
+                className=" relative justify-center align-center overflow-hidden mb-5"
+                style={{
+                  width: windowSize * 0.9,
+                  height: windowSize * aspect,
                 }}
               >
-                <Image
-                  className={
-                    "transition duration-500 ease-in-out opacity-100 hover:opacity-0 absolute z-10"
-                  }
-                  src={props.img}
-                  width={windowSize}
-                  height={windowSize * aspect}
-                  alt={props.alt}
-                  layout="responsive"
-                />
-                <video
-                  className="absolute z-0 top-0 left-0 "
-                  width={windowSize + "px"}
-                  height={windowSize * aspect + "px"}
-                  autoPlay
-                  loop
-                >
-                  <source src={props.vid} type="video/mp4" />
-                </video>
+                <div className="">
+                  <Image
+                    className={
+                      // "transition duration-500 ease-in-out opacity-100 hover:opacity-0 absolute z-10"
+
+                      " drop-shadow-2xl  w-72 h-72 rounded-3xl backdrop-invert backdrop-blur-xl z-1"
+                    }
+                    src={props.img}
+                    width={windowSize}
+                    height={windowSize * aspect}
+                    alt={props.alt}
+                    layout="responsive"
+                  />
+                </div>
+                {/* <video
+                    className="absolute z-0 top-0 left-0 pb-3"
+                    width={windowSize + "px"}
+                    height={windowSize * aspect + "px"}
+                    autoPlay
+                    loop
+                  >
+                    <source src={props.vid} type="video/mp4" />
+                  </video> */}
               </div>
 
               <div className="flex flex-col" style={{ width: "750px" }}>
-                <p className=" z-10 bottom-0 flex flex-row w-full align-center text-xl">
-                  {/* <Link className="" href={props.deployed}>
-                      Live Demo
-                    </Link>
-                    &nbsp;
-                    <Link className="github" href={props.github}>
-                      Github
-                    </Link>
-                    &nbsp;
-                    {props.figma ? (
-                      <Link className="figma" href={props.figma}>
-                        Figma
-                      </Link> */}
-                  {/* ) : null} */}
-                </p>
                 <div className="w-full">
                   <p className="text-white w-full text-left ">
                     {props.children}
@@ -119,7 +108,18 @@ export default function ProjectCard(props) {
   );
 }
 
-function getWindowSize() {
-  const { innerWidth, innerHeight } = window;
-  return { innerWidth, innerHeight };
-}
+//  <p className=" z-10 bottom-0 flex flex-row w-full align-center text-xl">
+//               <Link className="" href={props.deployed}>
+//                   Live Demo
+//                 </Link>
+//                 &nbsp;
+//                 <Link className="github" href={props.github}>
+//                   Github
+//                 </Link>
+//                 &nbsp;
+//                 {props.figma ? (
+//                   <Link className="figma" href={props.figma}>
+//                     Figma
+//                   </Link>
+//               ) : null}
+//             </p>

@@ -3,6 +3,78 @@
 @tailwind utilities;
 @import url("https://api.fontshare.com/css?f[]=clash-grotesk@1&f[]=cabinet-grotesk@400,500,700,800&display=swap");
 
+@font-face {
+  font-family: "ABC Whyte Inktrap";
+  src: url("/fonts/ABCWhyteInktrapSemi-Mono-Regular-Trial.otf");
+}
+
+@font-face {
+  font-family: "ABC Prophet";
+  src: url("/fonts/ABCProphetVariable-Trial.ttf");
+  font-weight: thin normal medium bold;
+}
+
+@font-face {
+  font-family: "ABC Ginto";
+  src: url("/fonts/ABCGintoNormalVariable-Trial.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "ABC Ginto Nord";
+  src: url("/fonts/ABCGintoNordVariable-Trial.ttf");
+  font-weight: thin normal medium bold;
+}
+
+@font-face {
+  font-family: "ABC Whyte Mono";
+  src: url("/fonts/ABCWhyteMono-Regular-Trial.otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ABC Social";
+  src: url("/fonts/abcSocialMono/ABCSocialMono-Bold-Trial.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "ABC Social";
+  src: url("/fonts/abcSocialMono/ABCSocialMono-Book-Trial.otf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "ABC Social";
+  src: url("/fonts/abcSocialMono/ABCSocialMono-Medium-Trial.otf");
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: "ABC Social";
+  src: url("/fonts/abcSocialMono/ABCSocialMono-RegularItalic-Trial.otf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ABC Monument Grotesk Mono";
+  src: url("/fonts/abcMonumentGroteskMono/ABCMonumentGroteskMono-Bold-Trial.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "ABC Monument Grotesk Mono";
+  src: url("/fonts/abcMonumentGroteskMono/ABCMonumentGroteskMono-Medium-Trial.otf");
+  font-weight: medium;
+}
+@font-face {
+  font-family: "ABC Monument Grotesk Mono";
+  src: url("/fonts/abcMonumentGroteskMono/ABCMonumentGroteskMono-Medium-Trial.otf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "ABC Monument Grotesk Mono";
+  src: url("/fonts/abcMonumentGroteskMono/ABCMonumentGroteskMono-Light-Trial.otf");
+  font-weight: thin;
+}
+
 #root canvas {
   display: none;
   position: fixed;
@@ -32,12 +104,12 @@ body {
 } */
 
 a {
-  font-size: x-large;
-  font-weight: 600;
+  font-size: larger;
+  font-weight: 400;
   font-family: "Cabinet Grotesk", sans-serif;
 }
 a:hover {
-  text-decoration: red underline;
+  text-decoration: #00ffff underline;
   text-underline-offset: 6px;
 }
 

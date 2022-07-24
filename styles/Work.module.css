@@ -11,6 +11,7 @@
 }
 
 .container {
+  /* padding: 0 20px 0; */
   background-size: cover;
   background-image: url("/gradient-1.png");
   background-repeat: repeat;
@@ -28,11 +29,13 @@
   margin: 0 auto;
   pointer-events: none;
   font-family: "Cabinet Grotesk", sans-serif;
-  font-size: 300px;
-  color: black;
+  font-size: 200px;
+  text-align: left;
+  padding-left: 5%;
+  /* color: black;
   backdrop-filter: invert(0.7);
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
-  letter-spacing: 13px;
+  letter-spacing: 13px; */
 }

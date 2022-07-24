@@ -1,7 +1,8 @@
 @import url("https://api.fontshare.com/css?f[]=clash-grotesk@1&f[]=cabinet-grotesk@400,500,700,800&display=swap");
 
 .nav-link {
-  font-size: x-large;
+  color: red;
+  font-size: 30px;
   font-weight: 600;
   font-family: "Cabinet Grotesk", sans-serif;
 }

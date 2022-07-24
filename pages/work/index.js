@@ -5,54 +5,36 @@ import NextJsCarousel from "../../components/Carousel/index";
 import styles from "../../styles/Work.module.css";
 import { useRouter } from "next/dist/client/router";
 import { useState } from "react";
-import { Modal } from "../../components/Modal/Modal";
 
 function ProjectListPage() {
   let router = useRouter();
-  const [modalImage, setModalImage] = useState("/thyme.png");
-  const [modalOpen, setModalOpen] = useState(false);
-
-  // let image = "";
 
   return (
     <>
       <Navbar />
-
-      <div
-        onClick={() => {
-          setModalOpen(false);
-        }}
-        className={
-          !modalOpen ? "hidden" : "w-screen h-screen z-30 absolute top-0 left-0"
-        }
-      >
-        <div
-          className={
-            !modalOpen
-              ? "hidden"
-              : "" +
-                " fixed grid place-content-center top-0 left-0 w-screen h-screen bg-trp z-50"
-          }
-        >
+      <div className={[styles.container + " absolute "]}>
+        <div>
           <div
-            style={{ width: "750px", height: "410px" }}
-            className=" bg-black "
+            className={[
+              styles.title +
+                " fixed top-0 left-0 z-50 mix-blend-difference text-white",
+            ]}
           >
-            <Modal modalImage={modalImage} />
+            <div className="flex flex-row">
+              portfolio
+              <div className="pt-24 px-10">
+                <p className="w-64 border-2 flex justify-around text-white rounded-full py-5 px-14 whitespace-nowrap font-bold tracking-wider bg-black text-3xl">
+                  design creative
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className={[styles.container + " absolute h-screen w-screen"]}>
-        <div className="relative w-full pt-14 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-black">
-          {/* <h1 className={[styles.title + " fixed top-0 left-0 z-50 "]}>
-            jexica
-          </h1> */}
-
+        <div className=" pl-10 relative grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-black content-center pt-60">
           <ProjectCard
             // href="/?image=1"
             // as="/1"
-            setModalOpen={setModalOpen}
-            setModalImage={setModalImage}
+
             img="/digialtar.png"
             vid="/digialtar.mp4"
             alt="digialtar"
@@ -72,8 +54,6 @@ function ProjectListPage() {
           </ProjectCard>
 
           <ProjectCard
-            setModalOpen={setModalOpen}
-            setModalImage={setModalImage}
             img="/gjam.png"
             vid="/gjam.mp4"
             alt="gjam"
@@ -93,8 +73,6 @@ function ProjectListPage() {
             </p> */}
           </ProjectCard>
           <ProjectCard
-            setModalOpen={setModalOpen}
-            setModalImage={setModalImage}
             img="/thyme.png"
             vid="/thyme.mp4"
             alt="thyme"
@@ -110,8 +88,6 @@ function ProjectListPage() {
             </p> */}
           </ProjectCard>
           <ProjectCard
-            setModalOpen={setModalOpen}
-            setModalImage={setModalImage}
             img="/36days.png"
             vid="/36days.mp4"
             alt="36days"
@@ -127,8 +103,6 @@ function ProjectListPage() {
             </p> */}
           </ProjectCard>
           <ProjectCard
-            setModalOpen={setModalOpen}
-            setModalImage={setModalImage}
             img="/giphy.png"
             vid="/giphy.mp4"
             alt="ghibli-giphy"
@@ -144,8 +118,6 @@ function ProjectListPage() {
             </p> */}
           </ProjectCard>
           <ProjectCard
-            setModalOpen={setModalOpen}
-            setModalImage={setModalImage}
             img="/spiritgif.png"
             vid="/spiritgif.mp4"
             alt="spiritgif"
