@@ -21,10 +21,12 @@ function HomePage() {
   return (
     <>
       <SafeHydrate>
-        <Layout>
-          <GlassButton />
-          <SkillButtons />
-        </Layout>
+        <div className=" cursor-star">
+          <Layout>
+            <GlassButton />
+            <SkillButtons />
+          </Layout>
+        </div>
       </SafeHydrate>
     </>
   );

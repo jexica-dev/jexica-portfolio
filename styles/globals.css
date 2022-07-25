@@ -93,6 +93,10 @@
   font-weight: thin;
 }
 
+.custom-cursor {
+  cursor: url(/star.png), auto;
+}
+
 #root canvas {
   display: none;
   position: fixed;
@@ -116,10 +120,6 @@ body {
   overscroll-behavior: none;
   overflow-x: hidden;
 }
-
-/* html {
-  background-color: black;
-} */
 
 a {
   font-size: larger;

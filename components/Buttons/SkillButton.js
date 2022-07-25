@@ -3,24 +3,24 @@ import React from "react";
 
 export default function SkillButtons(props) {
   const defaultSkillBtn =
-    " flex justify-around text-white rounded-full py-3 px-10 whitespace-nowrap font-medium tracking-widest bg-black text-2xl ";
+    " flex justify-around text-white rounded-full py-3 px-10 mx-3 whitespace-nowrap font-medium tracking-widest bg-black text-2xl mb-5";
 
   return (
     <>
-      <div className="w-screen h-full flex lg:flex-wrap flex-col lg:flex-row md:flex-col sm:flex-col justify-center">
-        <div className="align-center w-screen flex  justify-around px-60 pb-5">
+      <div className="w-screen h-full flex flex-wrap flex-row justify-center">
+        <div className="justify-center flex content-start flex-wrap flex-row  items-start ">
           <div className={"w-28" + defaultSkillBtn}>HTML</div>
           <div className={" w-28" + defaultSkillBtn}>CSS</div>
           <div className={"w-48" + defaultSkillBtn}>Javascript</div>
           <div className={"w-30" + defaultSkillBtn}>Node.js</div>
         </div>
-        <div className="align-center w-screen flex justify-around px-52 pb-5">
+        <div className="justify-center flex content-start flex-wrap flex-row  items-start  ">
           <div className={"w-44" + defaultSkillBtn}>React.js</div>
           <div className={" w-48" + defaultSkillBtn}>MongoDB</div>
           <div className={"w-44" + defaultSkillBtn}>Express.js</div>
           <div className={"w-28" + defaultSkillBtn}>Java</div>
         </div>
-        <div className="align-center w-screen flex justify-around px-52 pb-5">
+        <div className="justify-center flex content-start flex-wrap flex-row  items-start ">
           <div className={" w-32" + defaultSkillBtn}>Next.js</div>
           <div className={"w-48" + defaultSkillBtn}>Tailwind CSS</div>
           <div className={"w-28" + defaultSkillBtn}>Ruby</div>

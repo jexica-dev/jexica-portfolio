@@ -20,7 +20,7 @@ function Navbar(props) {
   return (
     <SafeHydrate>
       <div className="z-50">
-        <div className=" mix-blend-difference text-white  z-30 fixed nav-body flex justify-around grid-cols-5 whitespace-nowrap py-3 pr-14 w-full text-md font-[600] font-monument border-b">
+        <div className=" mix-blend-difference text-white  z-30 fixed nav-body flex justify-around grid-cols-5 whitespace-nowrap py-3 pr-14 w-full text-md font-[600] font-whytemono border-b">
           <div className="">
             <span>{arrow} &nbsp;</span>
             <Link className="" href="/">

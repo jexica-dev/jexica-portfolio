@@ -5,7 +5,14 @@ module.exports = {
     extend: {
       backgroundImage: {
         gradient01: "url('/gradient-1.png')",
-        gradient02: "url('/gradient-34.png')",
+        gradient02: "url('/gradient-2.png')",
+        gradient03: "url('/gradient-3.png')",
+        gradient04: "url('/gradient-4.png')",
+        gradient05: "url('/gradient-5.png')",
+        gradient06: "url('/gradient-6.png')",
+        gradient07: "url('/gradient-7.png')",
+        gradient08: "url('/gradient-8.png')",
+        gradient09: "url('/gradient-9.png')",
       },
       fontFamily: {
         gintonord: ["ABC Ginto Nord"],
@@ -14,9 +21,6 @@ module.exports = {
         monument: ["ABC Monument Grotesk Mono"],
         whytemono: ["ABC Whyte Mono"],
         whyteinktrap: ["ABC Whyte Inktrap"],
-      },
-      cursor: {
-        star: "url('/star-cursor.png')",
       },
       animation: {
         movebg: "20s linear infinite alternate",
