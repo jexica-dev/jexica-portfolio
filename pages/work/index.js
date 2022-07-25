@@ -22,8 +22,8 @@ function ProjectListPage() {
           >
             <div className=" pl-16 pt-20 font-whyteinktrap flex flex-row text-8xl">
               portfolio
-              <div className=" pt-3 px-10">
-                <p className="  border-2 flex justify-around bg-white text-black rounded-full py-5 px-10 whitespace-nowrap font-bold tracking-wider  text-3xl">
+              <div className=" pt-3 px-14">
+                <p className="  border-2 flex justify-around bg-white text-black rounded-full py-5 px-7 whitespace-nowrap font-bold tracking-wider  text-2xl">
                   creative developer
                 </p>
               </div>
@@ -31,7 +31,7 @@ function ProjectListPage() {
           </div>
         </div>
 
-        <div className=" pl-10 relative grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 text-black content-center pt-60">
+        <div className=" pl-10 relative grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-black content-center pt-60">
           <ProjectCard
             // href="/?image=1"
             // as="/1"

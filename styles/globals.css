@@ -119,6 +119,7 @@ body {
 }
 ::selection {
   background: rgb(192, 192, 0);
+  backdrop-filter: invert(70%);
 }
 
 a {
@@ -129,15 +130,6 @@ a {
 a:hover {
   text-decoration: #00ffff underline;
   text-underline-offset: 6px;
-}
-
-.home-logo {
-  width: 100vw;
-  height: 100vh;
-  margin: 0 auto;
-  padding: 0 auto;
-  position: "fixed";
-  z-index: 100;
 }
 
 * {

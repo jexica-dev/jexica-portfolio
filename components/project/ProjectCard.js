@@ -14,6 +14,7 @@ function SafeHydrate({ children }) {
 export default function ProjectCard(props) {
   const [width, setWidth] = useState(0);
   const [height, setHeight] = useState(0);
+  const [onHover, setOnHover] = useState(false);
 
   const handleWindowResize = () => {
     setWidth(window.innerWidth);
@@ -34,7 +35,7 @@ export default function ProjectCard(props) {
 
   return (
     <SafeHydrate>
-      <Media queries={{ mobile: { maxWidth: 700 } }}>
+      <Media queries={{ mobile: { maxWidth: 768 } }}>
         {(matches) => {
           return matches.mobile ? (
             <>
@@ -46,7 +47,7 @@ export default function ProjectCard(props) {
               >
                 <Image
                   className={
-                    "drop-shadow-2xl  w-72 h-72 rounded-3xl backdrop-invert backdrop-blur-xl z-1"
+                    "drop-shadow-2xl  w-72 h-72 rounded-3xl backdrop-invert backdrop-blur-xl z-1 hover:bg-cover hover:bg-left-top hover:bg-gradient09"
                   }
                   src={props.img}
                   width={750}
@@ -65,20 +66,33 @@ export default function ProjectCard(props) {
           ) : (
             <>
               <div
+                onMouseEnter={() => setOnHover(true)}
+                onMouseLeave={() => setOnHover(false)}
                 className=" relative justify-center align-center overflow-hidden mb-5"
                 style={{
                   width: windowSize * 0.9,
                   height: windowSize * aspect,
                 }}
               >
-                <div className="">
+                <div className=" relative">
+                  <div
+                    className={
+                      onHover
+                        ? " absolute top-0 left-0  z-50 p-10 mix-blend-color-burn"
+                        : " hide"
+                    }
+                  >
+                    <span className="text-7xl font-whytemono text-black ">
+                      {onHover ? props.alt : null}
+                    </span>
+                  </div>
                   <Image
                     className={
                       // "transition duration-500 ease-in-out opacity-100 hover:opacity-0 absolute z-10"
 
-                      " drop-shadow-2xl  w-72 h-72 rounded-3xl backdrop-invert backdrop-blur-xl z-1"
+                      " absolute drop-shadow-2xl  w-72 h-72 rounded-3xl backdrop-invert backdrop-blur-xl z-1"
                     }
-                    src={props.img}
+                    src={onHover ? "/gradient-8.png" : props.img}
                     width={windowSize}
                     height={windowSize * aspect}
                     alt={props.alt}
