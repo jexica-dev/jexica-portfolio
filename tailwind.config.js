@@ -21,11 +21,24 @@ module.exports = {
       animation: {
         movebg: "20s linear infinite alternate",
       },
-      invert: {
-        25: ".25",
-        50: ".5",
-        75: ".75",
+      spacing: {
+        128: "32rem",
+        132: "34rem",
+        140: "40rem",
+        180: "90rem",
       },
+      animation: {
+        wiggle: "wiggle 1s ease-in-out infinite",
+      },
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" },
+        },
+      },
+    },
+    lineHeight: {
+      12: "3rem",
     },
   },
   variants: {

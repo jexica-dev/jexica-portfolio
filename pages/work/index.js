@@ -16,14 +16,13 @@ function ProjectListPage() {
         {/* <div className={[styles.container + " absolute "]}> */}
         <div>
           <div
-            className={[
-              styles.title +
-                " fixed top-0 left-0 z-50 mix-blend-difference text-white",
-            ]}
+            className={
+              " fixed top-0 left-0 z-20 mix-blend-difference text-white"
+            }
           >
-            <div className="flex flex-row">
+            <div className=" pl-16 pt-20 font-whyteinktrap flex flex-row text-8xl">
               portfolio
-              <div className="pt-24 px-10">
+              <div className=" pt-3 px-10">
                 <p className=" border-2 flex justify-around text-white rounded-full py-5 px-10 whitespace-nowrap font-bold tracking-wider bg-black text-3xl">
                   creative developer
                 </p>
