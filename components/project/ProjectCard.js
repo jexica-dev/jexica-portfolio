@@ -39,12 +39,15 @@ export default function ProjectCard(props) {
           return matches.mobile ? (
             <>
               <div
-                className="w-fit relative overflow-hidden align-center justify-center "
+                className="relative justify-center align-center overflow-hidden mb-5 "
+                // className="w-fit relative overflow-hidden align-center justify-center "
                 // className="mb-5 hover:border-black border border-white  drop-shadow-lg rounded-large w-72 h-72  backdrop-blur-xl z-1"
                 style={{ height: "auto" }}
               >
                 <Image
-                  className={"absolute z-10 top-0 left-0"}
+                  className={
+                    "drop-shadow-2xl  w-72 h-72 rounded-3xl backdrop-invert backdrop-blur-xl z-1"
+                  }
                   src={props.img}
                   width={750}
                   height={410}

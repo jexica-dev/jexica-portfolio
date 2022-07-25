@@ -28,12 +28,18 @@ module.exports = {
         180: "90rem",
       },
       animation: {
-        wiggle: "wiggle 1s ease-in-out infinite",
+        "bounce-slow": "bounce-slow 1s ease-in-out infinite",
       },
       keyframes: {
-        wiggle: {
-          "0%, 100%": { transform: "rotate(-3deg)" },
-          "50%": { transform: "rotate(3deg)" },
+        "bounce-slow": {
+          "0%, 100%": {
+            transform: "translateY(-10%)",
+            "animation-timing-function": "cubic-bezier(0.8, 0, .5, 1)",
+          },
+          "50%": {
+            transform: "translateY(0)",
+            "animation-timing-function": "cubic - bezier(0, 0, 0.1, 1)",
+          },
         },
       },
     },
