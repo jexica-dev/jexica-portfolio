@@ -93,10 +93,6 @@
   font-weight: thin;
 }
 
-.custom-cursor {
-  cursor: url(/star.png), auto;
-}
-
 #root canvas {
   display: none;
   position: fixed;
@@ -116,9 +112,13 @@ body {
   margin: 0 auto;
   font-weight: 500;
   font-size: large;
-  /* font-family: "Cabinet Grotesk", sans-serif; */
+  font-family: "Cabinet Grotesk", sans-serif;
   overscroll-behavior: none;
   overflow-x: hidden;
+  cursor: url("/star-cursor.png"), crosshair;
+}
+::selection {
+  background: rgb(192, 192, 0);
 }
 
 a {

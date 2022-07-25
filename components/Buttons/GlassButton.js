@@ -7,9 +7,9 @@ export default function GlassButton() {
   const arrow = "→  ";
   return (
     <div className="w-screen relative ">
-      <div className="z-10 text-2xl pt-20 bg-gradient-1 w-full flex flex-row  flex-wrap justify-center">
+      <div className="z-10 text-2xl pt-20  w-full flex flex-row  flex-wrap justify-center">
         <div className=" flex flex-col justify-center">
-          <div className="pl-7  text-black text-left py-10 px-30 mx-5  mb-7  flex justify-around rounded-3xl bg-right-top bg-gradient07 animate-movebg w-96 h-60 bg-cover filter">
+          <div className="pl-7 text-black text-left py-10 px-30 mx-5  mb-7  flex items-start rounded-3xl bg-right-top bg-gradient07 animate-movebg w-96 h-60 bg-cover filter">
             <p className="text-6xl font-whyteinktrap ">
               <span className="  mix-blend-overlay filter drop-shadow-sm">
                 Creative Developer
@@ -18,7 +18,7 @@ export default function GlassButton() {
                 <div className=" text-3xl pr-5 pt-3 animate-bounce-slow text-yellow-300 ">
                   {arrow}
                 </div>
-                <p className=" mt-1 w-48 z-50 flex justify-around  text-white rounded-full py-1 px-7 whitespace-nowrap font-bold tracking-wide bg-trp border  text-2xl font-whytemono hover:text-green-300 border-black">
+                <p className=" mt-1 w-48 z-50 flex justify-around  text-white rounded-full py-1 px-7 whitespace-nowrap font-bold tracking-wide bg-trp border  text-2xl font-whytemono hover:text-yellow-300 border-black">
                   <div
                     className=" w-44"
                     onMouseEnter={() => setOnHover(true)}
