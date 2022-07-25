@@ -17,13 +17,13 @@ function ProjectListPage() {
         <div>
           <div
             className={
-              " fixed top-0 left-0 z-20 mix-blend-difference text-white"
+              " fixed top-0 left-0 z-20 mix-blend-exclusion text-white"
             }
           >
             <div className=" pl-16 pt-20 font-whyteinktrap flex flex-row text-8xl">
               portfolio
               <div className=" pt-3 px-10">
-                <p className=" border-2 flex justify-around text-white rounded-full py-5 px-10 whitespace-nowrap font-bold tracking-wider bg-black text-3xl">
+                <p className="  border-2 flex justify-around bg-white text-black rounded-full py-5 px-10 whitespace-nowrap font-bold tracking-wider  text-3xl">
                   creative developer
                 </p>
               </div>
