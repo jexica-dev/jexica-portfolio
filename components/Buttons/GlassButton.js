@@ -8,7 +8,7 @@ export default function GlassButton() {
   return (
     <div className="w-screen relative ">
       <div className="z-10 text-2xl pt-20  w-full flex flex-row flex-wrap justify-center ">
-        <div className=" flex flex-col justify-center md:w-24 sm:w-24">
+        <div className=" flex flex-col justify-center">
           <div className="pl-7 text-black text-left py-10 px-30 mx-5  mb-7  flex items-start rounded-3xl bg-right-top bg-gradient07 animate-movebg w-96 h-60 bg-cover filter">
             <p className="text-6xl font-whyteinktrap ">
               <span className="  mix-blend-overlay filter drop-shadow-sm">
