@@ -20,10 +20,16 @@ function ProjectListPage() {
               " fixed top-0 left-0 z-20 mix-blend-exclusion text-white"
             }
           >
-            <div className=" pl-16 pt-20 font-whyteinktrap flex flex-row text-8xl">
+            <div
+              style={{ fontSize: "10vw", padding: "7vh 3vw 0 " }}
+              className=" pt-20 font-whyteinktrap flex flex-row "
+            >
               portfolio
-              <div className=" pt-3 px-14">
-                <p className="  border-2 flex justify-around bg-white text-black rounded-full py-5 px-7 whitespace-nowrap font-bold tracking-wider  text-2xl">
+              <div style={{ padding: "3vw 4vw 0" }}>
+                <p
+                  style={{ fontSize: "3vw", padding: "2vw 2vw" }}
+                  className="  border-2 flex justify-around bg-white text-black rounded-full whitespace-nowrap font-bold tracking-wider "
+                >
                   creative developer
                 </p>
               </div>
@@ -31,7 +37,10 @@ function ProjectListPage() {
           </div>
         </div>
 
-        <div className=" pl-10 relative grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-black content-center pt-60">
+        <div
+          className=" relative grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-black content-center pt-60"
+          style={{ padding: "20vw 3vw 0" }}
+        >
           <ProjectCard
             title="digi-Altar"
             lang="HTML, CSS, JavaScript, React, Tailwind CSS, Ruby on Rails"
@@ -93,6 +102,7 @@ function ProjectListPage() {
             </p> */}
           </ProjectCard>
           <ProjectCard
+            title="#36daysoftype_2022"
             img="/36days.png"
             vid="/36days.mp4"
             alt="36days"
@@ -108,6 +118,7 @@ function ProjectListPage() {
             </p> */}
           </ProjectCard>
           <ProjectCard
+            title="Ghibli-Giphy Remix"
             img="/giphy.png"
             vid="/giphy.mp4"
             alt="ghibli-giphy"
@@ -123,6 +134,7 @@ function ProjectListPage() {
             </p> */}
           </ProjectCard>
           <ProjectCard
+            title="Spirit Gif"
             img="/spiritgif.png"
             vid="/spiritgif.mp4"
             alt="spiritgif"

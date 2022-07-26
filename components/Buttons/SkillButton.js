@@ -26,6 +26,12 @@ export default function SkillButtons(props) {
           <div className={"w-28" + defaultSkillBtn}>Ruby</div>
           <div className={"w-52" + defaultSkillBtn}>Ruby on Rails</div>
         </div>
+        <div className="justify-center flex content-start flex-wrap flex-row  items-start ">
+          <div className={" w-32" + defaultSkillBtn}>React Three Fiber</div>
+          <div className={"w-48" + defaultSkillBtn}>Spring Boot</div>
+          <div className={"w-28" + defaultSkillBtn}>Bootstrap</div>
+          <div className={"w-52" + defaultSkillBtn}>Material UI</div>
+        </div>
       </div>
     </>
   );

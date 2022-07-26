@@ -118,7 +118,7 @@ body {
   cursor: url("/star-cursor.png"), crosshair;
 }
 ::selection {
-  background: rgb(192, 192, 0);
+  background: rgb(255, 255, 0);
   backdrop-filter: invert(70%);
 }
 

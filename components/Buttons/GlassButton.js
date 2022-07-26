@@ -32,7 +32,7 @@ export default function GlassButton() {
                           className="overflow-hidden p-1 "
                           gradient={null}
                           speed={30}
-                          pauseOnHover
+                          playOnHover
                         >
                           projects
                         </Marquee>

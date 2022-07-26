@@ -82,8 +82,8 @@ export default function ProjectCard(props) {
                         : " hide"
                     }
                   >
-                    <span className="text-7xl font-whytemono text-black ">
-                      {onHover ? props.alt : null}
+                    <span className="text-left text-5xl font-whytemono text-black ">
+                      {onHover ? props.title : null}
                     </span>
                   </div>
                   <Image
@@ -92,7 +92,7 @@ export default function ProjectCard(props) {
 
                       " absolute drop-shadow-2xl  w-72 h-72 rounded-3xl backdrop-invert backdrop-blur-xl z-1"
                     }
-                    src={onHover ? "/gradient-8.png" : props.img}
+                    src={onHover ? "/gradient-9.png" : props.img}
                     width={windowSize}
                     height={windowSize * aspect}
                     alt={props.alt}
