@@ -102,7 +102,7 @@ function ProjectListPage() {
             </p> */}
           </ProjectCard>
           <ProjectCard
-            title="#36daysoftype_2022"
+            title="#36daysoftype_22"
             img="/36days.png"
             vid="/36days.mp4"
             alt="36days"
