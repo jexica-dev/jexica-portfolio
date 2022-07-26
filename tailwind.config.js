@@ -28,6 +28,9 @@ module.exports = {
         140: "40rem",
         180: "90rem",
       },
+      cursor: {
+        star: "url(/star-cursor.png), crosshair",
+      },
       animation: {
         "bounce-slow": "bounce-slow 1s ease-in-out infinite",
         movebg: "20s linear infinite alternate",
