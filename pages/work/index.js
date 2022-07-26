@@ -33,9 +33,8 @@ function ProjectListPage() {
 
         <div className=" pl-10 relative grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-black content-center pt-60">
           <ProjectCard
-            // href="/?image=1"
-            // as="/1"
-
+            title="digi-Altar"
+            lang="HTML, CSS, JavaScript, React, Tailwind CSS, Ruby on Rails"
             img="/digialtar.png"
             vid="/digialtar.mp4"
             alt="digialtar"
@@ -55,6 +54,9 @@ function ProjectListPage() {
           </ProjectCard>
 
           <ProjectCard
+            title="g'JAM"
+            lang="HTML, CSS, JavaScript, React, Bootstrap, Node. Express, MongoDB,
+            Mongoose"
             img="/gjam.png"
             vid="/gjam.mp4"
             alt="gjam"
@@ -74,6 +76,8 @@ function ProjectListPage() {
             </p> */}
           </ProjectCard>
           <ProjectCard
+            title="Thyme"
+            lang="HTML, CSS, JavaScript, React, Airtable "
             img="/thyme.png"
             vid="/thyme.mp4"
             alt="thyme"

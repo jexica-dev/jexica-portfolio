@@ -18,14 +18,14 @@ export default function GlassButton() {
                 <div className=" text-3xl pr-5 pt-3 animate-bounce-slow text-yellow-300 ">
                   {arrow}
                 </div>
-                <p className=" mt-1 w-48 z-50 flex justify-around  text-white rounded-full py-1 px-7 whitespace-nowrap font-bold tracking-wide bg-trp border  text-2xl font-whytemono hover:text-yellow-300 border-black">
+                <p className=" mt-1 w-48 z-50 flex justify-around  text-white rounded-full py-1 px-7 whitespace-nowrap font-bold tracking-wide bg-trp border  text-2xl font-whytemono  border-black">
                   <div
                     className=" w-44"
                     onMouseEnter={() => setOnHover(true)}
                     onMouseLeave={() => setOnHover(false)}
                   >
                     <Link href="/work" passHref>
-                      <a className=" hover:no-underline">
+                      <a className=" hover:no-underline hover:text-yellow-300">
                         <Marquee
                           style={{ textAlign: "center" }}
                           direction="right"
@@ -52,7 +52,7 @@ export default function GlassButton() {
         <div className="flex mx-5 mb-10 p-10 top-0 left-0  relative w-96 h-128 rounded-3xl bg-cover bg-right-top bg-gradient06 ">
           <div className="text-3xl tracking-wide text-left  text-black font-whytemono selection:bg-fuchsia-300 selection:text-fuchsia-900 ">
             Hello, <br className="mb-3" />
-            I’m a web developer, specializing in React (MERN), Java, and design
+            I’m a web developer specializing in React (MERN), Java, and design
             technologies. <br className="mb-3" />
             Based in NYC + Open to remote work.
           </div>

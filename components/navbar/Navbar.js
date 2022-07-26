@@ -13,7 +13,7 @@ function SafeHydrate({ children }) {
 }
 
 function Navbar(props) {
-  // const [isOpen, setOpen] = useState(false);
+  // const [onHover, setOnHover] = useState(false);
 
   const arrow = "→  ";
 
@@ -21,8 +21,8 @@ function Navbar(props) {
     <SafeHydrate>
       <div className="z-50">
         <div className=" mix-blend-difference text-white  z-30 fixed nav-body flex justify-around grid-cols-5 whitespace-nowrap py-3 pr-14 w-full text-md font-[600] font-whytemono border-b">
-          <div className="">
-            <span>{arrow} &nbsp;</span>
+          <div className=" ">
+            <span className="">{arrow} &nbsp;</span>
             <Link className="" href="/">
               About
             </Link>

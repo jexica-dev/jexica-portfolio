@@ -22,9 +22,6 @@ module.exports = {
         whytemono: ["ABC Whyte Mono"],
         whyteinktrap: ["ABC Whyte Inktrap"],
       },
-      animation: {
-        movebg: "20s linear infinite alternate",
-      },
       spacing: {
         128: "32rem",
         132: "34rem",
@@ -33,6 +30,7 @@ module.exports = {
       },
       animation: {
         "bounce-slow": "bounce-slow 1s ease-in-out infinite",
+        movebg: "20s linear infinite alternate",
       },
       keyframes: {
         "bounce-slow": {

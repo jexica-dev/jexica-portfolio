@@ -128,8 +128,9 @@ a {
   /* font-family: "Cabinet Grotesk", sans-serif; */
 }
 a:hover {
-  text-decoration: #00ffff underline;
-  text-underline-offset: 6px;
+  /* text-decoration: #00ffff underline;
+  text-underline-offset: 6px; */
+  color: darkcyan;
 }
 
 * {
