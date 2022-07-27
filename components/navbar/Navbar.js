@@ -3,7 +3,7 @@ import Link from "next/dist/client/link";
 // import styles from "./Navbar.module.css";
 import Media from "react-media";
 import { useState } from "react";
-import { Spiral as Hamburger } from "hamburger-react";
+import { Squeeze as Hamburger } from "hamburger-react";
 
 function SafeHydrate({ children }) {
   return (
@@ -31,7 +31,7 @@ function Navbar(props) {
             <>
               <div
                 style={navOpen ? { color: "black" } : { color: "green" }}
-                className=" fixed z-50 top-0 flex  flex-col w-full justify-around  "
+                className=" fixed z-50 top-0 flex flex-col w-full justify-around pt-3 "
               >
                 <button
                   onClick={handleToggle}
