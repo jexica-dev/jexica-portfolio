@@ -39,7 +39,7 @@ function ProjectListPage() {
 
         <div
           className=" relative grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-black content-center pt-60"
-          style={{ padding: "20vw 3vw 0" }}
+          style={{ padding: "21vw 3vw 0" }}
         >
           <ProjectCard
             title="digi-Altar"

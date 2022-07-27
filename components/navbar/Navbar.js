@@ -17,6 +17,8 @@ function Navbar(props) {
   const [navOpen, setNavOpen] = useState(false);
 
   const arrow = "→  ";
+  const arrowColor = "text-red-600";
+  const navBgColor = "bg-yellow-300 font-whytemono font-bold";
 
   const handleToggle = () => {
     setNavOpen(!navOpen);
@@ -28,8 +30,8 @@ function Navbar(props) {
           return matches.mobile ? (
             <>
               <div
-                style={navOpen ? { color: "red" } : { color: "green" }}
-                className=" fixed z-50 top-0 flex  flex-col justify-around w-full bg-gradient06 bg-cover bg-left-bottom"
+                style={navOpen ? { color: "black" } : { color: "green" }}
+                className=" fixed z-50 top-0 flex  flex-col w-full justify-around  "
               >
                 <button
                   onClick={handleToggle}
@@ -41,18 +43,62 @@ function Navbar(props) {
                     toggle={setNavOpen}
                   />
                 </button>
+
                 <ul
-                  style={!navOpen ? { display: "none" } : { display: "" }}
-                  className={!navOpen ? "hide" : ""}
+                  style={
+                    !navOpen
+                      ? { display: "none" }
+                      : { display: "", fontSize: "10vw" }
+                  }
+                  className={
+                    !navOpen
+                      ? "hide"
+                      : " flex flex-col text-left justify-center text-black  "
+                  }
                 >
                   <li>
-                    <Link href="/">test</Link>
+                    <span className={arrowColor}>
+                      &nbsp;&nbsp; {arrow} &nbsp;
+                    </span>
+                    <span className={navBgColor}>
+                      <Link href="/">&nbsp;About&nbsp;</Link>
+                    </span>
+                    {/* <span>&nbsp;&nbsp; &nbsp;&nbsp;</span> */}
                   </li>
                   <li>
-                    <Link href="/">test</Link>
+                    <span className={arrowColor}>
+                      &nbsp;&nbsp; {arrow} &nbsp;
+                    </span>
+                    <span className={navBgColor}>
+                      <Link href="/work">&nbsp;Work&nbsp;</Link>
+                    </span>
+                    {/* <span>&nbsp;&nbsp; &nbsp;&nbsp;</span> */}
                   </li>
                   <li>
-                    <Link href="/">test</Link>
+                    <span className={arrowColor}>
+                      &nbsp;&nbsp; {arrow} &nbsp;
+                    </span>
+                    <span className={navBgColor}>
+                      <Link className="" href="mailto:jexica.ayran@gmail.com">
+                        &nbsp;Contact&nbsp;
+                      </Link>
+                    </span>
+                    {/* <span>&nbsp;&nbsp; &nbsp;&nbsp;</span> */}
+                  </li>
+                  <li>
+                    <span className={arrowColor}>
+                      &nbsp;&nbsp; {arrow} &nbsp;
+                    </span>
+                    <span className={navBgColor}>
+                      <Link
+                        className=""
+                        href="/JexicaAyran-Resume.pdf"
+                        passHref
+                      >
+                        <a target="_blank">&nbsp;Resume&nbsp;</a>
+                      </Link>
+                    </span>
+                    <span>&nbsp;&nbsp; &nbsp;&nbsp;</span>
                   </li>
                 </ul>
               </div>
@@ -68,9 +114,7 @@ function Navbar(props) {
                 </div>
                 <div>
                   <span>&nbsp;&nbsp; {arrow} &nbsp;</span>
-                  <Link href="/work" passHref>
-                    Work
-                  </Link>
+                  <Link href="/work">Work</Link>
                 </div>
                 <div className="">
                   <span>{arrow} &nbsp;</span>
@@ -81,7 +125,7 @@ function Navbar(props) {
                 </div>
                 <div className="">
                   <span>{arrow} &nbsp;</span>
-                  <Link className="" href="/JexicaAyran-Resume.pdf">
+                  <Link className="" href="/JexicaAyran-Resume.pdf" passHref>
                     <a target="_blank">Resume</a>
                   </Link>
                   {/* <Link className="" href="https://www.linkedin.com/in/jexica/">

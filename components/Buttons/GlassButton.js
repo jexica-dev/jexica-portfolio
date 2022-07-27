@@ -18,7 +18,7 @@ export default function GlassButton() {
                 <div className=" text-3xl pr-5 pt-3 animate-bounce-slow text-yellow-300 ">
                   {arrow}
                 </div>
-                <p className=" mt-1 w-48 z-50 flex justify-around  text-white rounded-full py-1 px-7 whitespace-nowrap font-bold tracking-wide bg-trp border  text-2xl font-whytemono  border-black">
+                <p className=" mt-1 w-48 z-40 flex justify-around  text-white rounded-full py-1 px-7 whitespace-nowrap font-bold tracking-wide bg-trp border  text-2xl font-whytemono  border-black">
                   <div
                     className=" w-44"
                     onMouseEnter={() => setOnHover(true)}
