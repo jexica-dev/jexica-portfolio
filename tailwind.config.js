@@ -35,6 +35,8 @@ module.exports = {
         "bounce-slow": "bounce-slow 1s ease-in-out infinite",
         movebg: "20s linear infinite alternate",
         fadein: "fadein 5.25s",
+        "fadein-02": "fadein 7s",
+        "fadein-03": "fadein 9s",
       },
       keyframes: {
         "bounce-slow": {
@@ -48,6 +50,22 @@ module.exports = {
           },
         },
         fadein: {
+          "0%": {
+            opacity: "0%",
+          },
+          "100%": {
+            opacity: "100%",
+          },
+        },
+        "fadein-02": {
+          "0%": {
+            opacity: "0%",
+          },
+          "100%": {
+            opacity: "100%",
+          },
+        },
+        "fadein-03": {
           "0%": {
             opacity: "0%",
           },
