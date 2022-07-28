@@ -3,11 +3,11 @@ import React from "react";
 
 export default function SkillButtons(props) {
   const defaultSkillBtn =
-    " flex justify-around text-white rounded-full py-3 px-10 mx-3 whitespace-nowrap font-medium tracking-widest bg-black text-2xl mb-5";
+    "  flex justify-around text-white rounded-full py-3 px-10 mx-3 whitespace-nowrap font-medium tracking-widest bg-black text-2xl mb-5";
 
   return (
     <>
-      <div className="w-screen h-full flex flex-wrap flex-row justify-center">
+      <div className=" animate-fadein w-screen h-full flex flex-wrap flex-row justify-center">
         <div className="justify-center flex content-start flex-wrap flex-row  items-start ">
           <div className={"w-28" + defaultSkillBtn}>HTML</div>
           <div className={" w-28" + defaultSkillBtn}>CSS</div>

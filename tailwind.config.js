@@ -34,6 +34,7 @@ module.exports = {
       animation: {
         "bounce-slow": "bounce-slow 1s ease-in-out infinite",
         movebg: "20s linear infinite alternate",
+        fadein: "fadein 5.25s",
       },
       keyframes: {
         "bounce-slow": {
@@ -46,10 +47,19 @@ module.exports = {
             "animation-timing-function": "cubic - bezier(0, 0, 0.1, 1)",
           },
         },
+        fadein: {
+          "0%": {
+            opacity: "0%",
+          },
+          "100%": {
+            opacity: "100%",
+          },
+        },
       },
     },
     lineHeight: {
       12: "3rem",
+      13: "4rem",
       15: "5rem",
     },
   },

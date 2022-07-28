@@ -6,10 +6,10 @@ export default function GlassButton() {
   const [onHover, setOnHover] = useState(false);
   const arrow = "→  ";
   return (
-    <div className="w-screen relative ">
+    <div className="w-screen relative">
       <div className="z-10 text-2xl pt-20  w-full flex flex-row flex-wrap justify-center ">
-        <div className=" flex flex-col justify-center">
-          <div className="pl-7 text-black text-left py-10 px-30 mx-5  mb-7  flex items-start rounded-3xl bg-right-top bg-gradient07 animate-movebg w-96 h-60 bg-cover filter">
+        <div className=" animate-fadein flex flex-col justify-center">
+          <div className="  pl-7 text-black text-left py-10 px-30 mx-5  mb-7  flex items-start rounded-3xl bg-right-top bg-gradient07  w-96 h-60 bg-cover filter">
             <p className="text-6xl font-whyteinktrap ">
               <span className="  mix-blend-overlay filter drop-shadow-sm">
                 Creative Developer
@@ -49,7 +49,7 @@ export default function GlassButton() {
             </p>
           </div>
         </div>
-        <div className="flex mx-5 mb-10 p-10 top-0 left-0  relative w-96 h-128 rounded-3xl bg-cover bg-right-top bg-gradient06 ">
+        <div className="animate-fadein flex mx-5 mb-10 p-10 top-0 left-0  relative w-96 h-128 rounded-3xl bg-cover bg-right-top bg-gradient06 ">
           <div className="text-3xl tracking-wide text-left  text-black font-whytemono selection:bg-fuchsia-300 selection:text-fuchsia-900 ">
             Hello, <br className="mb-3" />
             I’m a web developer specializing in React (MERN), Java, and design

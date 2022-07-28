@@ -68,7 +68,7 @@ export default function ProjectCard(props) {
               <div
                 onMouseEnter={() => setOnHover(true)}
                 onMouseLeave={() => setOnHover(false)}
-                className=" relative justify-center align-center overflow-hidden mb-5"
+                className=" relative justify-center align-center overflow-hidden mb"
                 style={{
                   width: windowSize * 0.9,
                   height: windowSize * aspect,
@@ -78,23 +78,23 @@ export default function ProjectCard(props) {
                   <div
                     className={
                       onHover
-                        ? " text-left absolute top-0 left-0  z-50 p-10 "
+                        ? " text-left absolute top-0 left-0  z-50 lg:p-10  md:p-5"
                         : " hide"
                     }
                   >
                     <span
                       style={{ fontSize: "4vw" }}
-                      className=" font-whytemono text-black bg-yellow-300 z-50 mix-blend-normal"
+                      className=" font-whytemono text-black bg-yellow-300 z-50 mix-blend-normal leading-13"
                     >
                       {onHover ? props.title : null}
                     </span>
                   </div>
-                  <div>
+                  <div className=" ">
                     <Image
                       className={
                         // "transition duration-500 ease-in-out opacity-100 hover:opacity-0 absolute z-10"
 
-                        " absolute drop-shadow-2xl w-72 h-72 rounded-3xl backdrop-invert backdrop-blur-xl z-1 scale-150"
+                        " hover:opacity-0 animate-fadein absolute drop-shadow-2xl  rounded-3xl backdrop-invert z-50  transition duration-500 ease-in-out"
                       }
                       src={props.img}
                       width={windowSize}
@@ -102,6 +102,7 @@ export default function ProjectCard(props) {
                       alt={props.alt}
                       layout="responsive"
                     />
+                    <div className=" animate-fadein  rounded-3xl absolute z-0 top-0 left-0 bg-gradient-to-r from-indigo-700 via-red-500 w-full h-full object-center "></div>
                   </div>
                 </div>
                 {/* <video
@@ -115,13 +116,13 @@ export default function ProjectCard(props) {
                   </video> */}
               </div>
 
-              <div className="flex flex-col" style={{ width: "750px" }}>
+              {/* <div className="flex flex-col" style={{ width: "750px" }}>
                 <div className="w-full">
                   <p className="text-white w-full text-left ">
                     {props.children}
                   </p>
                 </div>
-              </div>
+              </div> */}
             </>
           );
         }}
