@@ -33,6 +33,18 @@ export default function ProjectCard(props) {
   let windowSize = width / 2;
   let aspect = 438.45 / 790;
 
+  const hoverText = (
+    <div className="font-whytemono text-black bg-yellow-300 p-2">
+      <span
+        style={{ fontSize: "4vw" }}
+        className="z-40 mix-blend-normal leading-13  "
+      >
+        {props.title}
+      </span>
+      <p>{props.info}</p>
+    </div>
+  );
+
   return (
     <SafeHydrate>
       <Media queries={{ mobile: { maxWidth: 768 } }}>
@@ -47,7 +59,7 @@ export default function ProjectCard(props) {
               >
                 <Image
                   className={
-                    "drop-shadow-2xl  w-72 h-72 rounded-3xl backdrop-invert backdrop-blur-xl z-1 hover:bg-cover hover:bg-left-top hover:bg-gradient09"
+                    "drop-shadow-2xl  w-72 h-72 rounded-3xl backdrop-invert backdrop-blur-xl z-1  "
                   }
                   src={props.img}
                   width={750}
@@ -82,19 +94,14 @@ export default function ProjectCard(props) {
                         : " hide"
                     }
                   >
-                    <span
-                      style={{ fontSize: "4vw" }}
-                      className=" font-whytemono text-black bg-yellow-300 z-50 mix-blend-normal leading-13"
-                    >
-                      {onHover ? props.title : null}
-                    </span>
+                    {onHover ? hoverText : null}
                   </div>
                   <div className=" ">
                     <Image
                       className={
                         // "transition duration-500 ease-in-out opacity-100 hover:opacity-0 absolute z-10"
 
-                        " hover:opacity-0 animate-fadein absolute drop-shadow-2xl  rounded-3xl backdrop-invert z-50  transition duration-500 ease-in-out"
+                        " hover:opacity-0 animate-fadein absolute drop-shadow-2xl  rounded-3xl backdrop-invert z-10  transition duration-500 ease-in-out"
                       }
                       src={props.img}
                       width={windowSize}

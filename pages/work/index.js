@@ -43,6 +43,7 @@ function ProjectListPage() {
         >
           <ProjectCard
             title="digi-Altar"
+            info="web app for creating cyber art-shrine collages"
             lang="HTML, CSS, JavaScript, React, Tailwind CSS, Ruby on Rails"
             img="/digialtar.png"
             vid="/digialtar.mp4"
@@ -64,6 +65,7 @@ function ProjectListPage() {
 
           <ProjectCard
             title="g'JAM"
+            info="e-commerce website for buying and creating customizable jams. branding + graphics included."
             lang="HTML, CSS, JavaScript, React, Bootstrap, Node. Express, MongoDB,
             Mongoose"
             img="/gjam.png"
@@ -86,6 +88,12 @@ function ProjectListPage() {
           </ProjectCard>
           <ProjectCard
             title="Thyme"
+            info={
+              <>
+                web app for creating a bucket-task list on your own
+                <span className="italic"> thyme</span>
+              </>
+            }
             lang="HTML, CSS, JavaScript, React, Airtable "
             img="/thyme.png"
             vid="/thyme.mp4"
@@ -103,6 +111,7 @@ function ProjectListPage() {
           </ProjectCard>
           <ProjectCard
             title="#36daysoftype_22"
+            info="web app designed for my personal project (audio-reactive visuals) and online event: #36daysoftype"
             img="/36days.png"
             vid="/36days.mp4"
             alt="36days"
@@ -119,6 +128,7 @@ function ProjectListPage() {
           </ProjectCard>
           <ProjectCard
             title="Ghibli-Giphy Remix"
+            info="Ghibli film informational page, using Ghibli Studio API and GIPHY API"
             img="/giphy.png"
             vid="/giphy.mp4"
             alt="ghibli-giphy"
@@ -135,6 +145,7 @@ function ProjectListPage() {
           </ProjectCard>
           <ProjectCard
             title="Spirit Gif"
+            info="A simple form that shows giphy images input name."
             img="/spiritgif.png"
             vid="/spiritgif.mp4"
             alt="spiritgif"
