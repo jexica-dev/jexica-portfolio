@@ -78,26 +78,31 @@ export default function ProjectCard(props) {
                   <div
                     className={
                       onHover
-                        ? " absolute top-0 left-0  z-50 p-10 mix-blend-color-burn"
+                        ? " text-left absolute top-0 left-0  z-50 p-10 "
                         : " hide"
                     }
                   >
-                    <span className="text-left text-5xl font-whytemono text-black ">
+                    <span
+                      style={{ fontSize: "4vw" }}
+                      className=" font-whytemono text-black bg-yellow-300 z-50 mix-blend-normal"
+                    >
                       {onHover ? props.title : null}
                     </span>
                   </div>
-                  <Image
-                    className={
-                      // "transition duration-500 ease-in-out opacity-100 hover:opacity-0 absolute z-10"
+                  <div>
+                    <Image
+                      className={
+                        // "transition duration-500 ease-in-out opacity-100 hover:opacity-0 absolute z-10"
 
-                      " absolute drop-shadow-2xl  w-72 h-72 rounded-3xl backdrop-invert backdrop-blur-xl z-1"
-                    }
-                    src={onHover ? "/gradient-9.png" : props.img}
-                    width={windowSize}
-                    height={windowSize * aspect}
-                    alt={props.alt}
-                    layout="responsive"
-                  />
+                        " absolute drop-shadow-2xl w-72 h-72 rounded-3xl backdrop-invert backdrop-blur-xl z-1 scale-150"
+                      }
+                      src={props.img}
+                      width={windowSize}
+                      height={windowSize * aspect}
+                      alt={props.alt}
+                      layout="responsive"
+                    />
+                  </div>
                 </div>
                 {/* <video
                     className="absolute z-0 top-0 left-0 pb-3"
