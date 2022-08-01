@@ -101,7 +101,7 @@ export default function ProjectCard(props) {
                       className={
                         // "transition duration-500 ease-in-out opacity-100 hover:opacity-0 absolute z-10"
 
-                        " hover:opacity-0 animate-fadein absolute drop-shadow-2xl  rounded-3xl backdrop-invert z-10  transition duration-500 ease-in-out"
+                        " hover:mix-blend-difference hover:filter hover:invert  absolute drop-shadow-2xl  rounded-3xl backdrop-invert z-10 "
                       }
                       src={props.img}
                       width={windowSize}
@@ -109,7 +109,7 @@ export default function ProjectCard(props) {
                       alt={props.alt}
                       layout="responsive"
                     />
-                    <div className=" animate-fadein  rounded-3xl absolute z-0 top-0 left-0 bg-gradient-to-r from-indigo-700 via-red-500 w-full h-full object-center "></div>
+                    {/* <div className=" animate-fadein  rounded-3xl absolute z-0 top-0 left-0 bg-gradient-to-r from-indigo-700 via-red-500 w-full h-full object-center "></div> */}
                   </div>
                 </div>
                 {/* <video

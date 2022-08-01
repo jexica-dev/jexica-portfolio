@@ -51,7 +51,7 @@ export default function GlassButton() {
         </div> */}
 
         <div className="animate-fadein-03 flex flex-col mx-5 mb-10  top-0 left-0  relative w-96 h-fit  ">
-          <div className="mb-10 rounded-3xl bg-cover bg-right-top bg-gradient06 px-10 pb-3 pt-10 text-3xl tracking-wide text-left  text-black font-whytemono selection:bg-fuchsia-300 selection:text-fuchsia-900 ">
+          <div className="mb-10 rounded-3xl bg-cover bg-right-top bg-gradient04 px-10 pb-3 pt-10 text-3xl tracking-wide text-left  text-black font-whytemono selection:bg-fuchsia-300 selection:text-fuchsia-900 ">
             <p className="   text-6xl font-whyteinktrap ">
               <span className="  mix-blend-overlay filter drop-shadow-sm">
                 Creative Developer
@@ -85,7 +85,7 @@ export default function GlassButton() {
               </div>
             </p>
           </div>
-          <div className="  animate-fadein-02 text-right py-10 px-30 w-96  flex justify-around rounded-3xl bg-cover bg-left-top bg-gradient06 h-60">
+          <div className="  animate-fadein-02 text-right py-10 px-30 w-96  flex justify-around rounded-3xl bg-cover bg-left-top bg-gradient01 h-60">
             <p className=" text-white pr-5 pb-5 text-8xl font-whyteinktrap leading-15 mix-blend-exclusion">
               jexica ayran
             </p>
