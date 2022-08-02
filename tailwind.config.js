@@ -27,6 +27,7 @@ module.exports = {
         132: "34rem",
         140: "40rem",
         180: "90rem",
+        container: "1700px",
       },
       cursor: {
         star: "url(/star-cursor.png), default",
