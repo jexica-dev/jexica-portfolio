@@ -12,15 +12,15 @@ export default function GlassButton() {
     <div className="w-screen relative ">
       <div
         style={{
-          top: "15vw",
-          left: "-1vw",
+          top: "25vh",
+          left: "3vw",
           filter:
-            "hue-rotate(330deg) contrast(1.1) drop-shadow( .05vw .05vw 0.05vw red)",
+            "hue-rotate(330deg) contrast(1.25) drop-shadow( .05vw .05vw 0.05vw red)",
         }}
         className={
           onHover1
-            ? " opacity-80 absolute w-80 h-80 z-50 rounded-full "
-            : "opacity-0 absolute  w-80 h-80  hidden"
+            ? " opacity-50 absolute w-64 h-64 z-50 rounded-full "
+            : "opacity-0 absolute  hidden"
         }
       >
         <Image
