@@ -35,7 +35,7 @@ export default function ProjectCard(props) {
   let aspect = 438.45 / 790;
 
   const hoverText = (
-    <div className="font-whytemono text-black bg-yellow-300 p-3 rounded-bl-3xl rounded-br-3xl h-full border  border-black">
+    <div className="font-whytemono text-black bg-yellow-300 p-3  h-full border  border-black ">
       <span
         style={{ fontSize: "3.75vw", lineHeight: "4vw" }}
         className="z-40 mix-blend-normal "
@@ -75,11 +75,13 @@ export default function ProjectCard(props) {
                 className="relative justify-center align-center overflow-hidden mb-5 "
                 // className="w-fit relative overflow-hidden align-center justify-center "
                 // className="mb-5 hover:border-black border border-white  drop-shadow-lg rounded-large w-72 h-72  backdrop-blur-xl z-1"
-                style={{ height: "auto" }}
+                style={{
+                  height: "auto",
+                }}
               >
                 <Image
                   className={
-                    "drop-shadow-2xl  w-72 h-72 rounded-3xl backdrop-invert backdrop-blur-xl z-1   "
+                    "drop-shadow-2xl  w-72 h-72  backdrop-invert backdrop-blur-xl z-1   "
                   }
                   src={props.img}
                   width={750}
@@ -100,28 +102,30 @@ export default function ProjectCard(props) {
               <div
                 onMouseEnter={() => setOnHover(true)}
                 onMouseLeave={() => setOnHover(false)}
-                className=" relative justify-center align-center overflow-hidden mb"
+                className=" relative justify-center align-center overflow-hidden"
                 style={{
                   width: windowSize * 0.9,
                   height: windowSize * aspect,
+
+                  // filter: "drop-shadow(5px 5px 1px black)",
                 }}
               >
                 <div className=" relative">
                   <div
                     className={
                       onHover
-                        ? " text-left absolute bottom-0 left-0 w-full z-50 h-1/2"
+                        ? " text-left absolute bottom-0 left-0 w-full z-50 h-3/4"
                         : " hide"
                     }
                   >
                     {onHover ? hoverText : null}
                   </div>
-                  <div className="border border-white rounded-3xl">
+                  <div className=" border border-black  relative top-0 right-0">
                     <Image
                       className={
                         // "transition duration-500 ease-in-out opacity-100 hover:opacity-0 absolute z-10"
 
-                        " hover:mix-blend-difference hover:filter hover:invert  absolute drop-shadow-2xl  rounded-3xl backdrop-invert z-10  "
+                        " hover:mix-blend-difference hover:filter hover:invert  absolute drop-shadow-2xl   backdrop-invert z-10  "
                       }
                       src={props.img}
                       width={windowSize}
@@ -129,7 +133,8 @@ export default function ProjectCard(props) {
                       alt={props.alt}
                       layout="responsive"
                     />
-                    {/* <div className=" animate-fadein  rounded-3xl absolute z-0 top-0 left-0 bg-gradient-to-r from-indigo-700 via-red-500 w-full h-full object-center "></div> */}
+
+                    {/* <div className=" animate-fadein   absolute z-0 top-0 left-0 bg-gradient-to-r from-indigo-700 via-red-500 w-full h-full object-center "></div> */}
                   </div>
                 </div>
                 {/* <video
