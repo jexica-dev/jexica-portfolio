@@ -34,14 +34,14 @@ export default function ProjectCard(props) {
   let aspect = 438.45 / 790;
 
   const hoverText = (
-    <div className="font-whytemono text-black bg-yellow-300 p-2">
+    <div className="font-whytemono text-black bg-yellow-300 p-3 rounded-bl-3xl rounded-br-3xl h-full border  border-black">
       <span
-        style={{ fontSize: "4vw" }}
-        className="z-40 mix-blend-normal leading-13  "
+        style={{ fontSize: "3.75vw", lineHeight: "4vw" }}
+        className="z-40 mix-blend-normal "
       >
         {props.title}
       </span>
-      <p>{props.info}</p>
+      <p style={{ paddingTop: "1vw", fontSize: "1.5vw" }}>{props.info}</p>
     </div>
   );
 
@@ -59,7 +59,7 @@ export default function ProjectCard(props) {
               >
                 <Image
                   className={
-                    "drop-shadow-2xl  w-72 h-72 rounded-3xl backdrop-invert backdrop-blur-xl z-1  "
+                    "drop-shadow-2xl  w-72 h-72 rounded-3xl backdrop-invert backdrop-blur-xl z-1   "
                   }
                   src={props.img}
                   width={750}
@@ -90,18 +90,18 @@ export default function ProjectCard(props) {
                   <div
                     className={
                       onHover
-                        ? " text-left absolute top-0 left-0  z-50 lg:p-10  md:p-5"
+                        ? " text-left absolute bottom-0 left-0 w-full z-50 h-1/2"
                         : " hide"
                     }
                   >
                     {onHover ? hoverText : null}
                   </div>
-                  <div className=" ">
+                  <div className="border border-white rounded-3xl">
                     <Image
                       className={
                         // "transition duration-500 ease-in-out opacity-100 hover:opacity-0 absolute z-10"
 
-                        " hover:mix-blend-difference hover:filter hover:invert  absolute drop-shadow-2xl  rounded-3xl backdrop-invert z-10 "
+                        " hover:mix-blend-difference hover:filter hover:invert  absolute drop-shadow-2xl  rounded-3xl backdrop-invert z-10  "
                       }
                       src={props.img}
                       width={windowSize}

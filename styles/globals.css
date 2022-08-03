@@ -115,10 +115,9 @@ body {
   font-family: "Cabinet Grotesk", sans-serif;
   overscroll-behavior: none;
   overflow-x: hidden;
-  cursor: url(/star-cursor.svg), url(/star-cursor.png), default;
 }
 ::selection {
-  background: rgb(255, 255, 0);
+  background: #16dcde;
   backdrop-filter: invert(70%);
 }
 

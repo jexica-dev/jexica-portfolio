@@ -11,15 +11,13 @@ export default function Layout(props) {
 
   // const cursor = createRef();
 
-
   return (
     <>
       <Navbar />
       <AnimatedCursor
-        // ref={cursor}
-        innerSize={20}
+        innerSize={0}
         outerSize={25}
-        outerAlpha={0.2}
+        outerAlpha={0.75}
         innerScale={0.7}
         outerScale={2}
       />
