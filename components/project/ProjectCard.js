@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/dist/client/link";
 import Media from "react-media";
 import { useEffect, useState } from "react";
+import Marquee from "react-fast-marquee";
 
 function SafeHydrate({ children }) {
   return (
@@ -39,9 +40,28 @@ export default function ProjectCard(props) {
         style={{ fontSize: "3.75vw", lineHeight: "4vw" }}
         className="z-40 mix-blend-normal "
       >
-        {props.title}
+        <Marquee
+          style={{
+            textAlign: "center",
+            widows: "3vw",
+            padding: "0 0 1vw 0",
+          }}
+          direction="right"
+          className="overflow-hidden p-1 "
+          gradient={null}
+          speed={30}
+        >
+          {props.title} &nbsp;
+          {props.title} &nbsp;
+          {props.title} &nbsp;
+        </Marquee>
       </span>
-      <p style={{ paddingTop: "1vw", fontSize: "1.5vw" }}>{props.info}</p>
+      <p
+        className="border-black border-t w-full"
+        style={{ paddingTop: "1vw", fontSize: "1.5vw" }}
+      >
+        {props.info}
+      </p>
     </div>
   );
 
