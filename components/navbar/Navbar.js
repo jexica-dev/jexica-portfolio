@@ -17,8 +17,8 @@ function Navbar(props) {
   const [navOpen, setNavOpen] = useState(false);
 
   const arrow = "→  ";
-  const arrowColor = "text-red-600";
-  const navBgColor = "bg-yellow-300 font-whytemono font-bold";
+  const arrowColor = "text-red-600 ";
+  const navBgColor = "bg-yellow-300 font-whytemono ";
 
   const handleToggle = () => {
     setNavOpen(!navOpen);
@@ -105,26 +105,26 @@ function Navbar(props) {
             </>
           ) : (
             <div className="z-40">
-              <div className=" mix-blend-difference text-white  z-30 fixed nav-body flex justify-around grid-cols-5 whitespace-nowrap py-3 pr-14 w-full text-md font-[600] font-whytemono border-b">
+              <div className=" mix-blend-difference text-white  z-30 fixed nav-body flex justify-around grid-cols-5 whitespace-nowrap py-3 pr-14 w-full text-xs font-monument font-thin border-b">
                 <div className=" ">
-                  <span className="">{arrow} &nbsp;</span>
+                  <span className="text-base">{arrow} &nbsp;</span>
                   <Link className="" href="/">
                     About
                   </Link>
                 </div>
                 <div>
-                  <span>&nbsp;&nbsp; {arrow} &nbsp;</span>
+                  <span className="text-base">&nbsp;&nbsp; {arrow} &nbsp;</span>
                   <Link href="/work">Work</Link>
                 </div>
                 <div className="">
-                  <span>{arrow} &nbsp;</span>
+                  <span className="text-base">{arrow} &nbsp;</span>
 
                   <Link className="" href="mailto:jexica.ayran@gmail.com">
                     Contact
                   </Link>
                 </div>
                 <div className="">
-                  <span>{arrow} &nbsp;</span>
+                  <span className="text-base">{arrow} &nbsp;</span>
                   <Link className="" href="/JexicaAyran-Resume.pdf" passHref>
                     <a target="_blank">Resume</a>
                   </Link>
@@ -133,7 +133,7 @@ function Navbar(props) {
               </Link> */}
                 </div>
                 <div className="">
-                  <span>{arrow} &nbsp;</span>
+                  {/* <span className="text-base">{arrow} &nbsp;</span> */}
 
                   {/*             
               <Link className="" href="https://github.com/xicaz">

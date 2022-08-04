@@ -24,7 +24,9 @@
     "react-responsive-carousel": "^3.2.22",
     "react-spring": "^9.3.0",
     "react-use-measure": "^2.0.4",
-    "three": "^0.132.2"
+    "styled-components": "^5.3.5",
+    "three": "^0.132.2",
+    "zustand": "^4.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.7",

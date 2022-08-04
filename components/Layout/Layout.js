@@ -1,18 +1,18 @@
 import React, { createRef } from "react";
 import Navbar from "../navbar/Navbar";
 import styles from "../../styles/Layout.module.css";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 // import AnimatedCursor from "react-animated-cursor";
 
 export default function Layout(props) {
-  const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
-    ssr: false,
-  });
+  // const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
+  //   ssr: false,
+  // });
 
   return (
     <>
       <Navbar />
-      <AnimatedCursor
+      {/* <AnimatedCursor
         innerSize={17}
         outerSize={17}
         outerAlpha={0.75}
@@ -20,7 +20,7 @@ export default function Layout(props) {
         outerScale={2}
         trailingSpeed={13}
         color="255,0,0"
-      />
+      /> */}
       <div className={[styles.container + " absolute "]}>
         <div className="relative">{props.children}</div>
       </div>
