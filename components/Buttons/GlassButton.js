@@ -15,11 +15,11 @@ export default function GlassButton() {
           top: "25vh",
           left: "3vw",
           filter:
-            "hue-rotate(330deg) contrast(1.25) drop-shadow( .05vw .05vw 0.05vw red)",
+            "hue-rotate(330deg) contrast(1.25) drop-shadow( .05vw .05vw 0.05vw yellow)",
         }}
         className={
           onHover1
-            ? " opacity-50 absolute w-64 h-64 z-50 rounded-full "
+            ? " opacity-80 absolute w-64 h-64 z-50 rounded-full  mix-blend-multiply"
             : "opacity-0 absolute  hidden"
         }
       >
@@ -64,7 +64,7 @@ export default function GlassButton() {
                           className="overflow-hidden p-1 "
                           gradient={null}
                           speed={30}
-                          playOnHover
+                          pauseOnHover
                         >
                           projects
                         </Marquee>
@@ -97,11 +97,19 @@ export default function GlassButton() {
           }
           className="animate-fadein-03 flex mx-5 mb-10 p-10 top-0 left-0  relative w-96 h-fit rounded-3xl bg-cover bg-right-top bg-gradient06 "
         >
-          <div className="text-3xl tracking-wide text-left  text-black font-whytemono selection:bg-fuchsia-300 selection:text-fuchsia-900 ">
+          <div className="text-2xl tracking-wide text-left  text-black font-whytemono selection:bg-fuchsia-300 selection:text-fuchsia-900 ">
             Hello, <br className="mb-3" />
-            I’m a web developer specializing in React (MERN), Java, and product
-            to graphic design technologies. <br className="mb-3" />
-            Based in NYC + Open to remote work.
+            I’m Jexica Ayran, <br />a designer turned into web developer from
+            the SF Bay Area and now currently residing in NYC.
+            <p className="mt-3 text-xl">
+              <span className="text-yellow-300">&#10022;</span> California
+              College of the Arts (SF, CA):
+              <br /> Bachelor of Architecture, 2016.
+            </p>
+            <p className="mt-3 text-xl">
+              <span className="text-yellow-300">&#10022;</span> General
+              Assembly: Software Engineering Immersive, 2021.
+            </p>
           </div>
         </div>
       </div>

@@ -57,7 +57,7 @@ export default function ProjectCard(props) {
         </Marquee>
       </span>
       <p
-        className="border-black border-t w-full"
+        className="border-black border-t w-full p-3"
         style={{ paddingTop: "1vw", fontSize: "1.5vw" }}
       >
         {props.info}
@@ -114,7 +114,7 @@ export default function ProjectCard(props) {
                   <div
                     className={
                       onHover
-                        ? " text-left absolute bottom-0 left-0 w-full z-50 h-3/4"
+                        ? " text-left absolute bottom-0 left-0 w-full z-50 h-3/4 "
                         : " hide"
                     }
                   >
