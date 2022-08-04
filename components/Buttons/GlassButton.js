@@ -33,7 +33,7 @@ export default function GlassButton() {
         />
       </div>
       <div className="z-10 text-2xl pt-20  w-full flex flex-row flex-wrap justify-center ">
-        <div className="animate-fadein-03 flex flex-col mx-5 mb-10  top-0 left-0  relative w-96 h-fit  ">
+        <div className="animate-fadein-01 flex flex-col mx-5 mb-10  top-0 left-0  relative w-96 h-fit  ">
           <div
             onMouseEnter={() => setOnHover(true)}
             onMouseLeave={() => setOnHover(false)}
@@ -42,7 +42,7 @@ export default function GlassButton() {
             }
             className=" mb-10 rounded-3xl bg-cover bg-right-top bg-gradient04 px-10 pb-3 pt-10 text-3xl tracking-wide text-left  text-black font-whytemono selection:bg-fuchsia-300 selection:text-fuchsia-900 "
           >
-            <p className="   text-6xl font-whyteinktrap ">
+            <p className=" text-6xl font-whyteinktrap ">
               <span className="  mix-blend-overlay filter ">
                 Creative Developer
               </span>
@@ -95,18 +95,29 @@ export default function GlassButton() {
           style={
             onHover2 ? { filter: "drop-shadow( .45vw .45vw 0 black)" } : null
           }
-          className="animate-fadein-03 flex mx-5 mb-10 p-10 top-0 left-0  relative w-96 h-fit rounded-3xl bg-cover bg-right-top bg-gradient06 "
+          className="animate-fadein-02 flex mx-5 mb-10 p-10 top-0 left-0  relative w-96 h-fit rounded-3xl bg-cover bg-right-top bg-gradient06 "
         >
           <div className="text-2xl tracking-wide text-left  text-black font-whytemono selection:bg-fuchsia-300 selection:text-fuchsia-900 ">
             Hello, <br className="mb-3" />
-            I’m Jexica Ayran, <br />a designer turned into web developer from
-            the SF Bay Area and now currently residing in NYC.
-            <p className="mt-3 text-xl">
+            I’m{" "}
+            <span className=" font-whyteinktrap tracking-wider">
+              Jexica Ayran
+            </span>
+            , <br />a{" "}
+            <span className="font-social mix-blend-difference text-red-500 ">
+              designer
+            </span>{" "}
+            and{" "}
+            <span className=" mix-blend-difference text-red-400 ">
+              web developer
+            </span>{" "}
+            originally from the SF Bay Area and now currently residing in NYC.
+            <p className="mt-3 text-lg">
               <span className="text-yellow-300">&#10022;</span> California
               College of the Arts (SF, CA):
               <br /> Bachelor of Architecture, 2016.
             </p>
-            <p className="mt-3 text-xl">
+            <p className="mt-3 text-lg">
               <span className="text-yellow-300">&#10022;</span> General
               Assembly: Software Engineering Immersive, 2021.
             </p>

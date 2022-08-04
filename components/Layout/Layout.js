@@ -9,17 +9,17 @@ export default function Layout(props) {
     ssr: false,
   });
 
-  // const cursor = createRef();
-
   return (
     <>
       <Navbar />
       <AnimatedCursor
-        innerSize={0}
+        innerSize={5}
         outerSize={25}
         outerAlpha={0.75}
         innerScale={0.7}
         outerScale={2}
+        trailingSpeed={13}
+        color="255,0,0"
       />
       <div className={[styles.container + " absolute "]}>
         <div className="relative">{props.children}</div>
