@@ -43,7 +43,7 @@ function ProjectListPage() {
         >
           <ProjectCard
             title="digi-Altar"
-            info="web app for creating cyber art-shrine collages"
+            info="full-stack web app for creating cyber art-shrine collages, using RoR and React.js"
             lang="HTML, CSS, JavaScript, React, Tailwind CSS, Ruby on Rails"
             img="/digialtar.png"
             vid="/digialtar.mp4"
@@ -65,7 +65,7 @@ function ProjectListPage() {
 
           <ProjectCard
             title="g'JAM"
-            info="e-commerce website for buying and creating customizable jams. branding + graphics included."
+            info="e-commerce (MERN stack) website for creating, modifying, and purchasing customizable organic jams "
             lang="HTML, CSS, JavaScript, React, Bootstrap, Node. Express, MongoDB,
             Mongoose"
             img="/gjam.png"
@@ -90,8 +90,10 @@ function ProjectListPage() {
             title="Thyme"
             info={
               <>
-                web app for creating a bucket-task list on your own
-                <span className="italic"> thyme</span>
+                a React web app for creating a bucket/task list based on your
+                own
+                <span className="italic"> thyme</span> and collecting data
+                through Airtable's API
               </>
             }
             lang="HTML, CSS, JavaScript, React, Airtable "
@@ -111,7 +113,7 @@ function ProjectListPage() {
           </ProjectCard>
           <ProjectCard
             title="#36daysoftype_22"
-            info="web app designed for my personal project (audio-reactive visuals) and online event: #36daysoftype"
+            info="a React web app designed for a personal project (audio-reactive alphabet typography), participating in the online event: #36daysoftype"
             img="/36days.png"
             vid="/36days.mp4"
             alt="36days"
@@ -128,7 +130,7 @@ function ProjectListPage() {
           </ProjectCard>
           <ProjectCard
             title="Ghibli-Giphy Remix"
-            info="Ghibli film informational page, using Ghibli Studio API and GIPHY API"
+            info="Ghibli film informational (wiki) page abstractly layered with images and text collected and rendered through the Ghibli Studio and Giphy API"
             img="/giphy.png"
             vid="/giphy.mp4"
             alt="ghibli-giphy"
@@ -145,7 +147,7 @@ function ProjectListPage() {
           </ProjectCard>
           <ProjectCard
             title="Spirit Gif"
-            info="A simple form that shows giphy images input name."
+            info="giphy images of the user's name are expressively collaged, using the Giphy API"
             img="/spiritgif.png"
             vid="/spiritgif.mp4"
             alt="spiritgif"

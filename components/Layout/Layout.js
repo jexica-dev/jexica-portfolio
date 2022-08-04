@@ -13,8 +13,8 @@ export default function Layout(props) {
     <>
       <Navbar />
       <AnimatedCursor
-        innerSize={5}
-        outerSize={25}
+        innerSize={17}
+        outerSize={17}
         outerAlpha={0.75}
         innerScale={0.7}
         outerScale={2}

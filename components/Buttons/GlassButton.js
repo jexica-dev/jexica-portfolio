@@ -97,29 +97,29 @@ export default function GlassButton() {
           }
           className="animate-fadein-02 flex mx-5 mb-10 p-10 top-0 left-0  relative w-96 h-fit rounded-3xl bg-cover bg-right-top bg-gradient06 "
         >
-          <div className="text-2xl tracking-wide text-left  text-black font-whytemono selection:bg-fuchsia-300 selection:text-fuchsia-900 ">
+          <div className="text-xl tracking-wide text-left  text-black font-whytemono selection:bg-fuchsia-300 selection:text-fuchsia-900 ">
             Hello, <br className="mb-3" />
             I’m{" "}
             <span className=" font-whyteinktrap tracking-wider">
               Jexica Ayran
             </span>
             , <br />a{" "}
-            <span className="font-social mix-blend-difference text-red-500 ">
-              designer
-            </span>{" "}
-            and{" "}
-            <span className=" mix-blend-difference text-red-400 ">
-              web developer
-            </span>{" "}
+            <span className=" font-monument text-red-400 ">designer</span> and{" "}
+            <span className=" font-monument  text-red-400 ">
+              web developer{" "}
+            </span>
             originally from the SF Bay Area and now currently residing in NYC.
-            <p className="mt-3 text-lg">
+            <p className="mt-3 text-base">
               <span className="text-yellow-300">&#10022;</span> California
               College of the Arts (SF, CA):
               <br /> Bachelor of Architecture, 2016.
             </p>
-            <p className="mt-3 text-lg">
+            <p className="mt-3 text-base">
               <span className="text-yellow-300">&#10022;</span> General
               Assembly: Software Engineering Immersive, 2021.
+              <span className="mt-3 block">
+                * Available for freelance and remote work.
+              </span>
             </p>
           </div>
         </div>
