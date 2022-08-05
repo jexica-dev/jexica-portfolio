@@ -2,18 +2,18 @@
 import Navbar from "../../components/navbar/Navbar";
 import ProjectCard from "../../components/project/ProjectCard.js";
 import NextJsCarousel from "../../components/Carousel/index";
-import styles from "../../styles/Work.module.css";
 import { useRouter } from "next/dist/client/router";
 import { useState } from "react";
 import Layout from "../../components/Layout/Layout";
+import Modal from "../../components/Modal/Modal";
+import Image from "next/dist/client/image";
 
-function ProjectListPage() {
-  let router = useRouter();
-
+function ProjectListPage(props) {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState("");
   return (
     <>
       <Layout>
-        {/* <div className={[styles.container + " absolute "]}> */}
         <div>
           <div
             className={
@@ -41,7 +41,32 @@ function ProjectListPage() {
           className=" relative grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-black content-center pt-60"
           style={{ padding: "21vw 3vw 0" }}
         >
+          <div
+            onClick={() => {
+              setModalOpen(false);
+            }}
+            className={
+              !modalOpen
+                ? "hidden"
+                : "w-screen h-screen z-40 absolute top-0 left-0"
+            }
+          >
+            <div
+              className={
+                !modalOpen
+                  ? "hidden"
+                  : "" +
+                    " absolute grid place-content-center top-0 left-0 w-screen h-screen bg-trp border z-30"
+              }
+            >
+              <div className=" w-96 h-96 bg-black">
+                <Modal modalImage={modalImage} />
+              </div>
+            </div>
+          </div>
           <ProjectCard
+            setModalOpen={setModalOpen}
+            setModalImage={setModalImage}
             title="digi-Altar"
             info="full-stack web app for creating cyber art-shrine collages, using RoR and React.js"
             lang="HTML, CSS, JavaScript, React, Tailwind CSS, Ruby on Rails"
@@ -64,6 +89,8 @@ function ProjectListPage() {
           </ProjectCard>
 
           <ProjectCard
+            setModalOpen={setModalOpen}
+            setModalImage={setModalImage}
             title="g'JAM"
             info="e-commerce (MERN stack) website for creating, modifying, and purchasing customizable organic jams "
             lang="HTML, CSS, JavaScript, React, Bootstrap, Node. Express, MongoDB,
@@ -87,6 +114,8 @@ function ProjectListPage() {
             </p> */}
           </ProjectCard>
           <ProjectCard
+            setModalOpen={setModalOpen}
+            setModalImage={setModalImage}
             title="Thyme"
             info={
               <>
@@ -112,6 +141,8 @@ function ProjectListPage() {
             </p> */}
           </ProjectCard>
           <ProjectCard
+            setModalOpen={setModalOpen}
+            setModalImage={setModalImage}
             title="#36daysoftype_22"
             info="a React web app designed for a personal project (audio-reactive alphabet typography), participating in the online event: #36daysoftype"
             img="/36days.png"
@@ -129,6 +160,8 @@ function ProjectListPage() {
             </p> */}
           </ProjectCard>
           <ProjectCard
+            setModalOpen={setModalOpen}
+            setModalImage={setModalImage}
             title="Ghibli-Giphy Remix"
             info="Ghibli film informational (wiki) page abstractly layered with images and text collected and rendered through the Ghibli Studio and Giphy API"
             img="/giphy.png"
@@ -146,6 +179,8 @@ function ProjectListPage() {
             </p> */}
           </ProjectCard>
           <ProjectCard
+            setModalOpen={setModalOpen}
+            setModalImage={setModalImage}
             title="Spirit Gif"
             info="giphy images of the user's name are expressively collaged, using the Giphy API"
             img="/spiritgif.png"
