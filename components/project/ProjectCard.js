@@ -35,15 +35,15 @@ export default function ProjectCard(props) {
   let aspect = 438.45 / 790;
 
   const hoverText = (
-    <div className="font-whytemono text-black bg-yellow-300 p-3 h-full border  border-black ">
+    <div className=" font-whytemono text-black bg-yellow-300 p-3 h-full border  border-black ">
       <span
         style={{ fontSize: "3.75vw", lineHeight: "4vw" }}
-        className="z-40 mix-blend-normal "
+        className="z-30 mix-blend-normal "
       >
         <button
           onClick={() => {
             props.setModalOpen(true);
-            props.setModalImage(props.img);
+            props.setModalImage(props.vid);
           }}
         >
           <Marquee
@@ -122,7 +122,7 @@ export default function ProjectCard(props) {
                   <div
                     className={
                       onHover
-                        ? " text-left absolute bottom-0 left-0 w-full z-50 h-3/4 "
+                        ? " text-left absolute bottom-0 left-0 w-full z-40 h-3/4 "
                         : " hide"
                     }
                   >

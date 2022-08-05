@@ -10,7 +10,7 @@ import Image from "next/dist/client/image";
 
 function ProjectListPage(props) {
   const [modalOpen, setModalOpen] = useState(false);
-  const [modalImage, setModalImage] = useState("");
+  const [modalImage, setModalImage] = useState("/digialtar.mp4");
   return (
     <>
       <Layout>
@@ -38,32 +38,48 @@ function ProjectListPage(props) {
         </div>
 
         <div
-          className=" relative grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-black content-center pt-60"
-          style={{ padding: "21vw 3vw 0" }}
+          style={{ zIndex: "100" }}
+          onClick={() => {
+            setModalOpen(false);
+          }}
+          className={
+            !modalOpen
+              ? "hidden w-screen h-screen fixed"
+              : "w-screen h-screen fixed   "
+          }
         >
           <div
+            style={{ zIndex: "50" }}
             onClick={() => {
               setModalOpen(false);
             }}
             className={
               !modalOpen
-                ? "hidden"
-                : "w-screen h-screen z-40 absolute top-0 left-0"
+                ? "hidden w-screen h-screen fixed"
+                : "w-screen h-screen fixed  bg-black opacity-70"
             }
           >
-            <div
-              className={
-                !modalOpen
-                  ? "hidden"
-                  : "" +
-                    " absolute grid place-content-center top-0 left-0 w-screen h-screen bg-trp border z-30"
-              }
-            >
-              <div className=" w-96 h-96 bg-black">
-                <Modal modalImage={modalImage} />
-              </div>
+            test
+          </div>
+          <div
+            style={{ top: "15vh", display: "flex" }}
+            className={
+              !modalOpen
+                ? "hidden"
+                : "" +
+                  " fixed  w-screen h-screen bg-trp z-50 grid grid-cols-1 place-content-center"
+            }
+          >
+            <div className="fixed  w-140 h-140 bg-white ">
+              <Modal modalImage={modalImage} />
             </div>
           </div>
+        </div>
+
+        <div
+          className=" relative grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-black content-center pt-60"
+          style={{ padding: "21vw 3vw 0" }}
+        >
           <ProjectCard
             setModalOpen={setModalOpen}
             setModalImage={setModalImage}
