@@ -4,7 +4,7 @@ import React from "react";
 export default function Modal(props) {
   return (
     <div className="p-5 overflow-y-scroll">
-      <p className=" text-left font-whyteinktrap lg:text-7xl"> Project</p>
+      <p className=" text-left font-whyteinktrap lg:text-3xl"> Project</p>
 
       <p className=" pl-3 py-2 text-left font-monument lg:text-sm">
         {" "}
@@ -24,9 +24,9 @@ export default function Modal(props) {
         </video>
       </div>
       <div className=" font-whytemono text-left flex flex-row justify-around w-1/2">
-        <label className="">Deployed</label>
+        <label className="">Online</label>
         <label className="">Github</label>
-        {/* <label className="">Figma</label> */}
+        <label className="">Figma</label>
       </div>
       <p className="pt-2 text-sm text-left font-monument">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

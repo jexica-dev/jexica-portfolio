@@ -50,19 +50,16 @@ function ProjectListPage(props) {
         >
           <div
             style={{ zIndex: "50" }}
-            onClick={() => {
-              setModalOpen(false);
-            }}
             className={
               !modalOpen
                 ? "hidden w-screen h-screen fixed"
-                : "w-screen h-screen fixed  bg-black opacity-70"
+                : "w-screen h-screen fixed  mix-blend-exclusion bg-black opacity-80"
             }
           >
             test
           </div>
           <div
-            style={{ top: "15vh", display: "flex" }}
+            style={{ top: "10vh", display: "flex" }}
             className={
               !modalOpen
                 ? "hidden"
@@ -70,7 +67,7 @@ function ProjectListPage(props) {
                   " fixed  w-screen h-screen bg-trp z-50 grid grid-cols-1 place-content-center"
             }
           >
-            <div className="fixed  w-140 h-140 bg-white ">
+            <div className="fixed  w-150  h-fit bg-white ">
               <Modal modalImage={modalImage} />
             </div>
           </div>

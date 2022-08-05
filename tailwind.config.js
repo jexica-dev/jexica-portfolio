@@ -26,6 +26,7 @@ module.exports = {
         128: "32rem",
         132: "34rem",
         140: "40rem",
+        150: "50rem",
         180: "90rem",
         container: "1700px",
       },
