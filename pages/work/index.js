@@ -10,7 +10,16 @@ import Image from "next/dist/client/image";
 
 function ProjectListPage(props) {
   const [modalOpen, setModalOpen] = useState(false);
-  const [modalImage, setModalImage] = useState("/digialtar.mp4");
+  const [modalData, setModalData] = useState({
+    img: "/thyme.png",
+    vid: "/thyme.mp4",
+    date: "",
+    lang: "",
+    body: "",
+    github: "",
+    figma: "",
+    site: "",
+  });
   return (
     <>
       <Layout>
@@ -53,7 +62,7 @@ function ProjectListPage(props) {
             className={
               !modalOpen
                 ? "hidden w-screen h-screen fixed"
-                : "w-screen h-screen fixed  mix-blend-exclusion bg-black opacity-80"
+                : "w-screen h-screen fixed  mix-blend-exclusion bg-black opacity-80 filter blur-3xl"
             }
           >
             test
@@ -63,12 +72,11 @@ function ProjectListPage(props) {
             className={
               !modalOpen
                 ? "hidden"
-                : "" +
-                  " fixed  w-screen h-screen bg-trp z-50 grid grid-cols-1 place-content-center"
+                : " fixed  w-screen h-screen bg-trp z-50 grid grid-cols-1 place-content-center"
             }
           >
-            <div className="fixed  w-150  h-fit bg-white ">
-              <Modal modalImage={modalImage} />
+            <div className="fixed  w-140  h-fit bg-white ">
+              <Modal modalData={modalData} />
             </div>
           </div>
         </div>
@@ -79,57 +87,45 @@ function ProjectListPage(props) {
         >
           <ProjectCard
             setModalOpen={setModalOpen}
-            setModalImage={setModalImage}
+            setModalData={setModalData}
+            lang="HTML, CSS, JavaScript, React, Tailwind CSS, Ruby on Rails."
             title="digi-Altar"
+            date="10-2021"
             info="full-stack web app for creating cyber art-shrine collages, using RoR and React.js"
-            lang="HTML, CSS, JavaScript, React, Tailwind CSS, Ruby on Rails"
+            body="digi-Altar is a cyber spiritual space, where you can create, share, and inspire your own altar using a hybrid mix of relics and artifacts. Images may link to actual objects that you may purchase and add to your own physical sanctuary."
             img="/digialtar.png"
             vid="/digialtar.mp4"
             alt="digialtar"
-            deployed="https://digialtar.netlify.app/"
+            site="https://digialtar.netlify.app/"
             github="https://github.com/xicaz/digiAltar"
             figma="https://www.figma.com/file/hO2KgFUbFCceqaOceDhOv0/digi-Altar?node-id=0%3A1"
-          >
-            {/* <span className="font-medium text-sm tracking-wide block text-left mb-2">
-              HTML, CSS, JavaScript, React, Tailwind CSS, Ruby on Rails.
-            </span>
-            <p className="font-light text-sm">
-              digi-Altar is a cyber spiritual space, where you can create,
-              share, and inspire your own altar using a hybrid mix of relics and
-              artifacts. Images may link to actual objects that you may purchase
-              and add to your own physical sanctuary.
-            </p> */}
-          </ProjectCard>
+          />
 
           <ProjectCard
             setModalOpen={setModalOpen}
-            setModalImage={setModalImage}
+            setModalData={setModalData}
+            date="09-2021"
             title="g'JAM"
-            info="e-commerce (MERN stack) website for creating, modifying, and purchasing customizable organic jams "
+            info="e-commerce (MERN stack) website for creating, modifying, and purchasing customizable organic jams"
             lang="HTML, CSS, JavaScript, React, Bootstrap, Node. Express, MongoDB,
             Mongoose"
+            body="g’JAM is an eCommerce shop that sells customizable sweet and
+            spicy, freshly-made jams, using a unique variety of ingredients.
+            Users, after creating an account and signing in, are able to buy
+            (shopping cart), create, and edit jams."
             img="/gjam.png"
             vid="/gjam.mp4"
             alt="gjam"
-            deployed="https://gjam.netlify.app/"
+            site="https://gjam.netlify.app/"
             github="https://github.com/xicaz/gjam-app"
             figma="https://www.figma.com/file/RpJb5JPqRSrHZgfHFav8Sr/GJAM-team-library?node-id=314%3A2"
-          >
-            {/* <span className="font-medium text-sm tracking-wide block text-left mb-2">
-              HTML, CSS, JavaScript, React, Bootstrap, Node. Express, MongoDB,
-              Mongoose.
-            </span>
-            <p className="font-light text-sm">
-              g’JAM is an eCommerce shop that sells customizable sweet and
-              spicy, freshly-made jams, using a unique variety of ingredients.
-              Users, after creating an account and signing in, are able to buy
-              (shopping cart), create, and edit jams.
-            </p> */}
-          </ProjectCard>
+          />
+
           <ProjectCard
             setModalOpen={setModalOpen}
-            setModalImage={setModalImage}
+            setModalData={setModalData}
             title="Thyme"
+            date="09-2021"
             info={
               <>
                 a React web app for creating a bucket/task list based on your
@@ -138,78 +134,56 @@ function ProjectListPage(props) {
                 through Airtable's API
               </>
             }
-            lang="HTML, CSS, JavaScript, React, Airtable "
+            lang="HTML, CSS, JavaScript, React, Airtable"
+            body="Thyme is a modern and simple tasklist, with a leaf-branching
+            system, for goal-setting or bucket lists."
             img="/thyme.png"
             vid="/thyme.mp4"
             alt="thyme"
-            deployed="https://thyme-app.netlify.app/"
+            site="https://thyme-app.netlify.app/"
             github="https://github.com/xicaz/Thyme"
-          >
-            {/* <span className="font-medium text-sm tracking-wide block text-left mb-2">
-              HTML, CSS, JavaScript, React. Airtable.
-            </span>
-            <p className="font-light text-sm">
-              Thyme is a modern and simple tasklist, with a leaf-branching
-              system, for goal-setting or bucket lists.
-            </p> */}
-          </ProjectCard>
+          />
+
           <ProjectCard
             setModalOpen={setModalOpen}
-            setModalImage={setModalImage}
+            setModalData={setModalData}
+            date="06-2022"
             title="#36daysoftype_22"
             info="a React web app designed for a personal project (audio-reactive alphabet typography), participating in the online event: #36daysoftype"
             img="/36days.png"
             vid="/36days.mp4"
             alt="36days"
-            deployed="https://thyme-app.netlify.app/"
-            github="https://github.com/xicaz/Thyme"
-          >
-            {/* <span className="font-medium text-sm tracking-wide block text-left mb-2">
-              HTML, CSS, JavaScript, React. Airtable.
-            </span>
-            <p className="font-light text-sm">
-              Thyme is a modern and simple tasklist, with a leaf-branching
-              system, for goal-setting or bucket lists.
-            </p> */}
-          </ProjectCard>
+            site="36daysoftype.jexica.design/"
+            github="https://github.com/xicaz/36days_2022"
+          />
+
           <ProjectCard
             setModalOpen={setModalOpen}
-            setModalImage={setModalImage}
+            setModalData={setModalData}
+            date="07-2022"
             title="Ghibli-Giphy Remix"
             info="Ghibli film informational (wiki) page abstractly layered with images and text collected and rendered through the Ghibli Studio and Giphy API"
+            data="Ghibli film informational (wiki) page abstractly layered with images and text collected and rendered through the Ghibli Studio and Giphy API"
             img="/giphy.png"
             vid="/giphy.mp4"
             alt="ghibli-giphy"
-            deployed="https://spiritgif.surge.sh/"
+            site="https://spiritgif.surge.sh/"
             github="https://github.com/xicaz/Spirit-GIF"
-          >
-            {/* <span className="font-medium text-sm tracking-wide block text-left mb-2">
-              HTML, CSS, JavaScript. Giphy API.
-            </span>
-            <p className="font-light text-sm">
-              Spiritgif is name search bar that'll create a collage of gif
-              sitckers, using the Giphy API.
-            </p> */}
-          </ProjectCard>
+          />
+
           <ProjectCard
             setModalOpen={setModalOpen}
-            setModalImage={setModalImage}
+            setModalData={setModalData}
+            date="06-2021"
             title="Spirit Gif"
             info="giphy images of the user's name are expressively collaged, using the Giphy API"
+            data="giphy images of the user's name are expressively collaged, using the Giphy API"
             img="/spiritgif.png"
             vid="/spiritgif.mp4"
             alt="spiritgif"
-            deployed="https://spiritgif.surge.sh/"
+            site="https://spiritgif.surge.sh/"
             github="https://github.com/xicaz/Spirit-GIF"
-          >
-            {/* <span className="font-medium text-sm tracking-wide block text-left mb-2">
-              HTML, CSS, JavaScript. Giphy API.
-            </span>
-            <p className="font-light text-sm">
-              Spiritgif is name search bar that'll create a collage of gif
-              sitckers, using the Giphy API.
-            </p> */}
-          </ProjectCard>
+          ></ProjectCard>
 
           {/* WORKSAMPLE */}
           {/* <NextJsCarousel /> */}

@@ -43,7 +43,24 @@ export default function ProjectCard(props) {
         <button
           onClick={() => {
             props.setModalOpen(true);
-            props.setModalImage(props.vid);
+            props.setModalData({
+              image: props.img,
+              video: props.vid,
+              date: props.date,
+              info: props.info,
+              site: props.site,
+              github: props.github,
+              figma: props.figma,
+            });
+            // props.setModalData(props.img);
+
+            // image: "/thyme.png",
+            // video: "/thyme.mp4",
+            // date: "",
+            // info: "",
+            // github: "",
+            // figma: "",
+            // site: "",
           }}
         >
           <Marquee
@@ -142,7 +159,7 @@ export default function ProjectCard(props) {
                       layout="responsive"
                     />
 
-                    {/* <div className=" animate-fadein   absolute z-0 top-0 left-0 bg-gradient-to-r from-indigo-700 via-red-500 w-full h-full object-center "></div> */}
+                    {/* <div className=" animate-fadein absolute z-0 top-0 left-0 bg-gradient-to-r from-indigo-700 via-red-500 w-full h-full object-center "></div> */}
                   </div>
                 </div>
                 {/* <video
@@ -155,14 +172,6 @@ export default function ProjectCard(props) {
                     <source src={props.vid} type="video/mp4" />
                   </video> */}
               </div>
-
-              {/* <div className="flex flex-col" style={{ width: "750px" }}>
-                <div className="w-full">
-                  <p className="text-white w-full text-left ">
-                    {props.children}
-                  </p>
-                </div>
-              </div> */}
             </>
           );
         }}
@@ -170,19 +179,3 @@ export default function ProjectCard(props) {
     </SafeHydrate>
   );
 }
-
-//  <p className=" z-10 bottom-0 flex flex-row w-full align-center text-xl">
-//               <Link className="" href={props.deployed}>
-//                   Live Demo
-//                 </Link>
-//                 &nbsp;
-//                 <Link className="github" href={props.github}>
-//                   Github
-//                 </Link>
-//                 &nbsp;
-//                 {props.figma ? (
-//                   <Link className="figma" href={props.figma}>
-//                     Figma
-//                   </Link>
-//               ) : null}
-//             </p>
