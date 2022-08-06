@@ -44,8 +44,11 @@ export default function ProjectCard(props) {
           onClick={() => {
             props.setModalOpen(true);
             props.setModalData({
-              image: props.img,
-              video: props.vid,
+              title: props.title,
+              img: props.img,
+              video: props.video,
+              lang: props.lang,
+              body: props.body,
               date: props.date,
               info: props.info,
               site: props.site,

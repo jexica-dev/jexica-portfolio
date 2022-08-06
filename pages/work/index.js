@@ -11,8 +11,9 @@ import Image from "next/dist/client/image";
 function ProjectListPage(props) {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalData, setModalData] = useState({
+    title: "",
     img: "/thyme.png",
-    vid: "/thyme.mp4",
+    video: "/thyme.mp4",
     date: "",
     lang: "",
     body: "",
@@ -20,6 +21,7 @@ function ProjectListPage(props) {
     figma: "",
     site: "",
   });
+
   return (
     <>
       <Layout>
@@ -88,13 +90,13 @@ function ProjectListPage(props) {
           <ProjectCard
             setModalOpen={setModalOpen}
             setModalData={setModalData}
-            lang="HTML, CSS, JavaScript, React, Tailwind CSS, Ruby on Rails."
+            lang="HTML, CSS, JavaScript, React, Tailwind CSS, Ruby on Rails"
             title="digi-Altar"
             date="10-2021"
             info="full-stack web app for creating cyber art-shrine collages, using RoR and React.js"
             body="digi-Altar is a cyber spiritual space, where you can create, share, and inspire your own altar using a hybrid mix of relics and artifacts. Images may link to actual objects that you may purchase and add to your own physical sanctuary."
             img="/digialtar.png"
-            vid="/digialtar.mp4"
+            video="/digialtar.mp4"
             alt="digialtar"
             site="https://digialtar.netlify.app/"
             github="https://github.com/xicaz/digiAltar"
@@ -114,7 +116,7 @@ function ProjectListPage(props) {
             Users, after creating an account and signing in, are able to buy
             (shopping cart), create, and edit jams."
             img="/gjam.png"
-            vid="/gjam.mp4"
+            video="/gjam.mp4"
             alt="gjam"
             site="https://gjam.netlify.app/"
             github="https://github.com/xicaz/gjam-app"
@@ -138,7 +140,7 @@ function ProjectListPage(props) {
             body="Thyme is a modern and simple tasklist, with a leaf-branching
             system, for goal-setting or bucket lists."
             img="/thyme.png"
-            vid="/thyme.mp4"
+            video="/thyme.mp4"
             alt="thyme"
             site="https://thyme-app.netlify.app/"
             github="https://github.com/xicaz/Thyme"
@@ -149,9 +151,11 @@ function ProjectListPage(props) {
             setModalData={setModalData}
             date="06-2022"
             title="#36daysoftype_22"
+            lang="HTML, CSS, Javascript, React, Touchdesigner "
             info="a React web app designed for a personal project (audio-reactive alphabet typography), participating in the online event: #36daysoftype"
+            body="a React web app designed for a personal project (audio-reactive alphabet typography), participating in the online event: #36daysoftype"
             img="/36days.png"
-            vid="/36days.mp4"
+            video="/36days.mp4"
             alt="36days"
             site="36daysoftype.jexica.design/"
             github="https://github.com/xicaz/36days_2022"
@@ -162,10 +166,11 @@ function ProjectListPage(props) {
             setModalData={setModalData}
             date="07-2022"
             title="Ghibli-Giphy Remix"
+            lang="HTML, CSS, Javascript"
             info="Ghibli film informational (wiki) page abstractly layered with images and text collected and rendered through the Ghibli Studio and Giphy API"
-            data="Ghibli film informational (wiki) page abstractly layered with images and text collected and rendered through the Ghibli Studio and Giphy API"
+            body="Ghibli film informational (wiki) page abstractly layered with images and text collected and rendered through the Ghibli Studio and Giphy API"
             img="/giphy.png"
-            vid="/giphy.mp4"
+            video="/giphy.mp4"
             alt="ghibli-giphy"
             site="https://spiritgif.surge.sh/"
             github="https://github.com/xicaz/Spirit-GIF"
@@ -177,9 +182,9 @@ function ProjectListPage(props) {
             date="06-2021"
             title="Spirit Gif"
             info="giphy images of the user's name are expressively collaged, using the Giphy API"
-            data="giphy images of the user's name are expressively collaged, using the Giphy API"
+            body="giphy images of the user's name are expressively collaged, using the Giphy API"
             img="/spiritgif.png"
-            vid="/spiritgif.mp4"
+            video="/spiritgif.mp4"
             alt="spiritgif"
             site="https://spiritgif.surge.sh/"
             github="https://github.com/xicaz/Spirit-GIF"
