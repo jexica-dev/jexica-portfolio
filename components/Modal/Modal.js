@@ -42,22 +42,3 @@ export default function Modal(props) {
     </div>
   );
 }
-
-{
-  /* <div className="">
-<Image
-  className={"absolute z-10"}
-  src={props.modalData.img}
-  width={500}
-  height={250}
-  alt={"image"}
-  layout="responsive"
-/>
-</div> */
-}
-
-{
-  /* <video className="" width="500px" height="250px" autoPlay loop controls>
-  <source src={props.modalData.video} type="video/mp4" />
-</video> */
-}

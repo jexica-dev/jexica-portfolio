@@ -1,14 +1,14 @@
 import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
 import { useEffect, useState } from "react";
-import LoadingScreen from "../components/LoadingScreen/LoadingScreen";
+// import LoadingScreen from "../components/LoadingScreen/LoadingScreen";
 
 export default function MyApp({ Component, pageProps }) {
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => setLoading(true), 1000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => setLoading(true), 1000);
+  // }, []);
 
   return (
     <>

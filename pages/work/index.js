@@ -88,7 +88,7 @@ function ProjectListPage(props) {
           <ProjectCard
             setModalOpen={setModalOpen}
             setModalData={setModalData}
-            lang="HTML, CSS, JavaScript, React, Tailwind CSS, Ruby on Rails"
+            lang="HTML, CSS, JavaScript, ReactJS, Tailwind CSS, Ruby, Ruby on Rails"
             title="digi-Altar"
             date="10-2021"
             info="full-stack web app for creating cyber art-shrine collages, using RoR and React.js"
@@ -107,7 +107,7 @@ function ProjectListPage(props) {
             date="09-2021"
             title="g'JAM"
             info="e-commerce (MERN stack) website for creating, modifying, and purchasing customizable organic jams"
-            lang="HTML, CSS, JavaScript, React, Bootstrap, Node. Express, MongoDB,
+            lang="HTML, CSS, JavaScript, ReactJS, Bootstrap, Node. Express, MongoDB,
             Mongoose"
             body="g’JAM is an eCommerce shop that sells customizable freshly-made jams, with music themed names and an endless list of savory, spicy, and sweet ingredients. Users, after creating an account and signing in, are able to buy (shopping cart), create, and edit jams."
             img="/gjam.png"
@@ -131,7 +131,7 @@ function ProjectListPage(props) {
                 through Airtable's API
               </>
             }
-            lang="HTML, CSS, JavaScript, React, Airtable"
+            lang="HTML, CSS, JavaScript, ReactJS, Airtable"
             body="Thyme is a modern and simple tasklist, with a leaf-branching
             system, for goal-setting or bucket lists. Airtable (backend) is collecting the tasks that submitted from the form, while React (frontend) is rendering the data and the single-page app. "
             img="/thyme.png"
@@ -146,7 +146,7 @@ function ProjectListPage(props) {
             setModalData={setModalData}
             date="06-2022"
             title="#36daysoftype_22"
-            lang="HTML, CSS, Javascript, React, Touchdesigner "
+            lang="HTML, CSS, Javascript, ReactJS, Touchdesigner"
             info="a React web app designed for a personal project (audio-reactive alphabet typography), participating in the online event: #36daysoftype"
             body="a React web app designed for a personal project (audio-reactive alphabet typography), participating in the online event: #36daysoftype. Touchdesigner, a node and code based software, specializes in creative programming and is reflective of the work I would love to be a part of."
             img="/36days.png"
@@ -159,16 +159,31 @@ function ProjectListPage(props) {
           <ProjectCard
             setModalOpen={setModalOpen}
             setModalData={setModalData}
-            date="03-2022"
-            title="Ghibli-Giphy Remix"
-            lang="HTML, CSS, Javascript"
-            info="Ghibli film informational (wiki) page abstractly layered with images and text collected and rendered through the Ghibli Studio and Giphy API"
-            body="A drop-down menu holding a list of Ghibli films offers an informational (wiki) page abstractly layered with gif images and text. Data is collected and rendered through the Ghibli Studio and Giphy API."
-            img="/giphy.png"
-            video="/giphy.mp4"
-            alt="ghibli-giphy"
-            site="https://spiritgif.surge.sh/"
-            github="https://github.com/xicaz/Spirit-GIF"
+            date="07-2022"
+            title="HaluPaleta"
+            lang="HTML, CSS, JavaScript, React, Tailwind CSS"
+            info="An experimental eCommerce website that sells customizable paletas (Mexico) and haluhalu (Phillipines)."
+            body="An experimental eCommerce website that sells customizable paletas (Mexico) and haluhalu (Phillipines)."
+            img="/halupaleta.png"
+            video="/halupaleta.mov"
+            alt="halupaleta"
+            site="https://halupaleta.jexica.design/"
+            github="https://github.com/xicaz/halu-paleta"
+          />
+
+          <ProjectCard
+            setModalOpen={setModalOpen}
+            setModalData={setModalData}
+            date="10-2022"
+            title="MemoAR"
+            lang="Javascript, A-Frame"
+            info={`A poetic AR experience that redefines traditional monuments as "memos" with playful sculptures and written notes on any Lightship VPS-enabled wayspot anchor.`}
+            body={`A poetic AR experience that redefines traditional monuments as "memos" with playful sculptures and written notes on any Lightship VPS-enabled wayspot anchor.`}
+            img="/memoar.png"
+            video="/memoar.mp4"
+            alt="MemoAR"
+            site="https://memoarr.jexica.design/"
+            github="https://interactiveknowledge.8thwall.app/vps-bespoke"
           />
 
           <ProjectCard
@@ -183,7 +198,21 @@ function ProjectListPage(props) {
             alt="spiritgif"
             site="https://spiritgif.surge.sh/"
             github="https://github.com/xicaz/Spirit-GIF"
-          ></ProjectCard>
+          />
+          <ProjectCard
+            setModalOpen={setModalOpen}
+            setModalData={setModalData}
+            date="03-2022"
+            title="Ghibli-Giphy Remix"
+            lang="HTML, CSS, Javascript"
+            info="Ghibli film informational (wiki) page abstractly layered with images and text collected and rendered through the Ghibli Studio and Giphy API"
+            body="A drop-down menu holding a list of Ghibli films offers an informational (wiki) page abstractly layered with gif images and text. Data is collected and rendered through the Ghibli Studio and Giphy API."
+            img="/giphy.png"
+            video="/giphy.mp4"
+            alt="ghibli-giphy"
+            site="https://spiritgif.surge.sh/"
+            github="https://github.com/xicaz/Spirit-GIF"
+          />
 
           {/* WORKSAMPLE */}
           {/* <NextJsCarousel /> */}

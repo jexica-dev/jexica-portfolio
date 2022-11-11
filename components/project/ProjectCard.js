@@ -55,15 +55,6 @@ export default function ProjectCard(props) {
               github: props.github,
               figma: props.figma,
             });
-            // props.setModalData(props.img);
-
-            // image: "/thyme.png",
-            // video: "/thyme.mp4",
-            // date: "",
-            // info: "",
-            // github: "",
-            // figma: "",
-            // site: "",
           }}
         >
           <Marquee
@@ -118,7 +109,11 @@ export default function ProjectCard(props) {
                   layout="responsive"
                 />
               </div>
-              <p></p>
+              <div>
+                <header> {props.title}</header>
+                <text>{props.info}</text>
+                
+              </div>
               <>
                 <p className=" z-10 bottom-0 flex flex-row w-full align-center text-left text-xl">
                   <div></div>
