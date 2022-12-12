@@ -96,7 +96,7 @@ function ProjectListPage(props) {
             img="/digialtar.png"
             video="/digialtar.mp4"
             alt="digialtar"
-            site="https://digialtar.netlify.app/"
+            site="https://digialtar.jexica.design"
             github="https://github.com/xicaz/digiAltar"
             figma="https://www.figma.com/file/hO2KgFUbFCceqaOceDhOv0/digi-Altar?node-id=0%3A1"
           />
@@ -137,7 +137,7 @@ function ProjectListPage(props) {
             img="/thyme.png"
             video="/thyme.mp4"
             alt="thyme"
-            site="https://thyme-app.netlify.app/"
+            site="https://thyme.jexica.design"
             github="https://github.com/xicaz/Thyme"
           />
 
@@ -182,7 +182,7 @@ function ProjectListPage(props) {
             img="/memoar.png"
             video="/memoar.mp4"
             alt="MemoAR"
-            site="https://memoarr.jexica.design/"
+            site="https://memoar.jexica.design/"
             github="https://interactiveknowledge.8thwall.app/vps-bespoke"
           />
 
@@ -199,6 +199,7 @@ function ProjectListPage(props) {
             site="https://spiritgif.surge.sh/"
             github="https://github.com/xicaz/Spirit-GIF"
           />
+
           <ProjectCard
             setModalOpen={setModalOpen}
             setModalData={setModalData}
