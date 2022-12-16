@@ -111,9 +111,9 @@ function ProjectListPage(props) {
             Mongoose"
             body="g’JAM is an eCommerce shop that sells customizable freshly-made jams, with music themed names and an endless list of savory, spicy, and sweet ingredients. Users, after creating an account and signing in, are able to buy (shopping cart), create, and edit jams."
             img="/gjam.png"
-            video="/gjam.mp4"
+            video="/gjam.mov"
             alt="gjam"
-            site="https://gjam.netlify.app/"
+            site="https://gjam.jexica.design"
             github="https://github.com/xicaz/gjam-app"
             figma="https://www.figma.com/file/RpJb5JPqRSrHZgfHFav8Sr/GJAM-team-library?node-id=314%3A2"
           />
@@ -152,7 +152,7 @@ function ProjectListPage(props) {
             img="/36days.png"
             video="/36days.mp4"
             alt="36days"
-            site="https://36daysoftype.jexica.design/"
+            site="https://36days.jexica.design/"
             github="https://github.com/xicaz/36days_2022"
           />
 

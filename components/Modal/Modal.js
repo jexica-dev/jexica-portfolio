@@ -14,7 +14,7 @@ export default function Modal(props) {
       </p>
 
       <div className="">
-        <video className="" width="100%" height="auto" autoPlay loop>
+        <video className="" width="100%" height="auto" autoPlay loop muted>
           <source src={props.modalData.video} type="video/mp4" />
         </video>
       </div>
