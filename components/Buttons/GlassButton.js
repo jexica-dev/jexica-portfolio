@@ -9,8 +9,9 @@ export default function GlassButton() {
   const [onHover2, setOnHover2] = useState(false);
   const arrow = "→  ";
   return (
-    <div className="w-screen relative ">
-      <div
+    <div className=" ">
+      {/*  */}
+      {/* <div
         style={{
           top: "25vh",
           left: "3vw",
@@ -31,16 +32,36 @@ export default function GlassButton() {
           alt="jexica"
           layout="responsive"
         />
-      </div>
-      <div className="z-10 text-2xl pt-20  w-full flex flex-row flex-wrap justify-center ">
-        <div className="animate-fadein-02 flex flex-col mx-5 mb-10  top-0 left-0  relative w-96 h-fit  ">
+      </div> */}
+
+      {/*  */}
+      <div className=" grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-3  place-items-center w-full h-full px-24 pt-20 pb-14">
+        {/*  */}
+
+        <div className="grid grid-cols-1 gap-3  h-full place-self-end ">
+          {/*  */}
+          <div className="z-10 text-2xl  w-96  ">
+            <div
+              onMouseEnter={() => setOnHover1(true)}
+              onMouseLeave={() => setOnHover1(false)}
+              // style={
+              //   onHover1 ? { filter: "drop-shadow( .45vw .45vw 0 black)" } : null
+              // }
+              className=" w-full animate-fadein-02 text-right py-10 px-30   mix-blend-overlay flex justify-around rounded-3xl bg-cover bg-left-top bg-gradient01 "
+            >
+              <p className=" text-black pr-5  mix-blend-overlay  tracking-wide text-8xl leading-15  font-magtis  ">
+                jexica ayran
+              </p>
+            </div>
+          </div>
+          {/*  */}
           <div
             onMouseEnter={() => setOnHover(true)}
             onMouseLeave={() => setOnHover(false)}
-            style={
-              onHover ? { filter: "drop-shadow( .45vw .45vw 0 black)" } : null
-            }
-            className=" mb-10 rounded-3xl bg-cover bg-right-top bg-gradient04 hover:text-indigo-700 px-10 pb-3 pt-10 text-3xl tracking-wide text-left  text-black font-whytemono  "
+            // style={
+            //   onHover ? { filter: "drop-shadow( .45vw .45vw 0 black)" } : null
+            // }
+            className=" w-96 rounded-3xl bg-cover bg-right-top bg-gradient04 hover:text-indigo-700 px-10 pb-3 pt-10 text-3xl tracking-wide text-left  text-black font-whytemono  "
           >
             <p className=" text-6xl font-whyteinktrap ">
               <span className="  mix-blend-overlay filter ">
@@ -50,7 +71,7 @@ export default function GlassButton() {
                 <div className=" text-3xl pr-5 pt-3 animate-bounce-slow text-yellow-300 ">
                   {arrow}
                 </div>
-                <p className=" mt-1 w-48 z-40 flex justify-around  text-white rounded-full py-1 px-7 whitespace-nowrap font-bold tracking-wide bg-trp border  text-2xl font-whytemono  border-black">
+                <p className=" mt-1 z-40 flex justify-around  text-white rounded-full py-1 px-7 whitespace-nowrap font-bold tracking-wide bg-trp border  text-2xl font-whytemono  border-black">
                   <div
                     className=" w-44"
                     onMouseEnter={() => setOnHover(true)}
@@ -75,27 +96,20 @@ export default function GlassButton() {
               </div>
             </p>
           </div>
-          <div
-            onMouseEnter={() => setOnHover1(true)}
-            onMouseLeave={() => setOnHover1(false)}
-            style={
-              onHover1 ? { filter: "drop-shadow( .45vw .45vw 0 black)" } : null
-            }
-            className="  animate-fadein-02 text-right py-10 px-30 w-96  flex justify-around rounded-3xl bg-cover bg-left-top bg-gradient01 h-60"
-          >
-            <p className=" text-white pr-5 pb-5 text-8xl font-whyteinktrap leading-15 mix-blend-exclusion  ">
-              jexica ayran
-            </p>
-          </div>
+          {/*  */}
+
+          {/*  */}
+          {/* second grid  */}
         </div>
+        {/*  */}
 
         <div
           onMouseEnter={() => setOnHover2(true)}
           onMouseLeave={() => setOnHover2(false)}
-          style={
-            onHover2 ? { filter: "drop-shadow( .45vw .45vw 0 black)" } : null
-          }
-          className="animate-fadein-02 flex mx-5 mb-10 p-10 top-0 left-0  relative w-96 h-fit rounded-3xl bg-cover bg-right-top bg-gradient06 "
+          // style={
+          //   onHover2 ? { filter: "drop-shadow( .45vw .45vw 0 black)" } : null
+          // }
+          className="place-self-start w-96 animate-fadein-02 flex  p-10   h-fit rounded-3xl bg-cover bg-right-top bg-gradient06 "
         >
           <div className="text-xl tracking-wide text-left  text-black font-whytemono selection:bg-fuchsia-300 selection:text-fuchsia-900 ">
             Hello, <br className="mb-3" />
@@ -123,6 +137,9 @@ export default function GlassButton() {
             </p>
           </div>
         </div>
+        {/*  */}
+
+        {/*  */}
       </div>
     </div>
   );
