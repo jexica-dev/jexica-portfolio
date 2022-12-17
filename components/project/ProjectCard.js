@@ -109,10 +109,17 @@ export default function ProjectCard(props) {
                   layout="responsive"
                 />
               </div>
-              <div>
-                <header> {props.title}</header>
-                <text>{props.info}</text>
-                
+              <div className="grid grid-col gap-2 text-left px-5 pb-3 font-whytemono">
+                <header className="font-bold font-whyteinktrap text-xl">
+                  {" "}
+                  {props.title}
+                </header>
+                <p>{props.info}</p>
+
+                <div className="grid grid-cols-2 place-items-center text-sm italic underline thin font-social">
+                  <Link href={props.site}>Online</Link>
+                  <Link href={props.github}>Github</Link>
+                </div>
               </div>
               <>
                 <p className=" z-10 bottom-0 flex flex-row w-full align-center text-left text-xl">

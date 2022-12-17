@@ -11,7 +11,7 @@ export default function GlassButton() {
   const [onHover2, setOnHover2] = useState(false);
   const arrow = "→  ";
   return (
-    <div className=" cursor-star">
+    <div className=" cursor-move">
       {/*  */}
       {/* <div
         style={{

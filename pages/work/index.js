@@ -82,9 +82,41 @@ function ProjectListPage(props) {
         </div>
 
         <div
-          className=" relative grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-black content-center pt-60"
+          className=" relative grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-black content-center pt-60"
           style={{ padding: "21vw 3vw 0" }}
         >
+          <ProjectCard
+            setModalOpen={setModalOpen}
+            setModalData={setModalData}
+            date="09-2021"
+            title="g'JAM"
+            info="e-commerce (MERN stack) website for creating, modifying, and purchasing customizable organic jams"
+            lang="HTML, CSS, JavaScript, ReactJS, Bootstrap, Node. Express, MongoDB,
+            Mongoose"
+            body="g’JAM is an eCommerce shop that sells customizable freshly-made jams, with music themed names and an endless list of savory, spicy, and sweet ingredients. Users, after creating an account and signing in, are able to buy (shopping cart), create, and edit jams."
+            img="/gjam.png"
+            video="/gjam.mov"
+            alt="gjam"
+            site="https://gjam.jexica.design"
+            github="https://github.com/xicaz/gjam-app"
+            figma="https://www.figma.com/file/RpJb5JPqRSrHZgfHFav8Sr/GJAM-team-library?node-id=314%3A2"
+          />
+
+          <ProjectCard
+            setModalOpen={setModalOpen}
+            setModalData={setModalData}
+            date="06-2022"
+            title="#36daysoftype_22"
+            lang="HTML, CSS, Javascript, ReactJS, Touchdesigner"
+            info="a React web app designed for an audio-reactive creative programming project, participating in the online event: #36daysoftype"
+            body="a React web app designed for an audio-reactive alphabet typography project, participating in the online event: #36daysoftype. Graphics were created in Touchdesigner and Adobe CC."
+            img="/36days.png"
+            video="/36days.mp4"
+            alt="36days"
+            site="https://36days.jexica.design/"
+            github="https://github.com/xicaz/36days_2022"
+          />
+
           <ProjectCard
             setModalOpen={setModalOpen}
             setModalData={setModalData}
@@ -104,18 +136,16 @@ function ProjectListPage(props) {
           <ProjectCard
             setModalOpen={setModalOpen}
             setModalData={setModalData}
-            date="09-2021"
-            title="g'JAM"
-            info="e-commerce (MERN stack) website for creating, modifying, and purchasing customizable organic jams"
-            lang="HTML, CSS, JavaScript, ReactJS, Bootstrap, Node. Express, MongoDB,
-            Mongoose"
-            body="g’JAM is an eCommerce shop that sells customizable freshly-made jams, with music themed names and an endless list of savory, spicy, and sweet ingredients. Users, after creating an account and signing in, are able to buy (shopping cart), create, and edit jams."
-            img="/gjam.png"
-            video="/gjam.mov"
-            alt="gjam"
-            site="https://gjam.jexica.design"
-            github="https://github.com/xicaz/gjam-app"
-            figma="https://www.figma.com/file/RpJb5JPqRSrHZgfHFav8Sr/GJAM-team-library?node-id=314%3A2"
+            date="07-2022"
+            title="HaluPaleta"
+            lang="HTML, CSS, JavaScript, React, Tailwind CSS"
+            info="An experimental eCommerce website that sells customizable paletas (Mexico) and haluhalu (Phillipines)."
+            body="An experimental eCommerce website that sells customizable paletas (Mexico) and haluhalu (Phillipines)."
+            img="/halupaleta.png"
+            video="/halupaleta.mov"
+            alt="halupaleta"
+            site="https://halupaleta.jexica.design/"
+            github="https://github.com/xicaz/halu-paleta"
           />
 
           <ProjectCard
@@ -139,36 +169,6 @@ function ProjectListPage(props) {
             alt="thyme"
             site="https://thyme.jexica.design"
             github="https://github.com/xicaz/Thyme"
-          />
-
-          <ProjectCard
-            setModalOpen={setModalOpen}
-            setModalData={setModalData}
-            date="06-2022"
-            title="#36daysoftype_22"
-            lang="HTML, CSS, Javascript, ReactJS, Touchdesigner"
-            info="a React web app designed for a personal project (audio-reactive alphabet typography), participating in the online event: #36daysoftype"
-            body="a React web app designed for a personal project (audio-reactive alphabet typography), participating in the online event: #36daysoftype. Touchdesigner, a node and code based software, specializes in creative programming and is reflective of the work I would love to be a part of."
-            img="/36days.png"
-            video="/36days.mp4"
-            alt="36days"
-            site="https://36days.jexica.design/"
-            github="https://github.com/xicaz/36days_2022"
-          />
-
-          <ProjectCard
-            setModalOpen={setModalOpen}
-            setModalData={setModalData}
-            date="07-2022"
-            title="HaluPaleta"
-            lang="HTML, CSS, JavaScript, React, Tailwind CSS"
-            info="An experimental eCommerce website that sells customizable paletas (Mexico) and haluhalu (Phillipines)."
-            body="An experimental eCommerce website that sells customizable paletas (Mexico) and haluhalu (Phillipines)."
-            img="/halupaleta.png"
-            video="/halupaleta.mov"
-            alt="halupaleta"
-            site="https://halupaleta.jexica.design/"
-            github="https://github.com/xicaz/halu-paleta"
           />
 
           <ProjectCard
