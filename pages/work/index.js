@@ -88,7 +88,7 @@ function ProjectListPage(props) {
           <ProjectCard
             setModalOpen={setModalOpen}
             setModalData={setModalData}
-            date="09-2021"
+            date="12-2022"
             title="g'JAM"
             info="e-commerce (MERN stack) website for creating, modifying, and purchasing customizable organic jams"
             lang="HTML, CSS, JavaScript, ReactJS, Bootstrap, Node. Express, MongoDB,
@@ -128,7 +128,7 @@ function ProjectListPage(props) {
             img="/digialtar.png"
             video="/digialtar.mp4"
             alt="digialtar"
-            site="https://digialtar.jexica.design"
+            site="https://digialtar.netlify.app/"
             github="https://github.com/xicaz/digiAltar"
             figma="https://www.figma.com/file/hO2KgFUbFCceqaOceDhOv0/digi-Altar?node-id=0%3A1"
           />
@@ -139,36 +139,13 @@ function ProjectListPage(props) {
             date="07-2022"
             title="HaluPaleta"
             lang="HTML, CSS, JavaScript, React, Tailwind CSS"
-            info="An experimental eCommerce website that sells customizable paletas (Mexico) and haluhalu (Phillipines)."
-            body="An experimental eCommerce website that sells customizable paletas (Mexico) and haluhalu (Phillipines)."
+            info="An experimental React and p5js eCommerce website for customizable paletas (Mexico) and haluhalu (Philippines)."
+            body="An experimental React and p5js eCommerce website for customizable frozen pops, paletas (Mexico), and tropical sundaes, haluhalu (Philippines)."
             img="/halupaleta.png"
             video="/halupaleta.mov"
             alt="halupaleta"
             site="https://halupaleta.jexica.design/"
             github="https://github.com/xicaz/halu-paleta"
-          />
-
-          <ProjectCard
-            setModalOpen={setModalOpen}
-            setModalData={setModalData}
-            title="Thyme"
-            date="08-2021"
-            info={
-              <>
-                a React web app for creating a bucket/task list based on your
-                own
-                <span className="italic"> thyme</span> and collecting data
-                through Airtable's API
-              </>
-            }
-            lang="HTML, CSS, JavaScript, ReactJS, Airtable"
-            body="Thyme is a modern and simple tasklist, with a leaf-branching
-            system, for goal-setting or bucket lists. Airtable (backend) is collecting the tasks that submitted from the form, while React (frontend) is rendering the data and the single-page app. "
-            img="/thyme.png"
-            video="/thyme.mp4"
-            alt="thyme"
-            site="https://thyme.jexica.design"
-            github="https://github.com/xicaz/Thyme"
           />
 
           <ProjectCard
@@ -185,19 +162,26 @@ function ProjectListPage(props) {
             site="https://memoar.jexica.design/"
             github="https://interactiveknowledge.8thwall.app/vps-bespoke"
           />
-
           <ProjectCard
             setModalOpen={setModalOpen}
             setModalData={setModalData}
-            date="07-2021"
-            title="Spirit Gif"
-            info="giphy images of the user's name are expressively collaged, using the Giphy API"
-            body="After entering your name in the search bar, giphy images are expressively and randomly added and collaged using the Giphy API."
-            img="/spiritgif.png"
-            video="/spiritgif.mp4"
-            alt="spiritgif"
-            site="https://spiritgif.surge.sh/"
-            github="https://github.com/xicaz/Spirit-GIF"
+            title="Thyme"
+            date="08-2021"
+            info={
+              <>
+                a React web app for creating a goal/task list based on your own
+                <span className="italic"> thyme</span> and using Airtable's API
+                to store data.
+              </>
+            }
+            lang="HTML, CSS, JavaScript, ReactJS, Airtable"
+            body="Thyme is a modern and simple tasklist, with a leaf-branching
+            system, for goal-setting or bucket lists. Airtable (backend) is collecting the tasks that submitted from the form, while React (frontend) is rendering the data and the single-page app. "
+            img="/thyme.png"
+            video="/thyme.mp4"
+            alt="thyme"
+            site="https://thyme.jexica.design"
+            github="https://github.com/xicaz/Thyme"
           />
 
           <ProjectCard
@@ -211,6 +195,20 @@ function ProjectListPage(props) {
             img="/giphy.png"
             video="/giphy.mp4"
             alt="ghibli-giphy"
+            site="https://spiritgif.surge.sh/"
+            github="https://github.com/xicaz/Spirit-GIF"
+          />
+
+          <ProjectCard
+            setModalOpen={setModalOpen}
+            setModalData={setModalData}
+            date="07-2021"
+            title="Spirit Gif"
+            info="giphy images of the user's name are expressively collaged, using the Giphy API"
+            body="After entering your name in the search bar, giphy images are expressively and randomly added and collaged using the Giphy API."
+            img="/spiritgif.png"
+            video="/spiritgif.mp4"
+            alt="spiritgif"
             site="https://spiritgif.surge.sh/"
             github="https://github.com/xicaz/Spirit-GIF"
           />
