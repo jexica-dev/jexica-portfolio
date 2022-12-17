@@ -97,6 +97,15 @@
   src: url("/fonts/Magtis-ExtraBold.otf");
   font-weight: bold;
 }
+@font-face {
+  font-family: "Haramond";
+  src: url("/fonts/Harmond-ExtraBoldExpanded.otf");
+}
+
+@font-face {
+  font-family: "DXSitrus";
+  src: url("/fonts/DxSitrus-Expanded.otf");
+}
 
 #root canvas {
   display: none;
@@ -111,7 +120,8 @@
 }
 
 html,
-body {
+body,
+code {
   text-align: center;
   padding: 0;
   margin: 0 auto;
@@ -122,7 +132,7 @@ body {
   overflow-x: hidden;
 }
 ::selection {
-  background: #16dcde;
+  background: #ffffff95;
   backdrop-filter: invert(70%);
 }
 

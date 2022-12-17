@@ -80,10 +80,22 @@ function Navbar(props) {
                     </span>
                     <span className={navBgColor}>
                       <Link className="" href="mailto:jexica.ayran@gmail.com">
-                        &nbsp;Contact&nbsp;
+                        &nbsp;Email&nbsp;
                       </Link>
                     </span>
-                    {/* <span>&nbsp;&nbsp; &nbsp;&nbsp;</span> */}
+                  </li>
+                  <li>
+                    <span className={arrowColor}>
+                      &nbsp;&nbsp; {arrow} &nbsp;
+                    </span>
+                    <span className={navBgColor}>
+                      <Link
+                        className=""
+                        href="https://www.linkedin.com/in/jexica/"
+                      >
+                        &nbsp;LinkedIn&nbsp;
+                      </Link>
+                    </span>
                   </li>
                   <li>
                     <span className={arrowColor}>
@@ -120,7 +132,19 @@ function Navbar(props) {
                   <span className="text-base">{arrow} &nbsp;</span>
 
                   <Link className="" href="mailto:jexica.ayran@gmail.com">
-                    Contact
+                    Email
+                  </Link>
+                </div>
+
+                <div className="">
+                  <span className="text-base">{arrow} &nbsp;</span>
+
+                  {/*             
+              <Link className="" href="https://github.com/xicaz">
+                Github
+              </Link> */}
+                  <Link className="" href="https://www.linkedin.com/in/jexica/">
+                    Linkedin
                   </Link>
                 </div>
                 <div className="">
@@ -128,17 +152,6 @@ function Navbar(props) {
                   <Link className="" href="/JexicaAyran-Resume.pdf" passHref>
                     <a target="_blank">Resume</a>
                   </Link>
-                  {/* <Link className="" href="https://www.linkedin.com/in/jexica/">
-                Linkedin
-              </Link> */}
-                </div>
-                <div className="">
-                  {/* <span className="text-base">{arrow} &nbsp;</span> */}
-
-                  {/*             
-              <Link className="" href="https://github.com/xicaz">
-                Github
-              </Link> */}
                   {/* <Link className="" href="https://www.linkedin.com/in/jexica/">
                 Linkedin
               </Link> */}

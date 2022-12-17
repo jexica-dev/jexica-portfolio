@@ -16,12 +16,15 @@ module.exports = {
       },
       fontFamily: {
         gintonord: ["ABC Ginto Nord"],
+        prophet: ["ABC Prophet"],
         ginto: ["ABC Ginto"],
         social: ["ABC Social"],
         monument: ["ABC Monument Grotesk Mono"],
         whytemono: ["ABC Whyte Mono"],
         whyteinktrap: ["ABC Whyte Inktrap"],
         magtis: ["Magtis"],
+        dxsitrus: ["DXSitrus"],
+        haramond: ["Haramond"],
       },
       spacing: {
         128: "32rem",

@@ -16,7 +16,6 @@ function HomePage() {
       <SafeHydrate>
         <Layout>
           <GlassButton />
-          <SkillButtons />
         </Layout>
       </SafeHydrate>
     </>
