@@ -12,8 +12,8 @@ function ProjectListPage(props) {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalData, setModalData] = useState({
     title: "",
-    img: "/thyme.png",
-    video: "/thyme.mp4",
+    img: "",
+    video: "",
     date: "",
     lang: "",
     body: "",

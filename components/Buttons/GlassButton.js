@@ -37,25 +37,22 @@ export default function GlassButton() {
       </div> */}
 
       {/*  */}
-      <div className=" grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-3  place-items-center w-full h-full px-20 py-16 ">
+      <div className=" grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-3  place-items-center w-full h-full px-5 lg:px-20 md:px-16 sm:px-10 py-16 ">
         {/*  */}
 
         <div className="grid grid-cols-1 gap-3  h-full place-self-end ">
           {/*  */}
           <Draggable>
-            <div className=" backdrop-blur-3xl z-10 text-2xl place-self-end ">
+            <div className="w-full backdrop-blur-3xl z-10 text-2xl place-self-end ">
               <div
                 onMouseEnter={() => setOnHover1(true)}
                 onMouseLeave={() => setOnHover1(false)}
                 // style={
                 //   onHover1 ? { filter: "drop-shadow( .45vw .45vw 0 black)" } : null
                 // }
-                className=" w-full animate-fadein-02 text-right py-10 px-30  bg-gradient01  mix-blend-overlay flex rounded-3xl bg-cover bg-left-top  "
+                className=" w-full animate-fadein-02 text-right py-10   bg-gradient01  mix-blend-overlay flex rounded-3xl bg-cover bg-left-top  "
               >
-                <p
-                  style={{ fontSize: "5.25rem" }}
-                  className=" text-indigo-900 px-5 pl-3 mix-blend-overlay  tracking-wide  leading-15  font-whyteinktrap font-bold  "
-                >
+                <p className="text-6xl lg:text-8xl md:text-7xl sm:text-7xl text-indigo-900 px-5 mix-blend-overlay  tracking-wide  leading-15  font-whyteinktrap font-bold  ">
                   jexica ayran
                 </p>
               </div>
@@ -70,19 +67,19 @@ export default function GlassButton() {
               // style={
               //   onHover ? { filter: "drop-shadow( .45vw .45vw 0 black)" } : null
               // }
-              className="place-items-start animate-fadein-02  rounded-3xl bg-cover bg-right-top bg-gradient04 hover:text-indigo-700 px-10 pb-3 pt-10 text-3xl tracking-wide text-left  text-black   "
+              className="place-items-start animate-fadein-02  rounded-3xl bg-cover bg-right-top bg-gradient04 hover:text-indigo-700 px-5 pb-3 pt-10 text-3xl tracking-wide text-left  text-black   "
             >
-              <p className="">
-                <span className=" text-5xl mix-blend-overlay filter leading-12  font-whytemono">
+              <p className="  grid grid-cols-1 place-items-center justify-center">
+                <div className="px-0 lg:px-7 md:px-5 sm:px-0 text-5xl mix-blend-overlay filter leading-12  font-whytemono">
                   Creative Developer
-                </span>
+                </div>
                 <div className="flex flex-row flex-wrap pt-2 justify-end">
-                  <div className=" text-3xl pr-2 pt-3 animate-bounce-slow text-yellow-300 ">
+                  <div className=" text-3xl pr-1 pt-3 animate-bounce-slow text-yellow-300 ">
                     {arrow}
                   </div>
-                  <p className=" mt-1 z-40 flex justify-around  text-white rounded-full py-1 px-5 whitespace-nowrap font-bold tracking-wide bg-trp border  text-2xl font-whytemono  border-black">
+                  <p className=" mt-1 z-40 flex justify-around  text-white rounded-full py-1 px-3 whitespace-nowrap font-bold tracking-wide bg-trp border  text-2xl font-whytemono  border-black">
                     <div
-                      className=" w-44"
+                      className="w-36"
                       onMouseEnter={() => setOnHover(true)}
                       onMouseLeave={() => setOnHover(false)}
                     >

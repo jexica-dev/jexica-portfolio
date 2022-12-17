@@ -73,7 +73,9 @@ export default function SkillButtons(props) {
   return (
     <>
       <div className="pl-3 place-items-stretch animate-fadein lg:w-96 md:w-full sm:w-full lg:col-span-1 md:col-span-2">
-        <div className="grid grid-cols-2 gap-3">{skillButtons}</div>
+        <div className="grid lg:grid-cols-2 grid-cols-1 md:grid-cols-2 sm:grid-cols-1 gap-3 ">
+          {skillButtons}
+        </div>
       </div>
     </>
   );
