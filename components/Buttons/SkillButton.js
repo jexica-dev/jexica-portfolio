@@ -9,7 +9,7 @@ export default function SkillButtons(props) {
     <>
       <div className=" animate-fadein w-screen h-full flex flex-wrap flex-row justify-center">
         <div className="w-container justify-center flex content-start flex-wrap flex-row  items-start ">
-          <div className={"w-28" + defaultSkillBtn}>HTML</div>
+          <div className={"w-28 font-ginto" + defaultSkillBtn}>HTML</div>
           <div className={" w-28" + defaultSkillBtn}>CSS</div>
           <div className={"w-48" + defaultSkillBtn}>Javascript</div>
           <div className={"w-30" + defaultSkillBtn}>Node.js</div>

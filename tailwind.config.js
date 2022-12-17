@@ -21,6 +21,7 @@ module.exports = {
         monument: ["ABC Monument Grotesk Mono"],
         whytemono: ["ABC Whyte Mono"],
         whyteinktrap: ["ABC Whyte Inktrap"],
+        magtis: ["Magtis"],
       },
       spacing: {
         128: "32rem",

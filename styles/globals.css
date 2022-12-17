@@ -92,6 +92,11 @@
   src: url("/fonts/abcMonumentGroteskMono/ABCMonumentGroteskMono-Light-Trial.otf");
   font-weight: thin;
 }
+@font-face {
+  font-family: "Magtis";
+  src: url("/fonts/Magtis-ExtraBold.otf");
+  font-weight: bold;
+}
 
 #root canvas {
   display: none;
