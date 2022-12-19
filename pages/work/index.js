@@ -7,6 +7,7 @@ import { useState } from "react";
 import Layout from "../../components/Layout/Layout";
 import Modal from "../../components/Modal/Modal";
 import Image from "next/dist/client/image";
+import projectList from "../../projects/projects.json";
 
 function ProjectListPage(props) {
   const [modalOpen, setModalOpen] = useState(false);
@@ -21,6 +22,29 @@ function ProjectListPage(props) {
     figma: "",
     site: "",
   });
+
+  console.log(projectList.length);
+  let projectCards = [];
+
+  projectList.map((project) =>
+    projectCards.push(
+      <ProjectCard
+        setModalOpen={setModalOpen}
+        setModalData={setModalData}
+        title={project.title}
+        date={project.date}
+        info={project.info}
+        lang={project.lang}
+        video={project.video}
+        img={project.img}
+        body={project.body}
+        alt={project.alt}
+        site={project.site}
+        github={project.github}
+        figma={project.figma ? project.figma : null}
+      />
+    )
+  );
 
   return (
     <>
@@ -85,134 +109,7 @@ function ProjectListPage(props) {
           className=" relative grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-black content-center pt-60"
           style={{ padding: "21vw 3vw 0" }}
         >
-          <ProjectCard
-            setModalOpen={setModalOpen}
-            setModalData={setModalData}
-            date="12-2022"
-            title="g'JAM"
-            info="e-commerce (MERN stack) website for creating, modifying, and purchasing customizable organic jams"
-            lang="HTML, CSS, JavaScript, ReactJS, Bootstrap, Node. Express, MongoDB,
-            Mongoose"
-            body="g’JAM is an eCommerce shop that sells customizable freshly-made jams, with music themed names and an endless list of savory, spicy, and sweet ingredients. Users, after creating an account and signing in, are able to buy (shopping cart), create, and edit jams."
-            img="/gjam.png"
-            video="/gjam.mov"
-            alt="gjam"
-            site="https://gjam.jexica.design"
-            github="https://github.com/xicaz/gjam-app"
-            figma="https://www.figma.com/file/RpJb5JPqRSrHZgfHFav8Sr/GJAM-team-library?node-id=314%3A2"
-          />
-
-          <ProjectCard
-            setModalOpen={setModalOpen}
-            setModalData={setModalData}
-            date="06-2022"
-            title="#36daysoftype_22"
-            lang="HTML, CSS, Javascript, ReactJS, Touchdesigner"
-            info="a React web app designed for an audio-reactive creative programming project, participating in the online event: #36daysoftype"
-            body="a React web app designed for an audio-reactive alphabet typography project, participating in the online event: #36daysoftype. Graphics were created in Touchdesigner and Adobe CC."
-            img="/36days.png"
-            video="/36days.mp4"
-            alt="36days"
-            site="https://36days.jexica.design/"
-            github="https://github.com/xicaz/36days_2022"
-          />
-
-          <ProjectCard
-            setModalOpen={setModalOpen}
-            setModalData={setModalData}
-            lang="HTML, CSS, JavaScript, ReactJS, Tailwind CSS, Ruby, Ruby on Rails"
-            title="digi-Altar"
-            date="10-2021"
-            info="full-stack web app for creating cyber art-shrine collages, using RoR and React.js"
-            body="digi-Altar is a cyber spiritual space, where you can create, share, and inspire your own altar using a hybrid mix of relics and artifacts."
-            img="/digialtar.png"
-            video="/digialtar.mp4"
-            alt="digialtar"
-            site="https://digialtar.netlify.app/"
-            github="https://github.com/xicaz/digiAltar"
-            figma="https://www.figma.com/file/hO2KgFUbFCceqaOceDhOv0/digi-Altar?node-id=0%3A1"
-          />
-
-          <ProjectCard
-            setModalOpen={setModalOpen}
-            setModalData={setModalData}
-            date="07-2022"
-            title="HaluPaleta"
-            lang="HTML, CSS, JavaScript, React, Tailwind CSS"
-            info="An experimental React and p5js eCommerce website for customizable paletas (Mexico) and haluhalu (Philippines)."
-            body="An experimental React and p5js eCommerce website for customizable frozen pops, paletas (Mexico), and tropical sundaes, haluhalu (Philippines)."
-            img="/halupaleta.png"
-            video="/halupaleta.mov"
-            alt="halupaleta"
-            site="https://halupaleta.jexica.design/"
-            github="https://github.com/xicaz/halu-paleta"
-          />
-
-          <ProjectCard
-            setModalOpen={setModalOpen}
-            setModalData={setModalData}
-            date="10-2022"
-            title="MemoAR"
-            lang="Javascript, A-Frame"
-            info={`A poetic AR experience that redefines traditional monuments as "memos" with playful sculptures and written notes on any Lightship VPS-enabled wayspot anchor.`}
-            body={`A poetic AR experience that redefines traditional monuments as "memos" with playful sculptures and written notes on any Lightship VPS-enabled wayspot anchor.`}
-            img="/memoar.png"
-            video="/memoar.mp4"
-            alt="MemoAR"
-            site="https://memoar.jexica.design/"
-            github="https://interactiveknowledge.8thwall.app/vps-bespoke"
-          />
-          <ProjectCard
-            setModalOpen={setModalOpen}
-            setModalData={setModalData}
-            title="Thyme"
-            date="08-2021"
-            info={
-              <>
-                a React web app for creating a goal/task list based on your own
-                <span className="italic"> thyme</span> and using Airtable's API
-                to store data.
-              </>
-            }
-            lang="HTML, CSS, JavaScript, ReactJS, Airtable"
-            body="Thyme is a modern and simple tasklist, with a leaf-branching
-            system, for goal-setting or bucket lists. Airtable (backend) is collecting the tasks that submitted from the form, while React (frontend) is rendering the data and the single-page app. "
-            img="/thyme.png"
-            video="/thyme.mp4"
-            alt="thyme"
-            site="https://thyme.jexica.design"
-            github="https://github.com/xicaz/Thyme"
-          />
-
-          <ProjectCard
-            setModalOpen={setModalOpen}
-            setModalData={setModalData}
-            date="03-2022"
-            title="Ghibli-Giphy Remix"
-            lang="HTML, CSS, Javascript"
-            info="Ghibli film informational (wiki) page abstractly layered with images and text collected and rendered through the Ghibli Studio and Giphy API"
-            body="A drop-down menu holding a list of Ghibli films offers an informational (wiki) page abstractly layered with gif images and text. Data is collected and rendered through the Ghibli Studio and Giphy API."
-            img="/giphy.png"
-            video="/giphy.mp4"
-            alt="ghibli-giphy"
-            site="https://spiritgif.surge.sh/"
-            github="https://github.com/xicaz/Spirit-GIF"
-          />
-
-          <ProjectCard
-            setModalOpen={setModalOpen}
-            setModalData={setModalData}
-            date="07-2021"
-            title="Spirit Gif"
-            info="giphy images of the user's name are expressively collaged, using the Giphy API"
-            body="After entering your name in the search bar, giphy images are expressively and randomly added and collaged using the Giphy API."
-            img="/spiritgif.png"
-            video="/spiritgif.mp4"
-            alt="spiritgif"
-            site="https://spiritgif.surge.sh/"
-            github="https://github.com/xicaz/Spirit-GIF"
-          />
-
+          {projectCards}
           {/* WORKSAMPLE */}
           {/* <NextJsCarousel /> */}
         </div>
