@@ -23,7 +23,6 @@ function ProjectListPage(props) {
     site: "",
   });
 
-  console.log(projectList.length);
   let projectCards = [];
 
   projectList.map((project) =>
@@ -111,9 +110,7 @@ function ProjectListPage(props) {
         >
           {projectCards}
           {/* WORKSAMPLE */}
-          {/* <NextJsCarousel /> */}
         </div>
-        {/* </div> */}
       </Layout>
     </>
   );

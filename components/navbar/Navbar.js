@@ -70,7 +70,7 @@ function Navbar(props) {
                       &nbsp;&nbsp; {arrow} &nbsp;
                     </span>
                     <span className={navBgColor}>
-                      <Link href="/work">&nbsp;Work&nbsp;</Link>
+                      <Link href="/work">&nbsp;Portfolio&nbsp;</Link>
                     </span>
                     {/* <span>&nbsp;&nbsp; &nbsp;&nbsp;</span> */}
                   </li>
@@ -126,7 +126,7 @@ function Navbar(props) {
                 </div>
                 <div>
                   <span className="text-base">&nbsp;&nbsp; {arrow} &nbsp;</span>
-                  <Link href="/work">Work</Link>
+                  <Link href="/work">Portfolio</Link>
                 </div>
                 <div className="">
                   <span className="text-base">{arrow} &nbsp;</span>
