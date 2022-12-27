@@ -37,13 +37,13 @@ export default function GlassButton() {
       </div> */}
 
       {/*  */}
-      <div className=" grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-3  place-items-center w-full h-full px-5 lg:px-20 md:px-16 sm:px-10 py-16 ">
+      <div className=" grid lg:grid-cols- md:grid-cols-2 sm:grid-cols-1 gap-3  place-items-center w-full h-full px-5  lg:px-48 md:px-16 sm:px-10 py-16 ">
         {/*  */}
 
         <div className="grid grid-cols-1 gap-4  h-full place-self-end ">
           {/*  */}
           <Draggable>
-            <div className=" cursor-move w-full backdrop-blur-3xl z-10 text-2xl place-self-end ">
+            <div className=" cursor-move w-full backdrop-blur-3xl text-2xl place-self-end ">
               <div
                 onMouseEnter={() => setOnHover1(true)}
                 onMouseLeave={() => setOnHover1(false)}
@@ -92,10 +92,9 @@ export default function GlassButton() {
                             direction="right"
                             className="overflow-hidden p-1 "
                             gradient={null}
-                            speed={30}
-                            pauseOnHover
+                            speed={15}
                           >
-                            projects
+                            projects&nbsp;
                           </Marquee>
                         </a>
                       </Link>
@@ -119,7 +118,7 @@ export default function GlassButton() {
             // style={
             //   onHover2 ? { filter: "drop-shadow( .45vw .45vw 0 black)" } : null
             // }
-            className="cursor-move place-self-end  animate-fadein-02 flex p-10  h-fit rounded-3xl bg-cover bg-right-top bg-gradient06 "
+            className="cursor-move place-self-end  animate-fadein-02 flex px-7 py-12  h-fit rounded-3xl bg-cover bg-right-top bg-gradient06 "
           >
             <div className="text-xl tracking-wide text-left  text-black font-whytemono selection:bg-fuchsia-300 selection:text-fuchsia-900 ">
               Hello, <br className="mb-3" />
@@ -135,12 +134,11 @@ export default function GlassButton() {
               originally from the SF Bay Area and now currently residing in NYC.
               <p className="mt-3 text-base">
                 <span className="text-yellow-300">&#10022;</span> California
-                College of the Arts (SF, CA):
-                <br /> Bachelor of Architecture, 2016.
+                College of the Arts, SF, CA: Bachelor of Architecture, 2016.
               </p>
               <p className="mt-3 text-base">
                 <span className="text-yellow-300">&#10022;</span> General
-                Assembly: Software Engineering Immersive, 2021.
+                Assembly, NYC - Remote: Software Engineering Immersive, 2021.
                 <span className="mt-3 block">
                   <span className="text-yellow-300">&#10022;&nbsp;</span>
                   Available for freelance and remote work.
