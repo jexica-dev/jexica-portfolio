@@ -1,12 +1,8 @@
 // ourdomain.com
-import Navbar from "../../components/navbar/Navbar";
-import ProjectCard from "../../components/project/ProjectCard.js";
-import NextJsCarousel from "../../components/Carousel/index";
-import { useRouter } from "next/dist/client/router";
 import { useState } from "react";
 import Layout from "../../components/Layout/Layout";
 import Modal from "../../components/Modal/Modal";
-import Image from "next/dist/client/image";
+import ProjectCard from "../../components/project/ProjectCard.js";
 import projectList from "../../projects/projects.json";
 
 function ProjectListPage(props) {

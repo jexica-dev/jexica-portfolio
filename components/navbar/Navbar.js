@@ -126,15 +126,15 @@ function Navbar(props) {
                 </div>
                 <div>
                   <span className="text-base">&nbsp;&nbsp; {arrow} &nbsp;</span>
-                  <Link href="/work">Portfolio</Link>
+                  <Link href="/developer">Portfolio</Link>
                 </div>
-                <div className="">
+                {/* <div className="">
                   <span className="text-base">{arrow} &nbsp;</span>
 
                   <Link className="" href="mailto:jexica.ayran@gmail.com">
                     Email
                   </Link>
-                </div>
+                </div> */}
 
                 <div className="">
                   <span className="text-base">{arrow} &nbsp;</span>
@@ -149,12 +149,12 @@ function Navbar(props) {
                 </div>
                 <div className="">
                   <span className="text-base">{arrow} &nbsp;</span>
-                  <Link className="" href="/JexicaAyran-Resume.pdf" passHref>
+                  {/* <Link className="" href="/JexicaAyran-Resume.pdf" passHref>
                     <a target="_blank">Resume</a>
+                  </Link> */}
+                  <Link className="" href="https://github.com/xicaz">
+                    Github
                   </Link>
-                  {/* <Link className="" href="https://www.linkedin.com/in/jexica/">
-                Linkedin
-              </Link> */}
                 </div>
               </div>
             </div>

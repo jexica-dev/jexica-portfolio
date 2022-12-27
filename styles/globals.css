@@ -92,19 +92,24 @@
   src: url("/fonts/abcMonumentGroteskMono/ABCMonumentGroteskMono-Light-Trial.otf");
   font-weight: thin;
 }
+
 @font-face {
-  font-family: "Magtis";
-  src: url("/fonts/Magtis-ExtraBold.otf");
-  font-weight: bold;
-}
-@font-face {
-  font-family: "Haramond";
-  src: url("/fonts/Harmond-ExtraBoldExpanded.otf");
+  font-family: "Dx Sitrus";
+  src: url("/fonts/DxSitrus-Expanded.otf");
 }
 
 @font-face {
-  font-family: "DXSitrus";
-  src: url("/fonts/DxSitrus-Expanded.otf");
+  font-family: "Mister Pixel";
+  src: url("/fonts/Mister Pixel Regular.otf");
+}
+@font-face {
+  font-family: "Mister Pixel Icons";
+  src: url("/fonts/Mister Pixel Tools.otf");
+}
+
+@font-face {
+  font-family: "Format";
+  src: url("/fonts/Format_1452.otf");
 }
 
 #root canvas {
@@ -139,7 +144,6 @@ code {
 a {
   font-size: larger;
   font-weight: 400;
-  /* font-family: "Cabinet Grotesk", sans-serif; */
 }
 a:hover {
   /* text-decoration: #00ffff underline;

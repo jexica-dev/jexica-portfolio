@@ -11,7 +11,7 @@ export default function GlassButton() {
   const [onHover2, setOnHover2] = useState(false);
   const arrow = "→  ";
   return (
-    <div className=" cursor-move">
+    <div className=" ">
       {/*  */}
       {/* <div
         style={{
@@ -40,20 +40,20 @@ export default function GlassButton() {
       <div className=" grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-3  place-items-center w-full h-full px-5 lg:px-20 md:px-16 sm:px-10 py-16 ">
         {/*  */}
 
-        <div className="grid grid-cols-1 gap-3  h-full place-self-end ">
+        <div className="grid grid-cols-1 gap-4  h-full place-self-end ">
           {/*  */}
           <Draggable>
-            <div className="w-full backdrop-blur-3xl z-10 text-2xl place-self-end ">
+            <div className=" cursor-move w-full backdrop-blur-3xl z-10 text-2xl place-self-end ">
               <div
                 onMouseEnter={() => setOnHover1(true)}
                 onMouseLeave={() => setOnHover1(false)}
-                // style={
-                //   onHover1 ? { filter: "drop-shadow( .45vw .45vw 0 black)" } : null
-                // }
+                style={{ lineHeight: "1px" }}
+                // style={onHover1 ? { fontFamily: "Mr Pixel" } : null}
                 className=" w-full animate-fadein-02 text-right py-10   bg-gradient01  mix-blend-overlay flex rounded-3xl bg-cover bg-left-top  "
               >
-                <p className="text-6xl lg:text-8xl md:text-7xl sm:text-7xl text-indigo-900 px-5 mix-blend-overlay  tracking-wide  leading-15  font-whyteinktrap font-bold  ">
-                  jexica ayran
+                <p className="text-indigo-900 w-full text-right text-7xl lg:text-8xl md:text-8xl sm:text-7xl  px-6 mix-blend-overlay font-dxsitrus ">
+                  <p>jexica</p>
+                  <p> ayran</p>
                 </p>
               </div>
             </div>
@@ -67,12 +67,14 @@ export default function GlassButton() {
               // style={
               //   onHover ? { filter: "drop-shadow( .45vw .45vw 0 black)" } : null
               // }
-              className="place-items-start animate-fadein-02  rounded-3xl bg-cover bg-right-top bg-gradient04 hover:text-indigo-700 px-5 pb-3 pt-10 text-3xl tracking-wide text-left  text-black   "
+              className=" cursor-pointer place-items-start animate-fadein-02  rounded-3xl bg-cover bg-right-top bg-gradient04 hover:text-indigo-700 px-5 pb-3 pt-10 text-3xl tracking-wide text-left  text-black   "
             >
               <p className="  grid grid-cols-1 place-items-center justify-center">
-                <div className="px-0 lg:px-7 md:px-5 sm:px-0 text-5xl mix-blend-overlay filter leading-12  font-whytemono">
-                  Creative Developer
-                </div>
+                <Link href="/work" passHref>
+                  <div className="px-0 lg:px-7 md:px-5 sm:px-0 text-5xl mix-blend-overlay filter leading-12  font-whytemono">
+                    Creative Developer
+                  </div>
+                </Link>
                 <div className="flex flex-row flex-wrap pt-2 justify-end">
                   <div className=" text-3xl pr-1 pt-3 animate-bounce-slow text-yellow-300 ">
                     {arrow}
@@ -83,7 +85,7 @@ export default function GlassButton() {
                       onMouseEnter={() => setOnHover(true)}
                       onMouseLeave={() => setOnHover(false)}
                     >
-                      <Link href="/work" passHref>
+                      <Link href="/developer" passHref>
                         <a className=" hover:no-underline hover:text-yellow-300">
                           <Marquee
                             style={{ textAlign: "center" }}
@@ -117,7 +119,7 @@ export default function GlassButton() {
             // style={
             //   onHover2 ? { filter: "drop-shadow( .45vw .45vw 0 black)" } : null
             // }
-            className="place-self-end  animate-fadein-02 flex p-10  h-fit rounded-3xl bg-cover bg-right-top bg-gradient06 "
+            className="cursor-move place-self-end  animate-fadein-02 flex p-10  h-fit rounded-3xl bg-cover bg-right-top bg-gradient06 "
           >
             <div className="text-xl tracking-wide text-left  text-black font-whytemono selection:bg-fuchsia-300 selection:text-fuchsia-900 ">
               Hello, <br className="mb-3" />
@@ -140,7 +142,22 @@ export default function GlassButton() {
                 <span className="text-yellow-300">&#10022;</span> General
                 Assembly: Software Engineering Immersive, 2021.
                 <span className="mt-3 block">
-                  * Available for freelance and remote work.
+                  <span className="text-yellow-300">&#10022;&nbsp;</span>
+                  Available for freelance and remote work.
+                  <div>
+                    <p className="text-sm  ">
+                      <span className="text-yellow-300">&#10022; &nbsp;</span>
+                      <Link className="" href="mailto:jexica.ayran@gmail.com">
+                        <a className="text-sm underline">email me</a>
+                      </Link>
+                      &nbsp;
+                      <Link href="/JexicaAyran-Resume.pdf" passHref>
+                        <a className="underline text-sm" target="_blank">
+                          resume
+                        </a>
+                      </Link>
+                    </p>
+                  </div>
                 </span>
               </p>
             </div>

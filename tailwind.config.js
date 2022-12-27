@@ -22,9 +22,9 @@ module.exports = {
         monument: ["ABC Monument Grotesk Mono"],
         whytemono: ["ABC Whyte Mono"],
         whyteinktrap: ["ABC Whyte Inktrap"],
-        magtis: ["Magtis"],
-        dxsitrus: ["DXSitrus"],
-        haramond: ["Haramond"],
+        dxsitrus: ["Dx Sitrus"],
+        mrpixel: ["Mister Pixel"],
+        format: ["Format"],
       },
       spacing: {
         128: "32rem",
