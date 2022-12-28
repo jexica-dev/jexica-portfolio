@@ -1,6 +1,7 @@
 import React from "react";
 // import "../Buttons/SkillButtons.css";
 import Draggable from "react-draggable";
+
 import { useMediaQuery } from "react-responsive";
 
 export default function SkillButtons(props) {
@@ -33,8 +34,6 @@ export default function SkillButtons(props) {
   ];
 
   let skillButtons = [];
-
-  // WILL FIX THIS NEXT TIME
 
   let gradientIndex = [
     "bg-gradient01",
@@ -88,7 +87,7 @@ export default function SkillButtons(props) {
     "180",
     "5",
     "44",
-    "40",
+    "20",
   ];
 
   let corner = ["right", "left"];
@@ -128,7 +127,7 @@ export default function SkillButtons(props) {
       <div className="pl-5  place-items-stretch animate-fadein lg:w-96 md:w-full sm:w-full lg:col-span-1 md:col-span-2">
         <div
           className={
-            !lgScreen
+            smScreen && mdScreen
               ? " z-50 grid lg:grid-cols-2 grid-cols-1 md:grid-cols-2 sm:grid-cols-1 gap-3 "
               : ""
           }

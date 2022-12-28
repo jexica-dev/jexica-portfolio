@@ -70,7 +70,7 @@ export default function GlassButton() {
               className=" cursor-pointer place-items-start animate-fadein-02  rounded-3xl bg-cover bg-right-top bg-gradient04 hover:text-indigo-700 px-5 pb-3 pt-10 text-3xl tracking-wide text-left  text-black   "
             >
               <p className="  grid grid-cols-1 place-items-center justify-center">
-                <Link href="/work" passHref>
+                <Link href="/developer" passHref>
                   <div className="px-0 lg:px-7 md:px-5 sm:px-0 text-5xl mix-blend-overlay filter leading-12  font-whytemono">
                     Creative Developer
                   </div>
@@ -141,10 +141,10 @@ export default function GlassButton() {
                 Assembly, NYC - Remote: Software Engineering Immersive, 2021.
                 <span className="mt-3 block">
                   <span className="text-yellow-300">&#10022;&nbsp;</span>
-                  Available for freelance and remote work.
+                  Available for freelance.
                   <div>
-                    <p className="text-sm  ">
-                      <span className="text-yellow-300">&#10022; &nbsp;</span>
+                    <p className="mt">
+                      <span className="text-yellow-300">&#10022;&nbsp;</span>
                       <Link className="" href="mailto:jexica.ayran@gmail.com">
                         <a className="text-sm underline">email me</a>
                       </Link>
