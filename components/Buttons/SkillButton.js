@@ -4,7 +4,7 @@ import Draggable from "react-draggable";
 
 export default function SkillButtons(props) {
   const defaultSkillBtn =
-    "cursor-move bg-right-top  bg-cover mix-blend-hard-light flex justify-around text-black  rounded-full py-3 px-10  whitespace-nowrap font-medium tracking-widest text-xl ";
+    "cursor-move bg-right-top  bg-cover mix-blend-hard-light flex justify-around text-black  rounded-full py-3 px-10  whitespace-nowrap font-medium tracking-widest text-base ";
 
   let languages = [
     "HTML",

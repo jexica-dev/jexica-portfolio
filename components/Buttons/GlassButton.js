@@ -51,9 +51,9 @@ export default function GlassButton() {
                 // style={onHover1 ? { fontFamily: "Mr Pixel" } : null}
                 className=" w-full animate-fadein-02 text-right py-10   bg-gradient01  mix-blend-overlay flex rounded-3xl bg-cover bg-left-top  "
               >
-                <p className="text-indigo-900 w-full text-right text-7xl lg:text-8xl md:text-8xl sm:text-7xl  px-6 mix-blend-overlay font-dxsitrus ">
+                <p className="text-indigo-900 w-full text-right text-7xl lg:text-8xl md:text-8xl sm:text-7xl  px-6 mix-blend-overlay font-whyteinktrap ">
                   <p>jexica</p>
-                  <p> ayran</p>
+                  <p>ayran</p>
                 </p>
               </div>
             </div>
@@ -124,21 +124,21 @@ export default function GlassButton() {
             <div className="text-xl tracking-wide text-left  text-black font-whytemono selection:bg-fuchsia-300 selection:text-fuchsia-900 ">
               Hello, <br className="mb-3" />
               I’m{" "}
-              {/* <span className=" font-whyteinktrap  text-red-400 tracking-wider">
-                Jexica Ayran
-              </span> */}
-              a <span className=" font-monument text-red-400 ">designer</span>{" "}
-              and{" "}
+              <span className=" font-whyteinktrap  text-red-400 tracking-wider">
+                Jessica Ayran
+              </span>{" "}
+              (jexica), a{" "}
+              <span className=" font-monument text-red-400 ">designer</span> and{" "}
               <span className=" font-monument  text-red-400 ">
                 web developer{" "}
               </span>
               originally from the SF Bay Area and now currently residing in NYC.
-              <p className="mt-3 text-base">
+              <p className="mt-3 text-sm">
                 <span className="text-yellow-300">&#10022;</span> California
                 College of the Arts (SF, CA):
                 <br /> Bachelor of Architecture, 2016.
               </p>
-              <p className="mt-3 text-base">
+              <p className="mt-3 text-sm">
                 <span className="text-yellow-300">&#10022;</span> General
                 Assembly: Software Engineering Immersive, 2021.
                 <span className="mt-3 block">
