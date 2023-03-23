@@ -151,7 +151,7 @@ export default function GlassButton() {
                         <a className="text-sm underline">email me</a>
                       </Link>
                       &nbsp;
-                      <Link href="/JexicaAyran-Resume.pdf" passHref>
+                      <Link href="/JAyran-Resume.pdf" passHref>
                         <a className="underline text-sm" target="_blank">
                           resume
                         </a>
