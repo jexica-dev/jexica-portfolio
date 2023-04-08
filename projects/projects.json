@@ -10,7 +10,7 @@
     "img": "/gjam.png",
     "video": "/gjam.mov",
     "alt": "gjam",
-    "site": ["https://gjam.jexica.design"],
+    "site": "https://gjam.jexica.design",
     "github": "https://github.com/xicaz/gjam-app",
     "figma": "https://www.figma.com/file/RpJb5JPqRSrHZgfHFav8Sr/GJAM-team-library?node-id:314%3A2"
   },
