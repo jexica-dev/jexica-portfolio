@@ -70,7 +70,7 @@ function Navbar(props) {
                       &nbsp;&nbsp; {arrow} &nbsp;
                     </span>
                     <span className={navBgColor}>
-                      <Link href="/work">&nbsp;Portfolio&nbsp;</Link>
+                      <Link href="/developer">&nbsp;Portfolio&nbsp;</Link>
                     </span>
                     {/* <span>&nbsp;&nbsp; &nbsp;&nbsp;</span> */}
                   </li>
