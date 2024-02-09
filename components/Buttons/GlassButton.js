@@ -165,7 +165,7 @@ export default function GlassButton() {
           </div>
         </Draggable>
         {/*  */}
-        <SkillButtons />
+        {/* <SkillButtons /> */}
 
         {/*  */}
       </div>
