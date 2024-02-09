@@ -12,11 +12,7 @@ export default function SkillButtons(props) {
   const smScreen = useMediaQuery({ query: "(min-width: 640px)" });
 
   const defaultSkillBtn =
-<<<<<<< HEAD
-    "cursor-move bg-right-top  bg-cover mix-blend-hard-light flex justify-around text-black  rounded-full py-3 px-10  whitespace-nowrap font-medium tracking-widest text-base ";
-=======
-    "-z-10 cursor-move bg-right-top bg-cover mix-blend-hard-light  justify-around text-black  rounded-full py-3 px-10  whitespace-nowrap font-medium tracking-widest text-xl ";
->>>>>>> ja-dev
+    "cursor-move bg-right-top bg-cover mix-blend-hard-light flex justify-around text-black rounded-full py-3 px-10 whitespace-nowrap font-medium tracking-widest text-base";
 
   let languages = [
     "HTML",
