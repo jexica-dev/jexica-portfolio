@@ -16,6 +16,7 @@
     "framer-motion": "^6.5.1",
     "hamburger-react": "^2.4.1",
     "next": "^11.1.2",
+    "punycode": "^2.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-draggable": "^4.4.5",

@@ -53,7 +53,7 @@ export default function GlassButton() {
               >
                 <p className="text-indigo-900 w-full text-right text-7xl lg:text-8xl md:text-8xl sm:text-7xl  px-6 mix-blend-overlay font-whyteinktrap ">
                   <p>jexica</p>
-                  <p>ayran</p>
+                  {/* <p>ayran</p> */}
                 </p>
               </div>
             </div>
@@ -92,7 +92,7 @@ export default function GlassButton() {
                             direction="right"
                             className="overflow-hidden p-1 "
                             gradient={null}
-                            speed={30}
+                            speed={20}
                             pauseOnHover
                           >
                             projects
@@ -147,11 +147,14 @@ export default function GlassButton() {
                   <div>
                     <p className="text-sm  ">
                       <span className="text-yellow-300">&#10022; &nbsp;</span>
-                      <Link className="" href="mailto:jexica.ayran@gmail.com">
+                      <Link className="" href="mailto:jess.ayran@gmail.com">
                         <a className="text-sm underline">email me</a>
                       </Link>
                       &nbsp;
-                      <Link href="/JAyran-Resume.pdf" passHref>
+                      <Link
+                        href="https://drive.google.com/file/d/1vNq72WyHiFver28D86C2fiV1UcFhW04W/view?usp=sharing"
+                        passHref
+                      >
                         <a className="underline text-sm" target="_blank">
                           resume
                         </a>
