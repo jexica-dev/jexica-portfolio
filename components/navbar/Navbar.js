@@ -79,7 +79,7 @@ function Navbar(props) {
                       &nbsp;&nbsp; {arrow} &nbsp;
                     </span>
                     <span className={navBgColor}>
-                      <Link className="" href="mailto:jexica.ayran@gmail.com">
+                      <Link className="" href="mailto:jess.ayran@gmail.com">
                         &nbsp;Email&nbsp;
                       </Link>
                     </span>
@@ -104,7 +104,7 @@ function Navbar(props) {
                     <span className={navBgColor}>
                       <Link
                         className=""
-                        href="/JexicaAyran-Resume.pdf"
+                        href="https://drive.google.com/file/d/1vNq72WyHiFver28D86C2fiV1UcFhW04W/view?usp=sharing"
                         passHref
                       >
                         <a target="_blank">&nbsp;Resume&nbsp;</a>
@@ -152,7 +152,7 @@ function Navbar(props) {
                   {/* <Link className="" href="/JexicaAyran-Resume.pdf" passHref>
                     <a target="_blank">Resume</a>
                   </Link> */}
-                  <Link className="" href="https://github.com/xicaz">
+                  <Link className="" href="https://github.com/jexica-dev">
                     Github
                   </Link>
                 </div>
