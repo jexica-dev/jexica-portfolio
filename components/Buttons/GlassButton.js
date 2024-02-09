@@ -37,7 +37,7 @@ export default function GlassButton() {
       </div> */}
 
       {/*  */}
-      <div className=" grid lg:grid-cols- md:grid-cols-2 sm:grid-cols-1 gap-3  place-items-center w-full h-full px-5  lg:px-48 md:px-16 sm:px-10 py-16 ">
+      <div className=" h-screen grid lg:grid-cols- md:grid-cols-2 sm:grid-cols-1 gap-3  place-items-center w-full px-5  lg:px-48 md:px-16 sm:px-10 py-16 ">
         {/*  */}
 
         <div className="grid grid-cols-1 gap-4  h-full place-self-end ">
