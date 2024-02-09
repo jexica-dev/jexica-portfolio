@@ -4,6 +4,8 @@ import styles from "../../styles/Layout.module.css";
 // import AnimatedCursor from "react-animated-cursor";
 
 export default function Layout(props) {
+
+
   return (
     <>
       <Navbar />

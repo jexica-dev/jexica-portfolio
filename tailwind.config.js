@@ -38,7 +38,7 @@ module.exports = {
         star: "url(/star-cursor.png), default",
       },
       animation: {
-        "bounce-slow": "bounce-slow 1s ease-in-out infinite",
+        "bounce-slow": "bounce-slow 2s ease-in-out infinite",
         movebg: "20s linear infinite alternate",
         fadein: "fadein 5.25s",
         "fadein-02": "fadein 7s",
