@@ -85,7 +85,6 @@ function ProjectListPage(props) {
           style={{ padding: "21vw 3vw 0" }}
         >
           {projectCards}
-          {/* WORKSAMPLE */}
         </div>
       </Layout>
     </>

@@ -1,5 +1,28 @@
 [
   {
+    "title:": "Jessica Ayran's Architectural Samplework",
+    "date": "02-2024",
+    "lang": "HTML, CSS, Javascript, ReactJS, TailwindCSS",
+    "info": "Jessica Ayran, also known as Jexica, is an architecural designer and programmer. A React App depicting her book portfolio.",
+    "body": "A React App depicting Jessica Ayran's, also known as jexica, architectural and design portfolio. Her diverse work includes parametric to graphic and web design.",
+    "img": "/Jexica-Samplework.png",
+    "video": "/Jexica-Samplework.mp4",
+    "alt": "jexica's samplework",
+    "site": "https://arch.jexica.design/"
+  },
+  {
+    "title": "#36daysoftype_22",
+    "date": "06-2022",
+    "lang": "HTML, CSS, Javascript, ReactJS, Touchdesigner",
+    "info": "a React web app designed for an audio-reactive creative programming project, participating in the online event: #36daysoftype",
+    "body": "a React web app designed for an audio-reactive alphabet typography project, participating in the online event: #36daysoftype. Graphics were created in Touchdesigner and Adobe CC.",
+    "img": "/36days.png",
+    "video": "/36days.mp4",
+    "alt": "36days",
+    "site": "https://36days.jexica.design/",
+    "github": "https://github.com/xicaz/36days_2022"
+  },
+  {
     "title": "g'JAM",
     "date": "12-2022",
     "lang": [
@@ -14,18 +37,6 @@
     "github": "https://github.com/xicaz/gjam-app",
     "figma": "https://www.figma.com/file/RpJb5JPqRSrHZgfHFav8Sr/GJAM-team-library?node-id:314%3A2"
   },
-  {
-    "title": "#36daysoftype_22",
-    "date": "06-2022",
-    "lang": "HTML, CSS, Javascript, ReactJS, Touchdesigner",
-    "info": "a React web app designed for an audio-reactive creative programming project, participating in the online event: #36daysoftype",
-    "body": "a React web app designed for an audio-reactive alphabet typography project, participating in the online event: #36daysoftype. Graphics were created in Touchdesigner and Adobe CC.",
-    "img": "/36days.png",
-    "video": "/36days.mp4",
-    "alt": "36days",
-    "site": "https://36days.jexica.design/",
-    "github": "https://github.com/xicaz/36days_2022"
-  },
 
   {
     "title": "digi-Altar",
@@ -39,6 +50,21 @@
     "site": "https://digialtar.netlify.app/",
     "github": "https://github.com/xicaz/digiAltar",
     "figma": "https://www.figma.com/file/hO2KgFUbFCceqaOceDhOv0/digi-Altar?node-id:0%3A1"
+  },
+  {
+    "title": "g'JAM",
+    "date": "12-2022",
+    "lang": [
+      "HTML, CSS, JavaScript, ReactJS, Bootstrap, Node. Express, MongoDB, Mongoose"
+    ],
+    "info": "e-commerce (MERN stack) website for creating, modifying, and purchasing customizable organic jams",
+    "body": "g’JAM is an eCommerce shop that sells customizable freshly-made jams, with music themed names and an endless list of savory, spicy, and sweet ingredients. Users, after creating an account and signing in, are able to buy (shopping cart), create, and edit jams.",
+    "img": "/gjam.png",
+    "video": "/gjam.mov",
+    "alt": "gjam",
+    "site": "https://gjam.jexica.design",
+    "github": "https://github.com/xicaz/gjam-app",
+    "figma": "https://www.figma.com/file/RpJb5JPqRSrHZgfHFav8Sr/GJAM-team-library?node-id:314%3A2"
   },
   {
     "title": "HaluPaleta",
