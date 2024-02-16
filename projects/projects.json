@@ -1,6 +1,6 @@
 [
   {
-    "title:": "Jessica Ayran's Architectural Samplework",
+    "title:": "Jessica Ayran's Samplework",
     "date": "02-2024",
     "lang": "HTML, CSS, Javascript, ReactJS, TailwindCSS",
     "info": "Jessica Ayran, also known as Jexica, is an architecural designer and programmer. A React App depicting her book portfolio.",
@@ -8,7 +8,8 @@
     "img": "/Jexica-Samplework.png",
     "video": "/Jexica-Samplework.mp4",
     "alt": "jexica's samplework",
-    "site": "https://arch.jexica.design/"
+    "site": "https://arch.jexica.design/",
+    "github": "https://github.com/jexica-dev/designer"
   },
   {
     "title": "#36daysoftype_22",
