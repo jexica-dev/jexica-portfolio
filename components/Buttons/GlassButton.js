@@ -131,7 +131,8 @@ export default function GlassButton() {
               <span className=" font-monument  text-red-400 ">
                 web developer{" "}
               </span>
-              originally from the SF Bay Area and now currently residing in NYC.
+              from the SF Bay Area. My work includes parametric design to web
+              development and I'm passionate to keep developing my skills.
               <p className="mt-3 text-sm">
                 <span className="text-yellow-300">&#10022;</span> California
                 College of the Arts, SF, CA: Bachelor of Architecture, 2016.
@@ -141,7 +142,8 @@ export default function GlassButton() {
                 Assembly, NYC - Remote: Software Engineering Immersive, 2021.
                 <span className="mt-3 block">
                   <span className="text-yellow-300">&#10022;&nbsp;</span>
-                  Available for freelance.
+                  HTML, CSS, Javascript, ReactJS, NextJS, Node, Ruby,
+                  RubyonRails, Postgresql, MongoDB, C++, Java.
                   <div>
                     <p className="mt">
                       <span className="text-yellow-300">&#10022;&nbsp;</span>
