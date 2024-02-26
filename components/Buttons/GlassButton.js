@@ -85,18 +85,19 @@ export default function GlassButton() {
                       onMouseEnter={() => setOnHover(true)}
                       onMouseLeave={() => setOnHover(false)}
                     >
-                      <Link href="/developer" passHref>
-                        <a className=" hover:no-underline hover:text-yellow-300">
-                          <Marquee
-                            style={{ textAlign: "center" }}
-                            direction="right"
-                            className="overflow-hidden p-1 "
-                            gradient={null}
-                            speed={15}
-                          >
-                            projects&nbsp;
-                          </Marquee>
-                        </a>
+                      <Link
+                        href="/developer"
+                        className="hover:no-underline hover:text-yellow-300"
+                      >
+                        <Marquee
+                          style={{ textAlign: "center" }}
+                          direction="right"
+                          className="overflow-hidden p-1 "
+                          gradient={null}
+                          speed={15}
+                        >
+                          projects&nbsp;
+                        </Marquee>
                       </Link>
                     </div>
                   </p>
