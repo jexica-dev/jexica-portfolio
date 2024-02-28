@@ -80,14 +80,14 @@ export default function GlassButton() {
                     {arrow}
                   </div>
                   <p className=" mt-1 z-40 flex justify-around  text-white rounded-full py-1 px-3 whitespace-nowrap font-bold tracking-wide bg-trp border  text-2xl font-whytemono  border-black">
-                    <div
-                      className="w-36"
-                      onMouseEnter={() => setOnHover(true)}
-                      onMouseLeave={() => setOnHover(false)}
+                    <Link
+                      href="/developer"
+                      className="hover:no-underline hover:text-yellow-300"
                     >
-                      <Link
-                        href="/developer"
-                        className="hover:no-underline hover:text-yellow-300"
+                      <div
+                        className="w-36"
+                        onMouseEnter={() => setOnHover(true)}
+                        onMouseLeave={() => setOnHover(false)}
                       >
                         <Marquee
                           style={{ textAlign: "center" }}
@@ -98,8 +98,8 @@ export default function GlassButton() {
                         >
                           projects&nbsp;
                         </Marquee>
-                      </Link>
-                    </div>
+                      </div>
+                    </Link>
                   </p>
                 </div>
               </p>
