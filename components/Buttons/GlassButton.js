@@ -1,15 +1,15 @@
-import Link from "next/dist/client/link";
-import React, { useState } from "react";
-import Marquee from "react-fast-marquee";
-import Image from "next/image";
-import Draggable from "react-draggable";
-import SkillButtons from "./SkillButton";
+import Link from 'next/dist/client/link';
+import React, { useState } from 'react';
+import Marquee from 'react-fast-marquee';
+import Image from 'next/image';
+import Draggable from 'react-draggable';
+import SkillButtons from './SkillButton';
 
 export default function GlassButton() {
   const [onHover, setOnHover] = useState(false);
   const [onHover1, setOnHover1] = useState(false);
   const [onHover2, setOnHover2] = useState(false);
-  const arrow = "→  ";
+  const arrow = '→  ';
   return (
     <div className=" ">
       {/*  */}
@@ -47,7 +47,7 @@ export default function GlassButton() {
               <div
                 onMouseEnter={() => setOnHover1(true)}
                 onMouseLeave={() => setOnHover1(false)}
-                style={{ lineHeight: "1px" }}
+                style={{ lineHeight: '1px' }}
                 // style={onHover1 ? { fontFamily: "Mr Pixel" } : null}
                 className=" w-full animate-fadein-02 text-right py-10   bg-gradient01  mix-blend-overlay flex rounded-3xl bg-cover bg-left-top  "
               >
@@ -90,7 +90,7 @@ export default function GlassButton() {
                         onMouseLeave={() => setOnHover(false)}
                       >
                         <Marquee
-                          style={{ textAlign: "center" }}
+                          style={{ textAlign: 'center' }}
                           direction="right"
                           className="overflow-hidden p-1 "
                           gradient={null}
@@ -123,14 +123,14 @@ export default function GlassButton() {
           >
             <div className="text-xl tracking-wide text-left  text-black font-whytemono selection:bg-fuchsia-300 selection:text-fuchsia-900 ">
               Hello, <br className="mb-3" />
-              I’m{" "}
+              I’m{' '}
               <span className=" font-whyteinktrap  text-red-400 tracking-wider">
                 Jessica Ayran
-              </span>{" "}
-              (jexica), a{" "}
-              <span className=" font-monument text-red-400 ">designer</span> and{" "}
+              </span>{' '}
+              (jexica), a{' '}
+              <span className=" font-monument text-red-400 ">designer</span> and{' '}
               <span className=" font-monument  text-red-400 ">
-                web developer{" "}
+                web developer{' '}
               </span>
               from the SF Bay Area. A budding programmer excited to learn new
               languages, frameworks, and UI tools.
@@ -139,8 +139,8 @@ export default function GlassButton() {
                 College of the Arts, SF, CA: Bachelor of Architecture, 2016.
               </p>
               <p className="mt-3 text-sm">
-                <span className="text-yellow-300">&#10022;</span> General
-                Assembly, NYC - Remote: Software Engineering Immersive, 2021.
+                {/* <span className="text-yellow-300">&#10022;</span> General
+                Assembly, NYC - Remote: Software Engineering Immersive, 2021. */}
                 <span className="mt-3 block">
                   <span className="text-yellow-300 ">&#10022;&nbsp;</span>
                   HTML, CSS, Javascript, ReactJS, NextJS, Node, Ruby,
