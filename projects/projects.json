@@ -1,17 +1,5 @@
 [
   {
-    "title": "jexica's samplework",
-    "date": "02-2024",
-    "lang": "HTML, CSS, Javascript, ReactJS, TailwindCSS",
-    "info": "A React App depicting Jessica Ayran's, also known as jexica, architectural and design portfolio. Her diverse work includes parametric to graphic and web design.",
-    "body": "A React App depicting Jessica Ayran's, also known as jexica, architectural and design portfolio. Her diverse work includes parametric to graphic and web design.",
-    "img": "/Jexica-Samplework.png",
-    "video": "/Jexica-Samplework.mp4",
-    "alt": "jexica's samplework",
-    "site": "https://arch.jexica.design/",
-    "github": "https://github.com/jexica-dev/designer"
-  },
-  {
     "title": "#36daysoftype_22",
     "date": "06-2022",
     "lang": "HTML, CSS, Javascript, ReactJS, Touchdesigner",
@@ -38,6 +26,19 @@
     "github": "https://github.com/jexica-dev/gjam",
     "figma": "https://www.figma.com/file/ECwPTYqJLglYR206tNS7E0/GJAM-team-library-(Copy)?type=design&node-id=314%3A2&mode=design&t=VtWKvruu1P45Ja6Z-1"
   },
+  {
+    "title": "the weather app",
+    "date": "02-2026",
+    "lang": "HTML, CSS, Javascript",
+    "info": "The forecast, simplified. A lightweight web app designed for speed and readability, ensuring you’re always prepared for the weather.",
+    "body": "\"The Weather App\" is a study in functional minimalism—stripping away the clutter of traditional weather sites to focus on the essential data users need at a glance.",
+    "img": "/theweatherapp.png",
+    "video": "/theweatherapp.mov",
+    "alt": "the weather app",
+    "site": "https://theweatherapp.jexica.design/",
+    "github": "https://github.com/jexica-dev/weather-app",
+    "figma": "https://www.figma.com/design/auu4gR7db0MNATraNbaSOU/WeatherApp?node-id=0-1&t=KS6vnd6XvSLsXSDh-1"
+  },
 
   {
     "title": "digi-Altar",
@@ -52,35 +53,19 @@
     "github": "https://github.com/xicaz/digiAltar",
     "figma": "https://www.figma.com/file/hO2KgFUbFCceqaOceDhOv0/digi-Altar?node-id:0%3A1"
   },
+  {
+    "title": "jexica's samplework",
+    "date": "02-2024",
+    "lang": "HTML, CSS, Javascript, ReactJS, TailwindCSS",
+    "info": "A React App depicting Jessica Ayran's, also known as jexica, architectural and design portfolio. Her diverse work includes parametric to graphic and web design.",
+    "body": "A React App depicting Jessica Ayran's, also known as jexica, architectural and design portfolio. Her diverse work includes parametric to graphic and web design.",
+    "img": "/Jexica-Samplework.png",
+    "video": "/Jexica-Samplework.mp4",
+    "alt": "jexica's samplework",
+    "site": "https://arch.jexica.design/",
+    "github": "https://github.com/jexica-dev/designer"
+  },
 
-  {
-    "title": "HaluPaleta",
-    "date": "07-2022",
-    "lang": "HTML, CSS, JavaScript, React, Tailwind CSS",
-    "info": "An experimental React and p5js eCommerce website for customizable paletas (Mexico) and haluhalu (Philippines).",
-    "body": "An experimental React and p5js eCommerce website for customizable frozen pops, paletas (Mexico), and tropical sundaes, haluhalu (Philippines).",
-    "img": "/halupaleta.png",
-    "video": "/halupaleta.mov",
-    "alt": "halupaleta",
-    "github": "https://github.com/xicaz/halu-paleta",
-    "site": "https://halupaleta.jexica.design/"
-  },
-  {
-    "title": "MemoAR",
-    "date": "10-2022",
-    "lang": "Javascript, A-Frame",
-    "info": [
-      "A poetic AR experience that redefines traditional monuments as \"memos\" with playful sculptures and written notes on any Lightship VPS-enabled wayspot anchor."
-    ],
-    "body": [
-      "A poetic AR experience that redefines traditional monuments as \"memos\" with playful sculptures and written notes on any Lightship VPS-enabled wayspot anchor."
-    ],
-    "img": "/memoar.png",
-    "video": "/memoar.mp4",
-    "alt": "MemoAR",
-    "site": "https://memoar.jexica.design/",
-    "github": "https://interactiveknowledge.8thwall.app/vps-bespoke"
-  },
   {
     "title": "Thyme",
     "date": "08-2021",
@@ -109,6 +94,19 @@
     "site": "https://ghibli.jexica.design/",
     "github": "https://github.com/jexica-dev/giphy-remix"
   },
+
+  {
+    "title": "HaluPaleta",
+    "date": "07-2022",
+    "lang": "HTML, CSS, JavaScript, React, Tailwind CSS",
+    "info": "An experimental React and p5js eCommerce website for customizable paletas (Mexico) and haluhalu (Philippines).",
+    "body": "An experimental React and p5js eCommerce website for customizable frozen pops, paletas (Mexico), and tropical sundaes, haluhalu (Philippines).",
+    "img": "/halupaleta.png",
+    "video": "/halupaleta.mov",
+    "alt": "halupaleta",
+    "github": "https://github.com/xicaz/halu-paleta",
+    "site": "https://halupaleta.jexica.design/"
+  },
   {
     "date": "07-2021",
     "title": "Spirit Gif",
@@ -119,5 +117,21 @@
     "alt": "spiritgif",
     "site": "https://spiritgif.surge.sh/",
     "github": "https://github.com/xicaz/Spirit-GIF"
+  },
+  {
+    "title": "MemoAR",
+    "date": "10-2022",
+    "lang": "Javascript, A-Frame",
+    "info": [
+      "A poetic AR experience that redefines traditional monuments as \"memos\" with playful sculptures and written notes on any Lightship VPS-enabled wayspot anchor."
+    ],
+    "body": [
+      "A poetic AR experience that redefines traditional monuments as \"memos\" with playful sculptures and written notes on any Lightship VPS-enabled wayspot anchor."
+    ],
+    "img": "/memoar.png",
+    "video": "/memoar.mp4",
+    "alt": "MemoAR",
+    "site": "https://memoar.jexica.design/",
+    "github": "https://interactiveknowledge.8thwall.app/vps-bespoke"
   }
 ]
