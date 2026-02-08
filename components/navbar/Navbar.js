@@ -1,14 +1,14 @@
 // import { Component } from "react";
-import Link from "next/dist/client/link";
+import Link from 'next/dist/client/link';
 // import styles from "./Navbar.module.css";
-import Media from "react-media";
-import { useState } from "react";
-import { Squeeze as Hamburger } from "hamburger-react";
+import Media from 'react-media';
+import { useState } from 'react';
+import { Squeeze as Hamburger } from 'hamburger-react';
 
 function SafeHydrate({ children }) {
   return (
     <div suppressHydrationWarning>
-      {typeof window === "undefined" ? null : children}
+      {typeof window === 'undefined' ? null : children}
     </div>
   );
 }
@@ -16,9 +16,9 @@ function SafeHydrate({ children }) {
 function Navbar(props) {
   const [navOpen, setNavOpen] = useState(false);
 
-  const arrow = "→  ";
-  const arrowColor = "text-red-600 ";
-  const navBgColor = "bg-yellow-300 font-whytemono ";
+  const arrow = '→  ';
+  const arrowColor = 'text-red-600 ';
+  const navBgColor = 'bg-yellow-300 font-whytemono ';
 
   const handleToggle = () => {
     setNavOpen(!navOpen);
@@ -30,7 +30,7 @@ function Navbar(props) {
           return matches.mobile ? (
             <>
               <div
-                style={navOpen ? { color: "black" } : { color: "green" }}
+                style={navOpen ? { color: 'black' } : { color: 'green' }}
                 className=" fixed z-50 top-0 flex flex-col w-full justify-around pt-3 "
               >
                 <button
@@ -47,13 +47,13 @@ function Navbar(props) {
                 <ul
                   style={
                     !navOpen
-                      ? { display: "none" }
-                      : { display: "", fontSize: "10vw" }
+                      ? { display: 'none' }
+                      : { display: '', fontSize: '10vw' }
                   }
                   className={
                     !navOpen
-                      ? "hide"
-                      : " flex flex-col text-left justify-center text-black  "
+                      ? 'hide'
+                      : ' flex flex-col text-left justify-center text-black  '
                   }
                 >
                   <li>
@@ -104,7 +104,7 @@ function Navbar(props) {
                     <span className={navBgColor}>
                       <Link
                         className=""
-                        href="https://drive.google.com/file/d/1vNq72WyHiFver28D86C2fiV1UcFhW04W/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1_9-fLoK9X_gkB6KhSDFdM8BcgNaSlINu/view?usp=sharing"
                         passHref
                       >
                         <a target="_blank">&nbsp;Resume&nbsp;</a>
