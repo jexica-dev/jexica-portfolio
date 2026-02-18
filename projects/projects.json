@@ -70,7 +70,7 @@
     "title": "Thyme",
     "date": "08-2021",
     "info": [
-      "a React web app for creating a goal/task list based on your own <i>thyme</i> and using Airtable's API to store data."
+      "a React web app for creating a goal/task list based on your own *thyme* and using Airtable's API to store data."
     ],
     "lang": "HTML, CSS, JavaScript, ReactJS, Airtable",
     "body": [
