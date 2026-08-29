@@ -149,7 +149,7 @@ export default function GlassButton() {
                   <div>
                     <p className="mt-2">
                       <span className="text-yellow-300">&#10022;&nbsp;</span>
-                      <Link className="" href="mailto:jexica.ayran@gmail.com">
+                      <Link className="" href="mailto:jess.ayran@gmail.com">
                         <a className="text-sm underline">email me</a>
                       </Link>
                       &nbsp;
